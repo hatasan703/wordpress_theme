@@ -13,7 +13,7 @@
         <div class="page_title">
           <div class="page_title_content">
             <h1>
-              <?php the_title(); ?>
+              「おうちで透析」の記事
             </h1>
           </div>
           <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
@@ -54,7 +54,7 @@
                   </div>
                 </div>
                 <div class="more_btn pink">
-                  <a href="<?php echo home_url(); ?>/">もっと見る</a>
+                  <a href="<?php echo home_url(); ?>/qa">もっと見る</a>
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
               </div>
@@ -85,7 +85,7 @@
                   </div>
                 </div>
                 <div class="more_btn">
-                  <a href="<?php echo home_url(); ?>/">もっと見る</a>
+                  <a href="<?php echo home_url(); ?>/patient-case">もっと見る</a>
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
               </div>
@@ -116,7 +116,7 @@
                   </div>
                 </div>
                 <div class="more_btn green">
-                  <a href="<?php echo home_url(); ?>/">もっと見る</a>
+                  <a href="<?php echo home_url(); ?>/video">もっと見る</a>
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
               </div>
@@ -148,7 +148,7 @@
                   </div>
                 </div>
                 <div class="more_btn blue">
-                  <a href="<?php echo home_url(); ?>/">もっと見る</a>
+                  <a href="<?php echo home_url(); ?>/glossary">もっと見る</a>
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
               </div>
@@ -260,6 +260,7 @@
     padding: 20px 30px;
     display: flex;
   }
+  .more_btn:hover{opacity: 0.8;}
   .more_btn a{
     padding: 0 25%;
     color: #fff;
