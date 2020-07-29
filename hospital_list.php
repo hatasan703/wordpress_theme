@@ -1,0 +1,315 @@
+<?php
+/*
+ * Template Name: 在宅腹膜透析実施病院リスト
+ */
+?>
+
+<?php get_header(); ?>
+
+<main>
+  <!-- <div class="container"> -->
+    <article>
+      <div>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <div class="page_title">
+            <div class="page_title_content">
+              <h1>
+                <?php the_title(); ?>
+              </h1>
+            </div>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/29.png" alt="在宅腹膜透析実施病院リスト">
+          </div>
+          <div class="container">
+            <div class="article_wrap1">
+              <div class="article_title">
+                在宅腹膜透析の実施病院リストです。<br>
+                お住まいの地域をクリックしてください。
+              </div>
+              <div class="hospital_list_btn">
+                <a>関東の病院</a>
+                <a>関西の病院</a>
+                <a>中国・四国の病院</a>
+                <a>東北の病院</a>
+                <a>中部の病院</a>
+                <a>九州の病院</a>
+              </div>
+              <div class="hospital_list">
+                <h2 class="hospital_area">
+                  関東の病院
+                </h2>
+                <div class="hospital_list">
+                  <li class="hospital">
+                    <div class="hospital_top">
+                      <p class="hospital_title">柴垣医院 自由が丘</p>
+                      <p class="hospital_place">東京都</p>
+                    </div>
+                    <div class="hospital_bottom">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/28.png" alt="在宅腹膜透析実施病院リスト">
+                      <div class="address">
+                        <p>〒152-0035</p>
+                        <p>
+                          東京都目黒区自由が丘1-13-4<br>
+                          シャイン自由が丘ビル２F
+                        </p>
+                        <p>☎︎ 03-3724-2626</p>
+                        <p>jiyugaoka@sibagakiiin.com</p>
+                      </div>
+                      <div class="time">
+                        <div class="closed">
+                          <p class="closed_title">休診日</p>
+                          <p>日曜日</p>
+                        </div>
+                        <div class="open">
+                          <p class="open_title">営業<br>時間</p>
+                          <p>
+                            12:30-16:45<br>
+                            17:00-22:30
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="hospital">
+                    <div class="hospital_top">
+                      <p class="hospital_title">柴垣医院 自由が丘</p>
+                      <p class="hospital_place">東京都</p>
+                    </div>
+                    <div class="hospital_bottom">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/28.png" alt="病院">
+                      <div class="address">
+                        <p>〒152-0035</p>
+                        <p>
+                          東京都目黒区自由が丘1-13-4<br>
+                          シャイン自由が丘ビル２F
+                        </p>
+                        <p>☎︎ 03-3724-2626</p>
+                        <p>jiyugaoka@sibagakiiin.com</p>
+                      </div>
+                      <div class="time">
+                        <div class="closed">
+                          <p class="closed_title">休診日</p>
+                          <p>日曜日</p>
+                        </div>
+                        <div class="open">
+                          <p class="open_title">営業<br>時間</p>
+                          <p>
+                            12:30-16:45<br>
+                            17:00-22:30
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <h2 class="hospital_area">
+                  関西の病院
+                </h2>
+                <div class="hospital_list">
+                  <li class="hospital">
+                    <div class="hospital_top">
+                      <p class="hospital_title">柴垣医院 自由が丘</p>
+                      <p class="hospital_place">大阪府</p>
+                    </div>
+                    <div class="hospital_bottom">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/28.png" alt="病院">
+                      <div class="address">
+                        <p>〒152-0035</p>
+                        <p>
+                          東京都目黒区自由が丘1-13-4<br>
+                          シャイン自由が丘ビル２F
+                        </p>
+                        <p>☎︎ 03-3724-2626</p>
+                        <p>jiyugaoka@sibagakiiin.com</p>
+                      </div>
+                      <div class="time">
+                        <div class="closed">
+                          <p class="closed_title">休診日</p>
+                          <p>日曜日</p>
+                        </div>
+                        <div class="open">
+                          <p class="open_title">営業<br>時間</p>
+                          <p>
+                            12:30-16:45<br>
+                            17:00-22:30
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="hospital">
+                    <div class="hospital_top">
+                      <p class="hospital_title">柴垣医院 自由が丘</p>
+                      <p class="hospital_place">京都府</p>
+                    </div>
+                    <div class="hospital_bottom">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/28.png" alt="病院">
+                      <div class="address">
+                        <p>〒152-0035</p>
+                        <p>
+                          東京都目黒区自由が丘1-13-4<br>
+                          シャイン自由が丘ビル２F
+                        </p>
+                        <p>☎︎ 03-3724-2626</p>
+                        <p>jiyugaoka@sibagakiiin.com</p>
+                      </div>
+                      <div class="time">
+                        <div class="closed">
+                          <p class="closed_title">休診日</p>
+                          <p>日曜日</p>
+                        </div>
+                        <div class="open">
+                          <p class="open_title">営業<br>時間</p>
+                          <p>
+                            12:30-16:45<br>
+                            17:00-22:30
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php endwhile; else : ?>
+          <p>まだ記事がありません</p>
+        <?php endif; ?>
+      </div>
+    </article>
+  </div>
+</main>
+
+<?php get_footer(); ?>
+
+<style>
+
+  /* --------メインコンテンツ */
+  .article_wrap1{
+    margin-top: 0;
+  }
+  .article_title{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+    color: #666666;
+    padding: 50px 100px;
+  }
+
+  .hospital_list_btn{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .hospital_list_btn a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #FFA42C;
+    border: solid 1px #FFA42C;
+    border-radius: 50px;
+    width: 220px;
+    padding: 20px 0;
+    margin: 10px 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 3px gray;
+  }
+
+  .hospital_list_btn a:hover{
+    background: #FF6A29;
+    cursor: pointer;
+  }
+
+  .hospital_area{  
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #FF6A29;
+    border: solid 1px #FFA42C;
+    border-radius: 50px;
+    width: 220px;
+    padding: 15px;
+    margin: 100px 20px 10px 0;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+
+  .hospital{
+    padding: 0 20px;
+  }
+  .hospital_top{
+    display: flex;
+    font-weight: bold;
+    border-bottom: solid 2px #FF6A29;
+    padding-bottom: 10px;
+    padding-top: 50px;
+  }
+  .hospital_title{
+    width: 50%;
+    letter-spacing: 0.2em;
+    padding-left: 10px;
+  }
+  .hospital_place{
+    width: 50%;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .hospital_bottom{
+    display: flex;
+    /* justify-content: space-around; */
+  }
+
+  .hospital_bottom img{
+    height: 120px;
+    width: 200px;
+    margin: 20px 30px 10px 0;
+  }
+  .address{
+    margin:20px 0;
+    width:calc(100% / 3) ; 
+  }
+  .address p{
+    font-size: 14px;
+    padding:5px;
+    letter-spacing: 0.1em;
+  }
+
+  .time{
+    margin: 20px 0 16px 60px;
+    border: solid 1px #FF6A29;
+    width:calc(100% / 3) ; 
+    font-size: 14px;
+    height: 120px;
+    width: 200px;
+  }
+  .time li{margin: 20px 0;}
+  .closed,
+  .open{
+    display: flex;
+    padding: 15px;
+  }
+  .closed{
+    padding-bottom: 5px;
+    margin-top:10px;}
+  .open{
+    padding-top: 5px;
+    margin-bottom:10px;
+  }
+  .closed p,
+  .open p{
+    padding: 5px;
+  }
+  .closed_title,
+  .open_title{
+    background: #FF6A29;
+    color: #fff;
+    width: 60px;
+    margin-right: 5px;
+    text-align: center;
+    
+  }
+</style>
