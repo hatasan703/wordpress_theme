@@ -51,10 +51,14 @@
               ４時間もじっと座り続けているとからだに負担がかかる。
               針が入りにくくなってきた・・・。」<br>
               そんな実感のあるあなたに、おうちで透析ができる腹膜透析の選択肢を。
+              <!-- 文字揃え -->
             </p>
           </div>
           <div class="detail_btn">
-            <a href="<?php echo home_url(); ?>/kayou">詳しくはこちら</a>
+            <a href="<?php echo home_url(); ?>/kayou">
+              詳しくはこちら
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
         <div class="topic2">
@@ -68,7 +72,10 @@
             </p>
           </div>
           <div class="detail_btn">
-            <a href="<?php echo home_url(); ?>/at-home">詳しくはこちら</a>
+            <a href="<?php echo home_url(); ?>/at-home">
+              詳しくはこちら
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
         <div class="topic3">
@@ -82,7 +89,10 @@
             </p>
           </div>
           <div class="detail_btn">
-            <a href="<?php echo home_url(); ?>/basic-knowledge">詳しくはこちら</a>
+            <a href="<?php echo home_url(); ?>/basic-knowledge">
+              詳しくはこちら
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -98,20 +108,24 @@
           <div class="articles_wrap">
             <div class="articles">
               <a href="<?php echo home_url(); ?>/" class="article">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/15.png" alt="イメージ">
-                <!-- <p>テキスト</p> -->
+                <time datetime="2020-07-29T10:00">2020.07.29</time>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                <p>ここにテキストが入ります。</p>
               </a>
               <a href="<?php echo home_url(); ?>/" class="article">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/15.png" alt="イメージ">
-                <!-- <p>テキスト</p> -->
+                <time datetime="2020-07-29T10:00">2020.07.29</time>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                <p>ここにテキストが入ります。</p>
               </a>
               <a href="<?php echo home_url(); ?>/" class="article">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/15.png" alt="イメージ">
-                <!-- <p>テキスト</p> -->
+                <time datetime="2020-07-29T10:00">2020.07.29</time>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                <p>ここにテキストが入ります。</p>
               </a>
               <a href="<?php echo home_url(); ?>/" class="article">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/15.png" alt="イメージ">
-                <!-- <p>テキスト</p> -->
+                <time datetime="2020-07-29T10:00">2020.07.29</time>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                <p>ここにテキストが入ります。</p>
               </a>
             </div>
             <div class="sidebar">

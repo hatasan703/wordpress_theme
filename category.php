@@ -30,24 +30,24 @@
             <div id="js-dropdown-menu">
               <div class="category" >
                 <div class="category_top pink">
-                  <div class="category_title">
+                  <div class="category_title2">
                     <h3>腹膜透析Q&A</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
                   <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
                 </div>
                 <div class="category_articles">
-                  <div class="article pink_border">
+                  <div class="category_article pink_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入りますここにテキストが入ります</p>
                   </div>
-                  <div class="article pink_border">
+                  <div class="category_article pink_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入ります</p>
                   </div>
-                  <div class="article pink_border">
+                  <div class="category_article pink_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入ります</p>
@@ -61,24 +61,24 @@
 
               <div class="category" >
                 <div class="category_top">
-                  <div class="category_title">
+                  <div class="category_title2">
                     <h3>患者さんの事例</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
                   <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
                 </div>
                 <div class="category_articles">
-                  <div class="article">
+                  <div class="category_article">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入りますここにテキストが入ります</p>
                   </div>
-                  <div class="article">
+                  <div class="category_article">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入ります</p>
                   </div>
-                  <div class="article">
+                  <div class="category_article">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入ります</p>
@@ -92,24 +92,24 @@
 
               <div class="category" >
                 <div class="category_top green">
-                  <div class="category_title">
+                  <div class="category_title2">
                     <h3>動画で学ぶ腹膜透析</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
                   <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
                 </div>
                 <div class="category_articles">
-                  <div class="article green_border">
+                  <div class="category_article green_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入りますここにテキストが入ります</p>
                   </div>
-                  <div class="article green_border">
+                  <div class="category_article green_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入ります</p>
                   </div>
-                  <div class="article green_border">
+                  <div class="category_article green_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入ります</p>
@@ -124,24 +124,24 @@
 
               <div class="category" >
                 <div class="category_top blue">
-                  <div class="category_title">
+                  <div class="category_title2">
                     <h3>用語集</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
                   <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
                 </div>
                 <div class="category_articles">
-                  <div class="article blue_border">
+                  <div class="category_article blue_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入りますここにテキストが入ります</p>
                   </div>
-                  <div class="article blue_border">
+                  <div class="category_article blue_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入ります</p>
                   </div>
-                  <div class="article blue_border">
+                  <div class="category_article blue_border">
                     <time datetime="2020-07-29T10:00">2020.07.29</time>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
                     <p>ここにテキストが入ります</p>
