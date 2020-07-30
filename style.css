@@ -802,7 +802,7 @@ BreakPoint
   border-radius: 50px;
   padding: 15px 40px;
   letter-spacing: 0.2em;
-  /* margin: 80px; */
+  margin-top: 80px;
 }
 .topic_content{
   display: flex;
@@ -866,8 +866,7 @@ BreakPoint
    background: #F9F7F4;
  }
  .article_wrap2 {
-  padding: 0 10%;
-	margin: 50px 0;
+  padding: 80px 10%;
   background: #F9F7F4;
 }
 
@@ -885,7 +884,7 @@ BreakPoint
 .articles_wrap{
   display: flex;
   margin-top: 20px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
 }
 .articles{
   display: flex;
@@ -897,7 +896,7 @@ BreakPoint
   height: 150px;
   width: 250px;
   border: solid 3px #FF6A29;
-  margin: 10px;
+  margin: 10px 20px 10px 0;
   color: #666666;
   text-decoration: none;
   letter-spacing: 0.1em;

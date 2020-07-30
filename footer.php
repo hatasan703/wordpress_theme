@@ -8,11 +8,11 @@
         </li>
       </div>
       <div class="footer_bottom">
-        <a href="<?php echo home_url(); ?>/medical-info" class="">サイトマップ</a>
-        <a href="<?php echo home_url(); ?>/medical-info" class="">terms of use</a>
-        <a href="<?php echo home_url(); ?>/medical-info" class="">プライバシーポリシー</a>
-        <a href="<?php echo home_url(); ?>/medical-info" class="">運営者情報</a>
-        <a href="<?php echo home_url(); ?>/medical-info" class="">お知らせ一覧</a>
+        <a href="<?php echo home_url(); ?>/sitemap" class="">サイトマップ</a>
+        <a href="<?php echo home_url(); ?>/terms" class="">terms of use</a>
+        <a href="<?php echo home_url(); ?>/privacy-policy" class="">プライバシーポリシー</a>
+        <a href="<?php echo home_url(); ?>/about-us" class="">運営者情報</a>
+        <a href="<?php echo home_url(); ?>/news" class="">お知らせ一覧</a>
       </div>
       <small class="copyright">&copy; 2020 inc.</small>
     </div>
