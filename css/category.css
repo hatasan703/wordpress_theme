@@ -9,6 +9,7 @@
   align-items: center;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 .back_btn i{
   font-size: 30px;
@@ -48,16 +49,16 @@
   font-weight: bold;
   height: 180px;
 }
-.category_title2{
+.category_page_title{
   width: 50%;
   padding: 70px 20px;
 }
-.category_title2 h3{
+.category_page_title h3{
   border-bottom: solid 2px #fff;
   padding-bottom: 10px;
   font-size: 18px;
 }
-.category_title2 p{
+.category_page_title p{
   margin-top: 10px;
   font-size: 14px;
 }

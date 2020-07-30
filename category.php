@@ -28,9 +28,10 @@
               </h2>
             </div>
             <div id="js-dropdown-menu">
+              <!-- 腹膜透析QAーーーーーーーー -->
               <div class="category" >
                 <div class="category_top pink">
-                  <div class="category_title2">
+                  <div class="category_page_title">
                     <h3>腹膜透析Q&A</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
@@ -59,9 +60,10 @@
                 </div>
               </div>
 
+              <!-- 患者さんの事例ーーーーーーーー -->
               <div class="category" >
                 <div class="category_top">
-                  <div class="category_title2">
+                  <div class="category_page_title">
                     <h3>患者さんの事例</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
@@ -90,9 +92,10 @@
                 </div>
               </div>
 
+              <!-- 動画で学ぶ腹膜透析ーーーーーーーー -->
               <div class="category" >
                 <div class="category_top green">
-                  <div class="category_title2">
+                  <div class="category_page_title">
                     <h3>動画で学ぶ腹膜透析</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
@@ -120,11 +123,12 @@
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
               </div>
-            
 
+
+              <!-- 用語集ーーーーーーーーーーーーー -->
               <div class="category" >
                 <div class="category_top blue">
-                  <div class="category_title2">
+                  <div class="category_page_title">
                     <h3>用語集</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
@@ -152,6 +156,7 @@
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

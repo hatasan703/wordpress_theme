@@ -21,13 +21,13 @@
 
           <div class="container">
             <div class="article_wrap1">
-              <div class="back_btn">
+              <a href="<?php echo home_url(); ?>/category" class="back_btn">
                 <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
                 ひとつ戻る
-              </div>
+              </a>
               <div class="category" >
                 <div class="category_top pink">
-                  <div class="category_title">
+                  <div class="category_page_title">
                     <h3>腹膜透析Q&A</h3>
                     <p>ここに簡単なテキストが入ります。</p>
                   </div>
