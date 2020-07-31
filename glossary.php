@@ -71,10 +71,6 @@
                 <p>ここにテキストが入ります</p>
               </div>
             </div>
-            <div class="more_btn blue">
-              <a href="<?php echo home_url(); ?>/glossary">もっと見る</a>
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </div>
           </div>
 
         </div>

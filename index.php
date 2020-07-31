@@ -64,7 +64,7 @@
         <div class="topic2">
           <span class="topic_title">おうちでできる腹膜透析</span>
           <div class="topic_content">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="握手">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/88.png" alt="握手">
             <p>
               腹膜透析はおうちでできる透析です。<br>
               お腹の中にある「腹膜」の性質を利用して血液中の老廃物や余計な水分をとります。
@@ -102,32 +102,42 @@
       <div class="container">
         <div class="article_wrap2">
           <span class="topic_title">「おうちで透析」の記事</span>
-          <div class="new">
-            <span class="new_btn">NEW</span>
-          </div>
+          
           <div class="articles_wrap">
             <div class="articles">
-              <a href="<?php echo home_url(); ?>/" class="top_article">
-                <time datetime="2020-07-29T10:00">2020.07.29</time>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                <p>ここにテキストが入ります。</p>
-              </a>
-              <a href="<?php echo home_url(); ?>/" class="top_article">
-                <time datetime="2020-07-29T10:00">2020.07.29</time>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                <p>ここにテキストが入ります。</p>
-              </a>
-              <a href="<?php echo home_url(); ?>/" class="top_article">
-                <time datetime="2020-07-29T10:00">2020.07.29</time>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                <p>ここにテキストが入ります。</p>
-              </a>
-              <a href="<?php echo home_url(); ?>/" class="top_article">
-                <time datetime="2020-07-29T10:00">2020.07.29</time>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                <p>ここにテキストが入ります。</p>
-              </a>
+              <div class="new">
+                <span class="new_btn">NEW</span>
+              </div>
+              <div class="article_list">
+                <a href="<?php echo home_url(); ?>/" class="top_article">
+                  <time datetime="2020-07-29T10:00">2020.07.29</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                  <p>ここにテキストが入ります。</p>
+                </a>
+                <a href="<?php echo home_url(); ?>/" class="top_article">
+                  <time datetime="2020-07-29T10:00">2020.07.29</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                  <p>ここにテキストが入ります。</p>
+                </a>
+              </div>
+
+              <div class="new">
+                <span class="new_btn">NEW</span>
+              </div>
+              <div class="article_list">
+                <a href="<?php echo home_url(); ?>/" class="top_article">
+                  <time datetime="2020-07-29T10:00">2020.07.29</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                  <p>ここにテキストが入ります。</p>
+                </a>
+                <a href="<?php echo home_url(); ?>/" class="top_article">
+                  <time datetime="2020-07-29T10:00">2020.07.29</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                  <p>ここにテキストが入ります。</p>
+                </a>
+              </div>
             </div>
+
             <div class="sidebar">
               <div class="sidebar_content">
                 <div class="new_article">■新着・人気の記事</div>
@@ -140,7 +150,8 @@
                   <p><a href="<?php echo home_url(); ?>/glossary">用語集</a></p>
               </div>
             </div>
-          </div>
+
+          </div>        
         </div>
       </div>
     </div>

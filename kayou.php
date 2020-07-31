@@ -15,14 +15,12 @@
             <?php the_title(); ?>
           </h1>
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/88.png" alt="透析に通うのがツライと思ったら">
       </div>
       <div class="container">
         <div class="article_wrap2">
           <div class="main_article_title">
-            <p class="article_image">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
-            </p>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/88.png" alt="透析に通うのがツライと思ったら">
             <h2><?php the_title(); ?></h2>
           </div>
           <a href="#kayou_table_of_contents">

@@ -880,12 +880,13 @@ BreakPoint
 .articles_wrap{
   display: flex;
   margin-top: 20px;
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
 }
-.articles{
+.articles{width: 75%!important;}
+.article_list{
   display: flex!important;
   flex-wrap: wrap!important;
-  width: 70%!important;
+  margin-top: 30px;
 }
 .top_article{
   height: 150px;
@@ -911,15 +912,16 @@ BreakPoint
 }
 
 .sidebar{
-  height: 324px;
-  width: 300px;
+  height: 436px;
+  width: 250px;
   border: solid 2px #FF6A29;
-  margin: 10px;
+  margin: 126px 10px 0 0;
 }
 
 .sidebar_content{
-  padding: 24px 50px;
+  padding: 60px 0;
   color: #FF6A29;
+  margin: 0 15%;
 }
 
 .new_article,
@@ -928,15 +930,15 @@ BreakPoint
   /* padding: 10px; */
 }
 .new_article{
-  padding-bottom:10px;
+  /* padding-bottom:10px; */
 }
 .category{
-  padding: 20px 0 10px;
+  padding: 50px 0 0 0;
 }
 
 .sidebar_content p{
   font-size: 14px;
-  padding: 10px;
+  padding: 10px 0 10px 5px;
 }
 
 .sidebar_content p a{
@@ -951,7 +953,6 @@ BreakPoint
 .container .article_wrap3 {
   padding: 0 10%;
   margin: 30px 0 80px 0;
-  /* background: linear-gradient(to right,#FFA42C, #FF6A29); */
   display: inline-block;
   width: 100%;
 }
