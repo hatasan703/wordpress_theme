@@ -107,22 +107,22 @@
           </div>
           <div class="articles_wrap">
             <div class="articles">
-              <a href="<?php echo home_url(); ?>/" class="article">
+              <a href="<?php echo home_url(); ?>/" class="top_article">
                 <time datetime="2020-07-29T10:00">2020.07.29</time>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
                 <p>ここにテキストが入ります。</p>
               </a>
-              <a href="<?php echo home_url(); ?>/" class="article">
+              <a href="<?php echo home_url(); ?>/" class="top_article">
                 <time datetime="2020-07-29T10:00">2020.07.29</time>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
                 <p>ここにテキストが入ります。</p>
               </a>
-              <a href="<?php echo home_url(); ?>/" class="article">
+              <a href="<?php echo home_url(); ?>/" class="top_article">
                 <time datetime="2020-07-29T10:00">2020.07.29</time>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
                 <p>ここにテキストが入ります。</p>
               </a>
-              <a href="<?php echo home_url(); ?>/" class="article">
+              <a href="<?php echo home_url(); ?>/" class="top_article">
                 <time datetime="2020-07-29T10:00">2020.07.29</time>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
                 <p>ここにテキストが入ります。</p>
@@ -134,7 +134,7 @@
                   <p><a href="">新着記事</a></p>
                   <p><a href="">人気の記事</a></p>
                 <div class="category">■カテゴリ</div>
-                  <p><a href="<?php echo home_url(); ?>/fukumaku_qa">腹膜透析Q&A</a></p>
+                  <p><a href="<?php echo home_url(); ?>/qa">腹膜透析Q&A</a></p>
                   <p><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></p>
                   <p><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></p>
                   <p><a href="<?php echo home_url(); ?>/glossary">用語集</a></p>

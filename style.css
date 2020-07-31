@@ -242,11 +242,7 @@ main
 	justify-content: flex-end;
 	align-items: center;
 }
-.qandaItemFooter > time {
-	font-size: 1.5rem;
-	font-weight: 600;
-	color: #d1dbde;
-}
+
 .qandaItemFooter > a {
 	font-size: 1.5rem;
 	color: #222;
@@ -764,7 +760,7 @@ BreakPoint
 
 /* コンテンツ */
 
-.article_wrap1 {
+.container .article_wrap1 {
 	padding: 0 10%;
 	margin: 50px 0;
 	background: #fff;
@@ -865,7 +861,7 @@ BreakPoint
  .white_wrap{
    background: #F9F7F4;
  }
- .article_wrap2 {
+ .container .article_wrap2 {
   padding: 80px 10%;
   background: #F9F7F4;
 }
@@ -887,12 +883,11 @@ BreakPoint
   padding-bottom: 70px;
 }
 .articles{
-  display: flex;
-  flex-wrap: wrap;
-
-  width: 70%;
+  display: flex!important;
+  flex-wrap: wrap!important;
+  width: 70%!important;
 }
-.article{
+.top_article{
   height: 150px;
   width: 250px;
   border: solid 3px #FF6A29;
@@ -900,12 +895,16 @@ BreakPoint
   color: #666666;
   text-decoration: none;
   letter-spacing: 0.1em;
+  position: relative;
 }
-.article p{
+.top_article time{
+  background: #FF6A29;
+}
+.top_article p{
   margin: 10px 20px;
 }
 
-.article img{
+.top_article img{
   height: 90px;
   width: 244px;
   /* object-fit: cover; */
@@ -949,7 +948,7 @@ BreakPoint
 
 /* コンテンツ３ */
 
-.article_wrap3 {
+.container .article_wrap3 {
   padding: 0 10%;
   margin: 30px 0 80px 0;
   /* background: linear-gradient(to right,#FFA42C, #FF6A29); */

@@ -5,6 +5,8 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>"
+    rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
   <link href="<?php echo get_template_directory_uri(); ?>/css/category.css" rel="stylesheet" type="text/css">

@@ -82,8 +82,8 @@
   position: relative;
 }
 
-time{
-  position: absolute;/*絶対配置*/
+ time{
+  position: absolute;
   top: 0;
   left: 0;
   background: #FFA42C;
