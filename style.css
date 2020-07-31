@@ -157,8 +157,8 @@ main
 	text-align: center;
 	background: #4f7ce0;
 	border-radius: 50px;
-	display: block;
-	box-shadow: 0 0 10px #ddd;
+  display: block;
+  box-shadow: 0 0 17px #d8d8d8;
 }
 .discussionBtn {text-align: center;}
 .questionBtn {
@@ -173,7 +173,7 @@ main
     background: #4f7ce0;
     border-radius: 50px;
     display: inline-block;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 17px #d8d8d8;
 }
 .answerBtn {
 	width: 260px;
@@ -187,7 +187,7 @@ main
     background: #ed2751;
     border-radius: 50px;
     display: inline-block;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 17px #d8d8d8;
 }
 
 /* .qandaTtl {
@@ -396,8 +396,8 @@ BreakPoint
 	.qandaWrap {
 	    padding: 0 5%;
 	    margin: 0 0 25px;
-	    background: #fff;
-		box-shadow: 0 1px 0 #d1dcdf;
+      background: #fff;
+      box-shadow: 0 0 17px #d8d8d8;
 	}
 	.qandaItem {
     	padding: 5% 0;
@@ -951,10 +951,10 @@ BreakPoint
 
 .article_wrap3 {
   padding: 0 10%;
-  margin: 0 0 50px;
+  margin: 30px 0 80px 0;
   /* background: linear-gradient(to right,#FFA42C, #FF6A29); */
   display: inline-block;
-  text-align: center;
+  width: 100%;
 }
 
 .others_link{
@@ -1001,7 +1001,9 @@ BreakPoint
   font-size: 16px;
   padding-bottom: 10px;
 }
-
+.detail_lists{
+  margin-left: 10px;
+}
 /* フッター */
 
 .footer {
@@ -1085,7 +1087,7 @@ BreakPoint
     width: 40%;
     padding: 100px 80px 60px 0;
     text-align: right;
-    box-shadow: 0 0 3px gray;
+    box-shadow: 0 0 10px #d8d8d8;
   }
   .page_title_content h1{
     width: 95%;
