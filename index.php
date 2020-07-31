@@ -51,16 +51,20 @@
               ４時間もじっと座り続けているとからだに負担がかかる。
               針が入りにくくなってきた・・・。」<br>
               そんな実感のあるあなたに、おうちで透析ができる腹膜透析の選択肢を。
+              <!-- 文字揃え -->
             </p>
           </div>
           <div class="detail_btn">
-            <a href="<?php echo home_url(); ?>/kayou">詳しくはこちら</a>
+            <a href="<?php echo home_url(); ?>/kayou">
+              詳しくはこちら
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
         <div class="topic2">
           <span class="topic_title">おうちでできる腹膜透析</span>
           <div class="topic_content">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="握手">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/88.png" alt="握手">
             <p>
               腹膜透析はおうちでできる透析です。<br>
               お腹の中にある「腹膜」の性質を利用して血液中の老廃物や余計な水分をとります。
@@ -68,7 +72,10 @@
             </p>
           </div>
           <div class="detail_btn">
-            <a href="<?php echo home_url(); ?>/at-home">詳しくはこちら</a>
+            <a href="<?php echo home_url(); ?>/at-home">
+              詳しくはこちら
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
         <div class="topic3">
@@ -82,7 +89,10 @@
             </p>
           </div>
           <div class="detail_btn">
-            <a href="<?php echo home_url(); ?>/basic-knowledge">詳しくはこちら</a>
+            <a href="<?php echo home_url(); ?>/basic-knowledge">
+              詳しくはこちら
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -92,41 +102,56 @@
       <div class="container">
         <div class="article_wrap2">
           <span class="topic_title">「おうちで透析」の記事</span>
-          <div class="new">
-            <span class="new_btn">NEW</span>
-          </div>
+          
           <div class="articles_wrap">
             <div class="articles">
-              <a href="<?php echo home_url(); ?>/" class="article">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/15.png" alt="イメージ">
-                <!-- <p>テキスト</p> -->
-              </a>
-              <a href="<?php echo home_url(); ?>/" class="article">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/15.png" alt="イメージ">
-                <!-- <p>テキスト</p> -->
-              </a>
-              <a href="<?php echo home_url(); ?>/" class="article">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/15.png" alt="イメージ">
-                <!-- <p>テキスト</p> -->
-              </a>
-              <a href="<?php echo home_url(); ?>/" class="article">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/15.png" alt="イメージ">
-                <!-- <p>テキスト</p> -->
-              </a>
+              <div class="new">
+                <span class="new_btn">NEW</span>
+              </div>
+              <div class="article_list">
+                <a href="<?php echo home_url(); ?>/" class="top_article">
+                  <time datetime="2020-07-29T10:00">2020.07.29</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                  <p>ここにテキストが入ります。</p>
+                </a>
+                <a href="<?php echo home_url(); ?>/" class="top_article">
+                  <time datetime="2020-07-29T10:00">2020.07.29</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                  <p>ここにテキストが入ります。</p>
+                </a>
+              </div>
+
+              <div class="new">
+                <span class="new_btn">NEW</span>
+              </div>
+              <div class="article_list">
+                <a href="<?php echo home_url(); ?>/" class="top_article">
+                  <time datetime="2020-07-29T10:00">2020.07.29</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                  <p>ここにテキストが入ります。</p>
+                </a>
+                <a href="<?php echo home_url(); ?>/" class="top_article">
+                  <time datetime="2020-07-29T10:00">2020.07.29</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
+                  <p>ここにテキストが入ります。</p>
+                </a>
+              </div>
             </div>
+
             <div class="sidebar">
               <div class="sidebar_content">
                 <div class="new_article">■新着・人気の記事</div>
                   <p><a href="">新着記事</a></p>
                   <p><a href="">人気の記事</a></p>
                 <div class="category">■カテゴリ</div>
-                  <p><a href="<?php echo home_url(); ?>/fukumaku_qa">腹膜透析Q&A</a></p>
+                  <p><a href="<?php echo home_url(); ?>/qa">腹膜透析Q&A</a></p>
                   <p><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></p>
                   <p><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></p>
                   <p><a href="<?php echo home_url(); ?>/glossary">用語集</a></p>
               </div>
             </div>
-          </div>
+
+          </div>        
         </div>
       </div>
     </div>
@@ -141,23 +166,28 @@
         <div class="site_map">
           <div class="first_user">
             <li class="first_user_title">■はじめての方へ</li>
-
-            <li><a href="<?php echo home_url(); ?>/kayou">透析に通うのがつらいと思ったら</a></li>
-            <li><a href="<?php echo home_url(); ?>/at-home">おうちでできる腹膜透析</a></li>
-            <li><a href="<?php echo home_url(); ?>/basic-knowledge">腹膜透析の基礎知識</a></li>
+            <ul class="detail_lists">
+              <li><a href="<?php echo home_url(); ?>/kayou">透析に通うのがつらいと思ったら</a></li>
+              <li><a href="<?php echo home_url(); ?>/at-home">おうちでできる腹膜透析</a></li>
+              <li><a href="<?php echo home_url(); ?>/basic-knowledge">腹膜透析の基礎知識</a></li>
+            </ul>
           </div>
           <div class="detail">
             <li class="detail_title">■もっと詳しく知る</li>
-            <li><a href="<?php echo home_url(); ?>/about">「おうちで透析」について</a></li>
-            <li><a href="<?php echo home_url(); ?>/medical-info">医療関係者の方へ</a></li>
-            <li><a href="<?php echo home_url(); ?>/hospital-list">在宅腹膜透析実施病院リスト</a></li>
+            <ul class="detail_lists">
+              <li><a href="<?php echo home_url(); ?>/about">「おうちで透析」について</a></li>
+              <li><a href="<?php echo home_url(); ?>/medical-info">医療関係者の方へ</a></li>
+              <li><a href="<?php echo home_url(); ?>/hospital-list">在宅腹膜透析実施病院リスト</a></li>
+            </ul>
           </div>
           <div class="article_category">
             <li class="category_title">■記事カテゴリ</li>
-            <li><a href="<?php echo home_url(); ?>/hukumaku-qa">腹膜透析Q&A</a></li>
-            <li><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></li>
-            <li><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></li>
-            <li><a href="<?php echo home_url(); ?>/glossary">用語集</a></li>
+            <ul class="detail_lists">
+              <li><a href="<?php echo home_url(); ?>/hukumaku-qa">腹膜透析Q&A</a></li>
+              <li><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></li>
+              <li><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></li>
+              <li><a href="<?php echo home_url(); ?>/glossary">用語集</a></li>
+            </ul>
           </div>
         </div>
       </div>

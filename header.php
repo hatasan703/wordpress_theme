@@ -5,9 +5,12 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="<?php echo get_template_directory_uri(); ?>/ress.css" rel="stylesheet" type="text/css">
   <link href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>"
     rel="stylesheet" type="text/css">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
+  <link href="<?php echo get_template_directory_uri(); ?>/css/category.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/article.css" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
@@ -59,7 +62,7 @@
     <h1 class="logo"><a href="<?php echo home_url(); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/img/1.png" alt="腹膜透析"></a></h1>
     <div class="nav">
       <a href="<?php echo home_url(); ?>/kayou" class="signupLinkBtn nav_vartical_bar">透析に通うのがつらい</a>
-      <a href="<?php echo home_url(); ?>/" class="signupLinkBtn nav_vartical_bar">おうちで腹膜透析</a>
+      <a href="<?php echo home_url(); ?>/at-home" class="signupLinkBtn nav_vartical_bar">おうちで腹膜透析</a>
       <a href="<?php echo home_url(); ?>/basic-knowledge" class="signupLinkBtn">腹膜透析の基礎知識</a>
       <a href="<?php echo home_url(); ?>/" class="header_contact"><img src="<?php echo get_template_directory_uri(); ?>/img/2.png" alt="お問い合わせ"></a>
       
