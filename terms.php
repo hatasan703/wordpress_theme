@@ -19,7 +19,7 @@
     <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
-        <div class="article_wrap2">
+        <div class="article_wrap1">
           <div class="site_info_title">
             <span><?php the_title(); ?></span>
           </div>
