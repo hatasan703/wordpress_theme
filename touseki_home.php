@@ -8,15 +8,15 @@
 
 <main>
   <article>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <div class="page_title">
-        <div class="page_title_content">
-          <h1>
-            <?php the_title(); ?>
-          </h1>
-        </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/32.png" alt="おうちでできる腹膜透析">
+    <div class="page_title">
+      <div class="page_title_content">
+        <h1>
+          <?php the_title(); ?>
+        </h1>
       </div>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/32.png" alt="おうちでできる腹膜透析">
+    </div>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
         <div class="article_wrap2">
           <div class="main_article_title">

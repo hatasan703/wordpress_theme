@@ -19,7 +19,7 @@
     <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
-        <div class="article_wrap2">
+        <div class="article_wrap1">
           <div class="site_info_title">
             <span><?php the_title(); ?></span>
           </div>
@@ -44,7 +44,7 @@
 
               <div class="privacy_title">３．個人情報を収集・利用する目的</div>
               <p>
-                当社が個人情報を収集・利用する目的は，以下のとおりです。<br>
+                当社が個人情報を収集・利用する目的は，以下のとおりです。<br><br>
                 当社サービスの提供・運営のため<br>
                 ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）<br>
                 ユーザーが利用中のサービスの新機能，更新情報，キャンペーン等及び当社が提供する他のサービスの案内のメールを送付するため<br>
@@ -138,6 +138,13 @@
 <?php get_footer(); ?>
 
 <style>
+  .container .article_wrap1{
+    padding: 80px 15%;
+    background: #fff;
+    line-height: 23px;
+    margin-top: 0;
+  }
+
   .privacy_text p{
     margin: 20px 30px 60px;
     font-size: 14px;
