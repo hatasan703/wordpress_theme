@@ -7,18 +7,106 @@
 <?php get_header(); ?>
 
 <main>
-  <div class="container">
-    <article>
-      <h2><?php the_title(); ?></h2>
-      <div>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <?php the_content(); ?>
-        <?php endwhile; else : ?>
-          <p>まだ記事がありません</p>
-        <?php endif; ?>
+  <article>
+    <div>
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <div class="page_title">
+        <div class="page_title_content">
+          <h1>
+            <?php the_title(); ?>
+          </h1>
+        </div>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/46.png" alt="サイトマップ">
       </div>
-    </article>
-  </div>
+
+      <div class="container">
+        <div class="article_wrap2">
+          <div class="site_info_title">
+            <span><?php the_title(); ?></span>
+          </div>
+          <div class="site_info_cotent">
+            <div class="top_page_link">
+              <a href="<?php echo home_url(); ?>/home">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/1.png" alt="腹膜透析">
+                <p>TOPページ</p>
+              </a>
+            </div>
+            <div class="sitemap_link">
+              <li>■初めての方へ
+                <p><a href="<?php echo home_url(); ?>/kayou">透析に通うのつらいと思ったら</a></p>
+                <p><a href="<?php echo home_url(); ?>/at-home">おうちでできる腹膜透析</a></p>
+                <p><a href="<?php echo home_url(); ?>/basic-knowledge">腹膜透析の基礎知識</a></p>
+                <p><a href="<?php echo home_url(); ?>/about">おうちで透析について</a></p>
+                <p><a href="<?php echo home_url(); ?>/home">なぜ腹膜透析か</a></p>
+                <p><a href="<?php echo home_url(); ?>/medical-info">医療関係者の方へ</a></p>
+              </li>
+              <li class="center">■もっと詳しく知る
+                <p><a href="<?php echo home_url(); ?>/qa">腹膜透析Q&A</a></p>
+                <p><a href="<?php echo home_url(); ?>/glossary">腹膜透析用語集</a></p>
+                <p><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></p>
+                <p><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></p>
+              </li>
+              <li>■記事カテゴリ
+                <p><a href="<?php echo home_url(); ?>/home">記事１</a></p>
+                <p><a href="<?php echo home_url(); ?>/home">記事２</a></p>
+                <p><a href="<?php echo home_url(); ?>/home">記事３</a></p>
+              </li>
+              <li class="center">■サイト情報
+                <p><a href="<?php echo home_url(); ?>/terms">利用規約</a></p>
+                <p><a href="<?php echo home_url(); ?>/privacy-policy">プライバシーポリシー</a></p>
+                <p><a href="<?php echo home_url(); ?>/about-us">運営者情報</a></p>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+      <div class="article_wrap3">
+        <div class="site_map">
+          <div class="first_user">
+            <li class="first_user_title">■はじめての方へ</li>
+            <ul class="detail_lists">
+              <li><a href="<?php echo home_url(); ?>/kayou">透析に通うのがつらいと思ったら</a></li>
+              <li><a href="<?php echo home_url(); ?>/at-home">おうちでできる腹膜透析</a></li>
+              <li><a href="<?php echo home_url(); ?>/basic-knowledge">腹膜透析の基礎知識</a></li>
+            </ul>
+          </div>
+          <div class="detail">
+            <li class="detail_title">■もっと詳しく知る</li>
+            <ul class="detail_lists">
+              <li><a href="<?php echo home_url(); ?>/about">「おうちで透析」について</a></li>
+              <li><a href="<?php echo home_url(); ?>/medical-info">医療関係者の方へ</a></li>
+              <li><a href="<?php echo home_url(); ?>/hospital-list">在宅腹膜透析実施病院リスト</a></li>
+            </ul>
+          </div>
+          <div class="article_category">
+            <li class="category_title">■記事カテゴリ</li>
+            <ul class="detail_lists">
+              <li><a href="<?php echo home_url(); ?>/hukumaku-qa">腹膜透析Q&A</a></li>
+              <li><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></li>
+              <li><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></li>
+              <li><a href="<?php echo home_url(); ?>/glossary">用語集</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <?php endwhile; else : ?>
+        <p>まだ記事がありません</p>
+      <?php endif; ?>
+    </div>
+  </article>
 </main>
 
 <?php get_footer(); ?>
+
+
+
+<style>
+  .container .article_wrap2{
+    padding: 80px 18%;
+    background: #F9F7F4;
+  }
+</style>

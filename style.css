@@ -1001,6 +1001,9 @@ BreakPoint
   font-size: 16px;
   padding-bottom: 10px;
 }
+.first_user{
+  letter-spacing: 0.1em;
+}
 .detail_lists{
   margin-left: 10px;
 }
