@@ -148,6 +148,7 @@
   .privacy_text p{
     margin: 20px 30px 60px;
     font-size: 14px;
+    text-align: justify;
   }
 
   .privacy_text .privacy_text_sub{

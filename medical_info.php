@@ -57,13 +57,14 @@
               </li>
               <li>
                 <span>サイトの目的</span>
-                <p>
+                <p class="margin0">
                   当サイトおよび関連SNSの目的は、わが国は先進諸国に比べ大きく後れを取っている腹膜透析（PD）について、
                   「在宅でできる透析医療＝おうちで透析」と位置付け、患者様やそのご家族に対して情報提供、普及啓蒙を促すものです。
                   当サイトは医療関係者向けに、透析治療を医学的見地で説明するものではありません。あくまで、患者様とそのご家族の立場に立ち、
                   簡単でわかりやすい言葉で、「透析治療」について説明を行うものです。その関係上、医療関係者や専門家の観点から不十分な部分や、
                   言葉不足の箇所があることをご了承ください。
                 </p>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/47.png" alt="サイトの目的" class="purpose">
               </li>
               <li>
                 <span>サイトのスタンス</span>
@@ -151,6 +152,11 @@
     height: 50px;
     margin: 30px 0 70px;
   }
+  .site_info_cotent li .info_img{
+    width: 70%;
+    height: 70%;
+    margin: 30px 0 70px;
+  }
 
   .site_info_cotent{
     text-align: center;
@@ -159,6 +165,7 @@
   .site_info_cotent p{
     margin: 0 0 40px;
     text-align: left;
+    text-align: justify;
   }
   .site_info_cotent .margin0{
     margin-bottom: 0;

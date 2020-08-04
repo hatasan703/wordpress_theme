@@ -128,12 +128,12 @@
 .site_info_title p{
   color: #666;
   margin-top: 60px;
-
 }
 
 .site_info_cotent{
   margin-top: 70px;
   text-align: left;
+  text-align: justify;
 }
 .site_info_cotent li{
   display: flex;
