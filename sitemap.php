@@ -8,17 +8,16 @@
 
 <main>
   <article>
+    <div class="page_title">
+      <div class="page_title_content">
+        <h1>
+          <?php the_title(); ?>
+        </h1>
+      </div>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/46.png" alt="サイトマップ">
+    </div>
     <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <div class="page_title">
-        <div class="page_title_content">
-          <h1>
-            <?php the_title(); ?>
-          </h1>
-        </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/46.png" alt="サイトマップ">
-      </div>
-
       <div class="container">
         <div class="article_wrap2">
           <div class="site_info_title">
@@ -61,7 +60,7 @@
         </div>
       </div>
 
-      <div class="container">
+    <div class="container">
       <div class="article_wrap3">
         <div class="site_map">
           <div class="first_user">
