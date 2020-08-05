@@ -22,7 +22,6 @@
 
   <!-- main contents -->
   <main class="main">
-    <div class="containerr">
       <section>
         <h2 class="top_image">
           <img src="<?php echo get_template_directory_uri(); ?>/img/27.png" alt="トップ画像">
@@ -34,7 +33,6 @@
             </p>
         </h2>
       </section>
-    </div>
 
     <div class="container">
       <div class="article_wrap1">
@@ -46,7 +44,7 @@
         <div class="topic1">
           <span class="topic_title">透析に通うのがつらいと思ったら</span>
           <div class="topic_content">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/5.png" alt="車椅子">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/52.png" alt="車椅子">
             <p>「週３回、人工透析に通うのがつらくなってきた。
               ４時間もじっと座り続けているとからだに負担がかかる。
               針が入りにくくなってきた・・・。」<br>
@@ -64,7 +62,7 @@
         <div class="topic2">
           <span class="topic_title">おうちでできる腹膜透析</span>
           <div class="topic_content">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/88.png" alt="握手">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/51.png" alt="握手">
             <p>
               腹膜透析はおうちでできる透析です。<br>
               お腹の中にある「腹膜」の性質を利用して血液中の老廃物や余計な水分をとります。
