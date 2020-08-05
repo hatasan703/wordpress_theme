@@ -12,6 +12,7 @@
   <link href="<?php echo get_template_directory_uri(); ?>/css/category.css" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/article.css" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/site_info.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/drawer.css" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <title>
     <?php wp_title( ' | ', true, 'right' ); ?>
@@ -45,35 +46,103 @@
 
       $dropdown.on('click', toggleMenu);
     
-    //別の場所をクリックすると閉じる処理
+      //別の場所をクリックすると閉じる処理
       $(document).on('click touchend', function(event) {
       if (!$(event.target).closest('body').length) {
         // ここに処理;
         fadeOutMenu();//関数呼びだし
       }
-    });
+     });
   });
+
+
+  // ハンバーガーメニュー
+  jQuery(function($){
+    ;(function($){
+      var touch = false;
+      $('#humberger').on('click touchstart',function(e){
+          switch (e.type) {
+              case 'touchstart':
+                  drawerToggle();
+                  touch = true;
+                  return false;
+              break;
+              case 'click':
+                  if(!touch)
+                      drawerToggle();
+                  return false;
+              break;
+          }
+          function drawerToggle(){
+              $('body').toggleClass('drawer-opened');
+              touch = false;
+          }
+      })
+      $('#overlay').on('click touchstart',function(){
+          $('body').removeClass('drawer-opened');
+      })
+  })(jQuery);
+});
+
+
   </script>
 </head>
 
+
+
+
+
+
+
+
+
 <!-- header -->
 <header class="header">
+
+
   <div class="headerWrap">
+    
     <h1 class="logo"><a href="<?php echo home_url(); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/img/1.png" alt="腹膜透析"></a></h1>
-    <div class="nav">
-      <a href="<?php echo home_url(); ?>/kayou" class="header_menu_btn nav_vartical_bar">透析に通うのがつらい</a>
-      <a href="<?php echo home_url(); ?>/at-home" class="header_menu_btn nav_vartical_bar">おうちで腹膜透析</a>
-      <a href="<?php echo home_url(); ?>/basic-knowledge" class="header_menu_btn">腹膜透析の基礎知識</a>
-      <?php get_search_form(); ?>
-      <a href="<?php echo home_url(); ?>/" class="header_contact"><img src="<?php echo get_template_directory_uri(); ?>/img/2.png" alt="お問い合わせ"></a>
-      
+    <!-- pcーーー -->
+    <div class="pc">
+      <div class="nav">
+        <a href="<?php echo home_url(); ?>/kayou" class="header_menu_btn nav_vartical_bar">透析に通うのがつらい</a>
+        <a href="<?php echo home_url(); ?>/at-home" class="header_menu_btn nav_vartical_bar">おうちで腹膜透析</a>
+        <a href="<?php echo home_url(); ?>/basic-knowledge" class="header_menu_btn">腹膜透析の基礎知識</a>
+        <?php get_search_form(); ?>
+        <a href="<?php echo home_url(); ?>/" class="header_contact"><img src="<?php echo get_template_directory_uri(); ?>/img/2.png" alt="お問い合わせ"></a>
+      </div>
     </div>
+    
+
+    <!-- spーーーーーーーー -->
+    <div id="humberger" class="sp">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div id="drawernav" class="sp">
+      <div class="container">
+        <nav>
+          <ul>
+          </ul>
+          <ul>
+            <li><a href="#">透析に通うのがつらい</a></li>
+            <li><a href="#">おうちで腹膜透析</a></li>
+            <li><a href="#">腹膜透析の基礎知識</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
   </div>
-    <div class="mainNav">
-      <li class="header_bar">
-      </li>
-      <li class="header_bar2">
-      </li>
-    </div>
+
+  <div class="mainNav">
+    <li class="header_bar">
+    </li>
+    <li class="header_bar2">
+    </li>
+  </div>
+
 
 </header>

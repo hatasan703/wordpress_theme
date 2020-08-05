@@ -37,6 +37,11 @@ input:focus::-moz-placeholder { color:transparent; }
 ::-webkit-search-cancel-button {-webkit-appearance: none;}
 
 
+.pc {display: block !important;}
+.sp {display: none !important;}
+.search {display: block;}
+.spSearch {display: none;}
+
 /******************************
 font
 ******************************/
@@ -60,7 +65,10 @@ BreakPoint
 ******************************/
 @media screen and (max-width: 640px) {
 	.pc {display: none !important;}
-	.sp {display: block !important;}
+  .sp {display: block !important;}
+  .spSearch {
+		display: block;
+	}
 	.headerWrap,
 	.footerWrap,
 	.container {width: 100%;}
@@ -283,7 +291,7 @@ BreakPoint
 .main_title{
   font-size: 16px;
   color: #FF6A29;
-  padding: 50px 10%;
+  padding: 0 10% 10%;
   text-align: center;
 }
 
@@ -298,7 +306,6 @@ BreakPoint
   border-bottom: solid 2px #FFA42C;
   padding-bottom: 10px;
   letter-spacing: 0.3em;
-  
 }
 
 
@@ -646,8 +653,50 @@ BreakPoint
 
 
 
-  /* スマホ版CSS */
 
-  @media screen and (max-width: 640px) {
+  
+ /* スマホ版CSS */
 
+ @media screen and (max-width: 640px) {
+
+  .article_wrap1 {
+    padding: 80px 5%;
   }
+
+  .main_title p{
+    width: 100%;
+    text-align: justify;
+  }
+  .main_title p span {
+    line-height: 3;
+  }
+
+  .topic_content{
+    display: block;
+  }
+
+  .topic_content p{
+    width: 90%;
+  }
+
+  .topic_content img{
+    width: 90%;
+    height: 90%;
+  }
+
+
+  .sns_link,
+  .others_link,
+  .topic_content,
+  .footer_bottom{
+    display: block;
+  }
+
+  .footerWrap{
+    width: 100%;
+  }
+  .footer_top{
+    width: 100%;
+    padding: 0;
+  }
+}

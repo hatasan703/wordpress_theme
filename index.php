@@ -36,10 +36,19 @@
 
     <div class="container">
       <div class="article_wrap1">
-        <div class="main_title">
+        <div class="main_title pc">
           <p><span>おうちで透析は</span></p>
           <p><span>透析に通うのがつらくなってきたあなたのために</span></p>
           <p><span>「腹膜透析」の選択肢について情報提供をするサイトです。</span></p>
+        </div>
+        <div class="main_title sp">
+          <p>
+            <span>
+              おうちで透析は
+              透析に通うのがつらくなってきたあなたのために
+              「腹膜透析」の選択肢について情報提供をするサイトです。
+            </span>
+          </p>
         </div>
         <div class="topic1">
           <span class="topic_title">透析に通うのがつらいと思ったら</span>
