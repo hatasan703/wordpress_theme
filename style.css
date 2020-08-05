@@ -96,11 +96,8 @@ BreakPoint
 
 
 /* ヘッダー */
-/* .logo {width: 40%;} */
 .logo img {
-  width: 60%;
-  height: 40px;
-  object-fit: contain;
+  width: 200px;
 }
 
 .nav {
@@ -121,7 +118,7 @@ BreakPoint
   padding-right: 20px;
 }
 
-.nav > .signupLinkBtn::before {
+.nav > .header_menu_btn::before {
 	content: "";
 	width: 25px;
 	height: 28px;
