@@ -760,7 +760,7 @@ BreakPoint
 
 /* コンテンツ */
 
-.container .article_wrap1 {
+.article_wrap1 {
 	padding: 80px 10%;
 	margin: 50px 0;
 	background: #fff;
@@ -856,12 +856,14 @@ BreakPoint
  }
  .topic2 .detail_btn a i{color: #FFA42C;}
 
- /* コンテンツ２ */
+
+
+ /* コンテンツ２ ---------------*/
 
  .white_wrap{
    background: #F9F7F4;
  }
- .container .article_wrap2 {
+ .article_wrap2 {
   padding: 80px 10%;
   background: #F9F7F4;
 }
@@ -882,11 +884,27 @@ BreakPoint
   margin-top: 20px;
   /* padding-bottom: 70px; */
 }
-.articles{width: 75%!important;}
+.articles a{text-decoration: none;}
 .article_list{
-  display: flex!important;
-  flex-wrap: wrap!important;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 30px;
+}
+.article_list .category_link img{
+  height: 180px;
+  width: 200px;
+}
+.category_list_btn{
+  color: #FF6A29;
+  border: solid 2px #FF6A29;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+  margin: 25px 0;
+  padding: 20px;
+  letter-spacing: 0.2em;
+
 }
 .top_article{
   height: 150px;
@@ -908,9 +926,19 @@ BreakPoint
 .top_article img{
   height: 90px;
   width: 244px;
-  /* object-fit: cover; */
 }
 
+.sns_link{
+  display: flex;
+  justify-content: center;
+}
+
+.sns_link img{
+  height: 110px;
+  width: 260px;
+  margin: 0 20px;
+}
+/* 
 .sidebar{
   height: 436px;
   width: 250px;
@@ -927,10 +955,8 @@ BreakPoint
 .new_article,
 .category{
   font-size: 16px;
-  /* padding: 10px; */
 }
 .new_article{
-  /* padding-bottom:10px; */
 }
 .category{
   padding: 50px 0 0 0;
@@ -946,7 +972,7 @@ BreakPoint
   color: #666666;
   border-bottom: solid 1px #FF6A29;
   padding: 5px;
-}
+} */
 
 /* コンテンツ３ */
 
@@ -1009,7 +1035,10 @@ BreakPoint
 .detail_lists{
   margin-left: 10px;
 }
-/* フッター */
+
+
+
+/* フッターーーーーーーーー */
 
 .footer {
 	width: 100%;
