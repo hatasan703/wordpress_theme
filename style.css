@@ -515,11 +515,17 @@ BreakPoint
   margin: 25px;
 }
 
+@media screen and (min-width: 640px) {
+  .site_map{
+    display: flex!important;
+  }
+  
+}
 .site_map{
   border: solid 2px #fff;
   padding: 30px 50px;
   margin-top: 50px;
-  display: flex;
+  
   justify-content: space-around;
   color: #fff;
   font-size: 14px;
@@ -654,7 +660,7 @@ BreakPoint
 
 
 
-  
+
  /* スマホ版CSS */
 
  @media screen and (max-width: 640px) {

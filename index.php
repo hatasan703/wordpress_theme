@@ -243,7 +243,7 @@
           <a href="<?php echo home_url(); ?>/medical-info" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/21.png" alt="医療関係者の方へ"></a>
           <a href="<?php echo home_url(); ?>/hospital-list" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/22.png" alt="在宅腹膜透析実施病院リスト"></a>
         </div>
-        <div class="site_map">
+        <div class="site_map pc">
           <div class="first_user">
             <li class="first_user_title">■はじめての方へ</li>
             <ul class="detail_lists">
