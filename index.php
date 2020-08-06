@@ -113,7 +113,8 @@
           <div class="articles_wrap">
             <div class="articles">
               <div class="new">
-                <span class="new_btn">カテゴリ</span>
+                <span class="new_btn pc">カテゴリ</span>
+                <span class="sp">記事カテゴリ</span>
               </div>
               <div class="article_list">
                 <a href="<?php echo home_url(); ?>/qa" class="category_link">
