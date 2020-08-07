@@ -152,6 +152,11 @@
     height: 50px;
     margin: 30px 0 70px;
   }
+
+  .site_info_cotent li .purpose{
+    height: 80%;
+    width: 80%;
+  }
   .site_info_cotent li .info_img{
     width: 70%;
     height: 70%;
