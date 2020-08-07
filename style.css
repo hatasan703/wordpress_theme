@@ -666,7 +666,7 @@ BreakPoint
  @media screen and (max-width: 640px) {
 
   .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     font-size: 16px;
   }
@@ -678,6 +678,7 @@ BreakPoint
   .article_wrap2,
   .article_wrap1{
     text-align: center;
+    padding: 80px 5px;
   }
 
   .article_list{
@@ -698,7 +699,8 @@ BreakPoint
   }
 
   .topic_title{
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
+    width: 100%;
 
   }
   .topic1 .topic_title{
@@ -767,10 +769,28 @@ BreakPoint
   }
 
   .footerWrap{
-    width: 100%;
+    width: 80%;
   }
   .footer_top{
     width: 100%;
     padding: 0;
+  }
+
+  .sns_link img {
+    margin: 10px 20px;
+  }
+  
+  .footer_contact a img {
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+  }
+
+  .footer_bottom {
+    display: inline-grid;
+  }
+
+  .footer_bottom a {
+    padding-bottom: 5px;
   }
 }
