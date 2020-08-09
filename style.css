@@ -662,9 +662,16 @@ BreakPoint
 
 
 
- /* スマホ版CSS */
+ /* TOPページスマホ版CSS */
 
  @media screen and (max-width: 640px) {
+   
+
+  /* spヘッダー */
+
+
+
+  /* spメイン */
 
   .container {
     width: 95%;
@@ -704,9 +711,7 @@ BreakPoint
   .main_title p span {
     line-height: 3;
   }
-
   .topic_title{
-    /* padding: 20px 10px; */
     width: 100%;
 
   }
@@ -775,6 +780,12 @@ BreakPoint
   }
   .others_link{ text-align: center;}
 
+  .sns_link img {
+    margin: 10px 20px;
+  }
+
+  /* spフッター */
+
   .footerWrap{
     width: 80%;
   }
@@ -782,12 +793,6 @@ BreakPoint
     width: 100%;
     padding: 0;
   }
-
-  .sns_link img {
-    margin: 10px 20px;
-  }
-
-  /* スマホフッター */
   
   .footer_contact a img {
     width: 150px;
