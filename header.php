@@ -102,7 +102,7 @@
 
   <div class="headerWrap">
     
-    <h1 class="logo"><a href="<?php echo home_url(); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/img/1.png" alt="腹膜透析"></a></h1>
+    <h1 class="logo"><a href="<?php echo home_url(); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/img/1.png" alt="腹膜透析"></a></h1></li>
     <!-- pcーーー -->
     <div class="pc">
       <div class="nav">
@@ -127,9 +127,9 @@
           <ul>
           </ul>
           <ul>
-            <li><a href="#">透析に通うのがつらい</a></li>
-            <li><a href="#">おうちで腹膜透析</a></li>
-            <li><a href="#">腹膜透析の基礎知識</a></li>
+            <li><a href="<?php echo home_url(); ?>/kayou" class="header_menu_btn nav_vartical_bar">透析に通うのがつらい</a></li>
+            <li><a href="<?php echo home_url(); ?>/at-home" class="header_menu_btn nav_vartical_bar">おうちで腹膜透析</a></li>
+            <li><a href="<?php echo home_url(); ?>/basic-knowledge" class="header_menu_btn">腹膜透析の基礎知識</a></li>
           </ul>
         </nav>
       </div>

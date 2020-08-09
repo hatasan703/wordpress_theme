@@ -37,7 +37,7 @@ input:focus::-moz-placeholder { color:transparent; }
 ::-webkit-search-cancel-button {-webkit-appearance: none;}
 
 
-.pc {display: block !important;}
+/* .pc {display: block !important;} */
 .sp {display: none !important;}
 .search {display: block;}
 .spSearch {display: none;}
@@ -616,9 +616,10 @@ BreakPoint
 
 .copyright {
 	font-size: 14px;
-	color: #7a7d8a;
+	color: #fff;
 	display: block;
-	text-align: center;
+  text-align: center;
+  margin: 100px 0 20px;
 }
 
 
@@ -684,6 +685,12 @@ BreakPoint
   .article_list{
     justify-content: center;
   }
+
+  .article_list .category_link img {
+    height: 125px;
+    width: 150px;
+    margin: 5px;
+}
 
   .top_article{
     margin: 10px 0;
@@ -763,10 +770,10 @@ BreakPoint
 
   .sns_link,
   .others_link,
-  .topic_content,
-  .footer_bottom{
+  .topic_content{
     display: block;
   }
+  .others_link{ text-align: center;}
 
   .footerWrap{
     width: 80%;
@@ -779,6 +786,8 @@ BreakPoint
   .sns_link img {
     margin: 10px 20px;
   }
+
+  /* スマホフッター */
   
   .footer_contact a img {
     width: 150px;
@@ -786,11 +795,25 @@ BreakPoint
     margin-top: 15px;
   }
 
-  .footer_bottom {
-    display: inline-grid;
+  .footer_bottom1,
+  .footer_bottom2{
+    display: flex;
+    font-size: 12px;
   }
 
-  .footer_bottom a {
-    padding-bottom: 5px;
+  .footer_bottom1{
+    justify-content: space-around;
+    margin: 0 15%;
   }
+  .footer_bottom2{
+    margin-top: 25px;
+    /* margin: 25px 2% 0; */
+    justify-content: space-around;
+  }
+  .copyright{
+    font-size: 10px;
+    margin: 60px 0 20px;
+  }
+
 }
+
