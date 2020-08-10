@@ -187,6 +187,22 @@ BreakPoint
 	display: block;
 }
 
+/* パンくずリスト */
+.breadcrumbs {
+	font-size: 0.6875rem;
+	padding: 5px;
+}
+ 
+a.home,
+a.taxonomy.category {
+	color: #000;
+}
+a.home:hover,
+a.home:active,
+a.taxonomy.category:hover,
+a.taxonomy.category:active {
+	color: #32cd32;
+}
 
 /* メイン */
 /* .container{background: linear-gradient(to right,#FFA42C, #FF6A29);} */
