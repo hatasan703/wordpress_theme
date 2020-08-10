@@ -30,12 +30,9 @@
               戻る
             </button>
           </a>
-          <p class="article_text">
-            すでに透析を始められている方は、一番つらかった時はいつでしょうか。
-            「透析を始めましょう」と医師から宣告があった時でしょうか。
-            実際に透析治療を始めて、なんとか慣れるまでも非常につらかったと思います。
-            そして今も、透析治療のために通院し、毎日つらい思いをされていることと思います。
-          </p>
+          <div class="article_text">
+            <?php the_content(); ?>
+          </div>
           <div class="table_of_contents" id="kayou_table_of_contents">
             <p>
               ■目次
