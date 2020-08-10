@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 <h1><?php the_search_query(); ?> の検索結果</h1>
  
 <?php
@@ -15,3 +17,5 @@ endwhile;
         </div>
     </div>
 <?php endif; ?>
+
+<?php get_footer(); ?>
