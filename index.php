@@ -176,36 +176,27 @@
                 <span class="new_btn">人気記事</span>
               </div>
               <div class="article_list">
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
+              <?php wpp_get_mostpopular(
+                array(
+                  'stats_date' => 1,
+                  'stats_date_format' => 'Y.m.d',
+                  'range' => 'all',
+                  'order_by' => 'views',
+                  'post_type' => 'post',
+                  'limit' => 6,
+                  'stats_views' => 1,
+                  'thumbnail_width' =>244,
+                  'thumbnail_height' => 90,
+                  'wpp_start' => '<ul class="blog_list">',
+                  'wpp_end' => '</ul>',
+                  'post_html' => 
+                  '<li class="top_article">{thumb}
+                  <time>{date}</time>
+                  <p>{title}</p>
+                  </li>'
+                )
+              );
+              ?>
               </div>
             </div>
 
