@@ -16,10 +16,10 @@
               「おうちで透析」の記事
             </h1>
           </div>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="カテゴリ一覧">
         </div>
         <div class="page_title sp">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="カテゴリ一覧">
           <div class="page_title_content">
             <h1>
               「おうちで透析」の記事

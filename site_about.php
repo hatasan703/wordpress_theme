@@ -9,13 +9,21 @@
 
 <main>
   <article>
-    <div class="page_title">
+    <div class="page_title pc">
       <div class="page_title_content">
         <h1>
           <?php the_title(); ?>
         </h1>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
+    </div>
+    <div class="page_title sp">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
+      <div class="page_title_content">
+        <h1>
+          <?php the_title(); ?>
+        </h1>
+      </div>
     </div>
     <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

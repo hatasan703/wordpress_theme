@@ -11,13 +11,21 @@
     <article>
       <div>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <div class="page_title">
+          <div class="page_title pc">
             <div class="page_title_content">
               <h1>
                 <?php the_title(); ?>
               </h1>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/29.png" alt="在宅腹膜透析実施病院リスト">
+          </div>
+          <div class="page_title sp">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/29.png" alt="在宅腹膜透析実施病院リスト">
+            <div class="page_title_content">
+              <h1>
+                <?php the_title(); ?>
+              </h1>
+            </div>
           </div>
           <div class="container">
             <div class="article_wrap1">
@@ -28,7 +36,7 @@
               <div class="hospital_list_btn">
                 <a>関東の病院</a>
                 <a>関西の病院</a>
-                <a>中国・四国の病院</a>
+                <a>中国･四国の病院</a>
                 <a>東北の病院</a>
                 <a>中部の病院</a>
                 <a>九州の病院</a>
@@ -310,6 +318,66 @@
     width: 60px;
     margin-right: 5px;
     text-align: center;
-    
+  }
+
+
+
+  @media screen and (max-width: 640px) {
+
+    .page_title_content h1{
+      width: 100%;
+    }
+    .article_title{
+      padding: 0 5% 20px;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+    }
+
+    .hospital_list_btn a {
+      width: 45%;
+      margin: 5px auto;
+      padding: 20px 5px;
+      font-size: 14px;
+    }
+
+    .hospital_area {
+      margin: 100px auto 10px auto;
+      padding: 20px;
+      width: 90%;
+    }
+
+    .hospital_title {
+      width: 70%;
+      padding-left: 0;
+      text-align: left;
+    }
+    .hospital_place {
+      width: 30%;
+    }
+
+    .hospital_bottom{
+      display: block;
+    }
+
+    .hospital_bottom img{
+      height: 80%;
+      width:  100%;
+      margin: 20px 30px 10px 0;
+    }
+    .address{
+      width: 100%;
+      text-align: left;
+    }
+    .time {
+      margin: 0;
+      height: 150px;
+      width: 100%;
+      padding: 20px;
+    }
+    .time .closed,
+    .time .open{
+      margin: 0;
+      padding: 10px;
+    }
   }
 </style>

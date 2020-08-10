@@ -8,13 +8,21 @@
 
 <main>
   <article>
-    <div class="page_title">
+    <div class="page_title pc">
       <div class="page_title_content">
         <h1>
           <?php the_title(); ?>
         </h1>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/img/46.png" alt="サイトマップ">
+    </div>
+    <div class="page_title sp">
+      <div class="page_title_content">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/46.png" alt="サイトマップ">
+        <h1>
+          <?php the_title(); ?>
+        </h1>
+      </div>
     </div>
     <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
