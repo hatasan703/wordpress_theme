@@ -172,4 +172,14 @@
     padding: 80px 13%;
     background: #F9F7F4;
   }
+
+  @media screen and (max-width: 640px) {
+    .container .article_wrap1 {
+      padding: 80px 10%;
+    }
+
+    .site_info_title span {
+      padding: 15px 10%;
+    }
+  }
 </style>

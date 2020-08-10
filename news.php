@@ -131,4 +131,14 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 640px) {
+  .container .article_wrap1 {
+    padding: 80px 5%;
+  }
+
+  /* .site_info_title span {
+    padding: 15px 10%;
+  } */
+}
+
 </style>

@@ -520,8 +520,7 @@ a.taxonomy.category:active {
 
 .others_link{
   display: flex;
-
-  
+  justify-content: center;
 }
 
 .others_link a img{
@@ -698,12 +697,11 @@ a.taxonomy.category:active {
 
   .article_wrap1 {
     padding: 80px 5%;
-  }
-
-  .article_wrap2,
-  .article_wrap1{
     text-align: center;
-    padding: 80px 5px;
+  }
+  .article_wrap2 {
+    padding: 80px 2%;
+    text-align: center;
   }
 
   .article_list{
@@ -720,7 +718,12 @@ a.taxonomy.category:active {
     margin: 10px 0;
   }
 
-
+  .main_title,
+  .topic_content{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
   .main_title p{
     width: 100%;
     text-align: justify;
@@ -730,7 +733,7 @@ a.taxonomy.category:active {
   }
   .topic_title{
     width: 100%;
-
+    font-size: 16px;
   }
   .topic1 .topic_title{
     padding: 20px 0;

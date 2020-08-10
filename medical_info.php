@@ -193,4 +193,14 @@
   .site_info_cotent li p{
     margin: 40px 0 70px;
   }
+
+  @media screen and (max-width: 640px) {
+    .container .article_wrap1 {
+      padding: 80px 10%;
+    }
+
+    /* .site_info_title span {
+      padding: 15px 10%;
+    } */
+  }
 </style>

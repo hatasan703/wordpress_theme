@@ -325,7 +325,7 @@
   @media screen and (max-width: 640px) {
 
     .page_title_content h1{
-      width: 100%;
+      width: 67%;
     }
     .article_title{
       padding: 0 5% 20px;
@@ -333,10 +333,14 @@
       letter-spacing: 0.1em;
     }
 
+    .hospital {
+      padding: 0 5%;
+    }
+
     .hospital_list_btn a {
       width: 45%;
       margin: 5px auto;
-      padding: 20px 5px;
+      padding: 20px 5px 20px 0;
       font-size: 14px;
     }
 
