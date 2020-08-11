@@ -110,7 +110,7 @@
         <a href="<?php echo home_url(); ?>/at-home" class="header_menu_btn nav_vartical_bar">おうちで腹膜透析</a>
         <a href="<?php echo home_url(); ?>/basic-knowledge" class="header_menu_btn">腹膜透析の基礎知識</a>
         <?php get_search_form(); ?>
-        <a href="<?php echo home_url(); ?>/" class="header_contact"><img src="<?php echo get_template_directory_uri(); ?>/img/2.png" alt="お問い合わせ"></a>
+        <a href="<?php echo home_url(); ?>/contact" class="header_contact"><img src="<?php echo get_template_directory_uri(); ?>/img/2.png" alt="お問い合わせ"></a>
       </div>
     </div>
     
