@@ -7,10 +7,12 @@
 }
 
 
-.site_info_title span{
+.site_info_title h2{
   border: 2px solid #FF6A29;
   border-radius: 50px;
-  padding: 15px 80px;
+  padding: 15px 0;
+  width: 40%;
+  margin: 0 auto;
 }
 
 
@@ -87,6 +89,10 @@
   .site_info_cotent{
     line-height: 2;
     font-size: 13px;
+  }
+
+  .site_info_title h2{
+    width: 100%;
   }
   
 }

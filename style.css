@@ -417,7 +417,11 @@ a.taxonomy.category:active {
 .articles_wrap{
   display: flex;
   margin-top: 20px;
+  justify-content: center;
   /* padding-bottom: 70px; */
+}
+.articles{
+  width: 100%;
 }
 .articles a{text-decoration: none;}
 .article_list{
@@ -869,6 +873,7 @@ font-weight: 600;
   .topic_title{
     width: 100%;
     font-size: 16px;
+    padding: 20px;
   }
   .topic1 .topic_title{
     padding: 20px 0;
@@ -886,14 +891,13 @@ font-weight: 600;
     margin-top: 40px;
   }
   .new_btn{
-    font-size: 18px;
-    color: #fff;
-    background-color: #FF6A29;
-    border: solid 1px #FF6A29;
+    /* font-size: 18px; */
+    /* color: #fff; */
+    /* background-color: #FF6A29; */
+    /* border: solid 1px #FF6A29;/ */
     border-radius: 50px;
-    padding: 20px 30%;
-    letter-spacing: 0.2em;
-    margin-top: 80px;
+    /* letter-spacing: 0.2em; */
+    /* margin-top: 80px; */
   }
 
   .topic_content{

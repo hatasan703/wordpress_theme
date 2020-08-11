@@ -102,6 +102,19 @@ function catch_that_image() {
 	$first_img = "wp-content/plugins/wordpress-popular-posts/assets/images/no_thumb.jpg";
 	}
 	return $first_img;
+  }
+  
+  function my_tiny_mce_before_init( $mceInit, $editor_id ) {
+	$mceInit['allow_script_urls'] = true;
+	if ( ! isset( $mceInit['extended_valid_elements'] ) ) {
+		$mceInit['extended_valid_elements'] = '';
+	} else {
+		$mceInit['extended_valid_elements'] .= ',';
 	}
+	$mceInit['extended_valid_elements'] .= 'button[onclick]';
+	return $mceInit;
+}
+add_filter( 'tiny_mce_before_init', 'my_tiny_mce_before_init', 10, 2 );
+
 
 ?>

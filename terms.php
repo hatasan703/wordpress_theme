@@ -29,7 +29,7 @@
       <div class="container">
         <div class="article_wrap1">
           <div class="site_info_title">
-            <span><?php the_title(); ?></span>
+            <h2><?php the_title(); ?></h2>
           </div>
           <div class="site_info_cotent">
             <p>

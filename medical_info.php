@@ -29,8 +29,7 @@
         <div class="container">
           <div class="article_wrap1">
             <div class="site_info_title" id="medical_info">
-              <span class="pc"><?php the_title(); ?></span>
-              <p class="sp"><?php the_title(); ?></p>
+              <h2><?php the_title(); ?></h2>
             </div>
             <a href="#medical_info">
               <button class="fixed_btn">
@@ -39,7 +38,10 @@
                 戻る
               </button>
             </a>
-            <div class="site_info_cotent">
+
+            <?php the_content(); ?>
+
+            <!-- <div class="site_info_cotent">
               <p>
               この度は、「おうちで透析」にお越しいただき誠にありがとうございます。
               当サイトの運営方針について紹介いたします。
@@ -53,7 +55,7 @@
                   またシステム間連携や既存システムを利用した新たなイノベーションによって医療現場における非効率性を排除することで、
                   すべての関係者が受益者となるようなシナジーを起こせると考えています。
                 </p>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/company_logo.png" alt="会社ロゴ">
+                <img class="alignnone  wp-image-192" src="http://dev.local/wp-content/uploads/2020/08/company_logo-1.png" alt="会社ロゴ" width="394" height="76" />
 
               </li>
               <li>
@@ -73,7 +75,7 @@
                   簡単でわかりやすい言葉で、「透析治療」について説明を行うものです。その関係上、医療関係者や専門家の観点から不十分な部分や、
                   言葉不足の箇所があることをご了承ください。
                 </p>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/47.png" alt="サイトの目的" class="purpose">
+                <img class="alignnone wp-image-185 purpose" src="http://dev.local/wp-content/uploads/2020/08/47-1.png" alt="" width="461" height="307" />
               </li>
               <li>
                 <span>サイトのスタンス</span>
@@ -101,7 +103,9 @@
                   私どもの取組みに共感いただけるならば、是非ご連絡いただきますようよろしくお願いいたします。
                 </p>
               </li>
-            </div>
+            </div> -->
+
+            
           </div>
         </div>
         
