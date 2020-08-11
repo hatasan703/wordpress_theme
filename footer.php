@@ -4,7 +4,7 @@
       <div class="footer_top">
         <li class="footer_logo">おうちで透析</li>
         <li class="footer_contact">
-          <a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/26.png" alt="お問い合わせ"></a>
+          <a href="<?php echo home_url(); ?>/contact"><img src="<?php echo get_template_directory_uri(); ?>/img/26.png" alt="お問い合わせ"></a>
         </li>
       </div>
       <div class="footer_bottom pc">

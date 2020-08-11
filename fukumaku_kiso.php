@@ -38,7 +38,9 @@
               戻る
             </button>
           </a>
+
           <?php the_content(); ?>
+
         </div>
 
       </div>

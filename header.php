@@ -18,6 +18,16 @@
     <?php wp_title( ' | ', true, 'right' ); ?>
     <?php bloginfo( 'name' ); ?>
   </title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175153718-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175153718-1');
+</script>
+
   <?php wp_head(); ?>
   <script type="text/javascript">
     jQuery(function($){
@@ -107,10 +117,10 @@
     <div class="pc">
       <div class="nav">
         <a href="<?php echo home_url(); ?>/kayou" class="header_menu_btn nav_vartical_bar">透析に通うのがつらい</a>
-        <a href="<?php echo home_url(); ?>/at-home" class="header_menu_btn nav_vartical_bar">おうちで腹膜透析</a>
+        <a href="<?php echo home_url(); ?>/at-home" class="header_menu_btn nav_vartical_bar">おうちでできる腹膜透析</a>
         <a href="<?php echo home_url(); ?>/basic-knowledge" class="header_menu_btn">腹膜透析の基礎知識</a>
         <?php get_search_form(); ?>
-        <a href="<?php echo home_url(); ?>/" class="header_contact"><img src="<?php echo get_template_directory_uri(); ?>/img/2.png" alt="お問い合わせ"></a>
+        <a href="<?php echo home_url(); ?>/contact" class="header_contact"><img src="<?php echo get_template_directory_uri(); ?>/img/2.png" alt="お問い合わせ"></a>
       </div>
     </div>
     
@@ -128,7 +138,7 @@
           </ul>
           <ul>
             <li><a href="<?php echo home_url(); ?>/kayou" class="header_menu_btn nav_vartical_bar">透析に通うのがつらい</a></li>
-            <li><a href="<?php echo home_url(); ?>/at-home" class="header_menu_btn nav_vartical_bar">おうちで腹膜透析</a></li>
+            <li><a href="<?php echo home_url(); ?>/at-home" class="header_menu_btn nav_vartical_bar">おうちでできる腹膜透析</a></li>
             <li><a href="<?php echo home_url(); ?>/basic-knowledge" class="header_menu_btn">腹膜透析の基礎知識</a></li>
           </ul>
         </nav>

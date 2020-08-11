@@ -38,6 +38,7 @@
               戻る
             </button>
           </a>
+
           <?php the_content(); ?>
           
         </div>
@@ -79,3 +80,20 @@
 </main>
 
 <?php get_footer(); ?>
+
+<style>
+  @media screen and (max-width: 640px) {
+    #kayou7{
+      letter-spacing: 0em;
+    }
+
+    .page_title_content h1 {
+      letter-spacing: 0.05em;
+    }
+    .main_article_title h2 {
+      letter-spacing: 0em;
+    }
+
+  }
+  
+</style>
