@@ -56,8 +56,9 @@
                       <div class="address">
                         <p>〒152-0035</p>
                         <p>
-                          東京都目黒区自由が丘1-13-4<br>
+                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">東京都目黒区自由が丘1-13-4<br>
                           シャイン自由が丘ビル２F
+                          </a>
                         </p>
                         <p>☎︎ 03-3724-2626</p>
                         <p>jiyugaoka@sibagakiiin.com</p>
@@ -88,8 +89,9 @@
                       <div class="address">
                         <p>〒152-0035</p>
                         <p>
-                          東京都目黒区自由が丘1-13-4<br>
+                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">東京都目黒区自由が丘1-13-4<br>
                           シャイン自由が丘ビル２F
+                          </a>
                         </p>
                         <p>☎︎ 03-3724-2626</p>
                         <p>jiyugaoka@sibagakiiin.com</p>
@@ -124,8 +126,9 @@
                       <div class="address">
                         <p>〒152-0035</p>
                         <p>
-                          東京都目黒区自由が丘1-13-4<br>
+                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">東京都目黒区自由が丘1-13-4<br>
                           シャイン自由が丘ビル２F
+                          </a>
                         </p>
                         <p>☎︎ 03-3724-2626</p>
                         <p>jiyugaoka@sibagakiiin.com</p>
@@ -156,8 +159,9 @@
                       <div class="address">
                         <p>〒152-0035</p>
                         <p>
-                          東京都目黒区自由が丘1-13-4<br>
+                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">東京都目黒区自由が丘1-13-4<br>
                           シャイン自由が丘ビル２F
+                          </a>
                         </p>
                         <p>☎︎ 03-3724-2626</p>
                         <p>jiyugaoka@sibagakiiin.com</p>
