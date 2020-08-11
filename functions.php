@@ -90,4 +90,18 @@ add_action( 'wp_enqueue_scripts', 'lab_scripts' );
 function my_function_admin_bar(){ return false; }
 add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 
+/* 記事内の最初の画像を取得して表示 */
+function catch_that_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all("/]+src=[\"'](s?https?:\/\/[\-_\.!~\*'()a-z0-9;\/\?:@&=\+\$,%#]+\.(jpg|jpeg|png|gif))[\"'][^>]+>/i", $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+	if(empty($first_img)){ //Defines a default image
+	$first_img = "wp-content/plugins/wordpress-popular-posts/assets/images/no_thumb.jpg";
+	}
+	return $first_img;
+	}
+
 ?>

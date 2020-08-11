@@ -140,38 +140,28 @@
                 <span class="new_btn">新着記事</span>
               </div>
               <div class="article_list">
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-                <a href="<?php echo home_url(); ?>/" class="top_article">
-                  <time datetime="2020-07-29T10:00">2020.07.29</time>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="イメージ">
-                  <p>ここにテキストが入ります。</p>
-                </a>
-              </div>
-
+                <?php
+                  $information= get_posts( array(
+                  'posts_per_page' => 5
+                  ));
+                  if( $information):
+                ?>
+                <?php
+                  foreach( $information as $post ):
+                  setup_postdata( $post );
+                ?>
+                  <a href="<?php the_permalink(); ?>" class="top_article">
+                  <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                  <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
+                            <p><?php the_title(); ?></p>
+                <?php
+                endforeach;
+                wp_reset_postdata();
+                ?>
+                <?php else: ?>
+                  <p>表示できる情報はありません。</p>
+                <?php endif; ?>
+                </div>
               <div class="new">
                 <span class="new_btn">人気記事</span>
               </div>
