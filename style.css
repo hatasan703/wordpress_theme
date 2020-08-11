@@ -661,11 +661,17 @@ a.taxonomy.category:active {
     box-shadow: 0 0 10px #d8d8d8;
   }
   .page_title_content h1{
-    width: 95%;
     font-weight: bold;
     border-bottom: solid 2px #fff;
     padding-bottom: 10px;
   }
+  /* .page_title_content h1 span{
+    border-bottom: solid 2px #fff;
+    padding-bottom: 9px;
+    margin-left: 40px;
+    display: block;
+    text-align: left;
+  } */
 
 /* お問い合わせーーーーーーーーー */ 
  
@@ -855,6 +861,15 @@ font-weight: 600;
   .topic_content{
     display: block;
   }
+
+  .site_map{
+    padding: 30px 20px 5px;
+  }
+ 
+  .detail_lists{
+    margin-bottom: 40px;
+  }
+
   .others_link{ text-align: center;}
 
   .sns_link img {

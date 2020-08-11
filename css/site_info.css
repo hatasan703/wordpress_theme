@@ -68,7 +68,25 @@
 
 .sitemap_link .center p{
   text-align: left;
-
   margin-left: 30%;
 
+}
+
+
+@media screen and (max-width: 640px) {
+  .site_info_title p {
+    border: 2px solid #FF6A29;
+    border-radius: 50px;
+    padding: 15px 5px;
+  }
+
+  .site_info_cotent li span{
+    letter-spacing: 0.1em;
+  }
+
+  .site_info_cotent{
+    line-height: 2;
+    font-size: 13px;
+  }
+  
 }

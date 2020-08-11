@@ -167,5 +167,9 @@
     font-size: 13px;
   }
   
+  .fixed_btn {
+    right: 10px;
+  }
+  
 }
 

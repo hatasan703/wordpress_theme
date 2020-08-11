@@ -30,7 +30,8 @@
         <div class="container">
           <div class="article_wrap1">
             <div class="site_info_title" id="medical_info">
-              <span><?php the_title(); ?></span>
+              <span class="pc"><?php the_title(); ?></span>
+              <p class="sp"><?php the_title(); ?></p>
             </div>
             <a href="#medical_info">
               <button class="fixed_btn">
@@ -49,7 +50,8 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/img/48.png" alt="会社ロゴ" class="info_img">
               </li>
               <li>
-                <span>腹膜透析に移行するためのハードルは様々</span>
+                <span class="pc">腹膜透析に移行するためのハードルは様々</span>
+                <div class="sp"><span>腹膜透析に移行するための<br>ハードルは様々</span></div>
                 <p>
                   実際に、「おうちで透析」を実現するためには、多くのハードルが存在します。自分や家族が毎日、
                   透析バックを交換しなくてはいけないこと。透析を行う場所の衛生管理を徹底しないといけないこと。
@@ -66,7 +68,8 @@
                 </p>
               </li>
               <li>
-                <span>高齢化により通院での透析が困難になるケース</span>
+                <span class="pc">高齢化により通院での透析が困難になるケース</span>
+                <div class="sp"><span>高齢化により通院での透析が<br>困難になるケース</span></div>
                 <p class="margin0">
                   わが国では超高齢社会が急速に進んでいます。
                   2018年現在、高齢化率は28.1％で、2030年には31.2％に達すると予想されています。
@@ -78,7 +81,9 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/img/49.png" alt="サイトの目的" class="info_img">
               </li>
               <li>
-                <span>診療報酬改定・介護保険制度とのかかわり</span>
+                <span class="pc">診療報酬改定・介護保険制度とのかかわり</span>
+                <div class="sp"><span>診療報酬改定・介護保険制度<br>とのかかわり</span></div>
+                
                 <p>
                   政府は2018年の診療報酬改定で、腹膜透析（PD)や腎移植を推進するために、腎不全患者に対して、
                   患者に合わせて様々な選択肢があると説明することを要件化しました。
@@ -100,7 +105,9 @@
                 </p>
               </li>
               <li>
-                <span>新型コロナウィルス流行とおうちで透析</span>
+                <span class="pc">新型コロナウィルス流行とおうちで透析</span>
+                <div class="sp"><span>新型コロナウィルス流行と<br>おうちで透析</span></div>
+              
                 <p>
                   新型コロナウイルスは、生活の在り方を変えようとしています。
                   通勤、通学、旅行、出張など、移動が前提とされた従来の生活は感染リスクが高いとされています。
@@ -227,6 +234,17 @@
 
   .site_info_cotent li p{
     margin: 40px 0 70px;
+  }
+
+  @media screen and (max-width: 640px) {
+
+
+    .container .article_wrap1{
+      padding: 80px 5%;
+      background: #fff;
+      line-height: 30px;
+      margin-top: 0;
+    }
   }
   
 </style>

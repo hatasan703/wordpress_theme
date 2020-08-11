@@ -29,7 +29,8 @@
       <div class="container">
         <div class="article_wrap1">
           <h2 class="site_info_title">
-            <span><?php the_title(); ?></span><br>
+            <span class="pc"><?php the_title(); ?></span><br>
+            <p class="sp"><?php the_title(); ?></p><br>
           </h2>
           <h3 class="site_info_sub_title">
             NEWS
@@ -116,7 +117,6 @@
 }
 .site_info_cotent li{
   display: flex;
-  /* margin: 40px; */
   border-bottom: 1px solid #cbcbcb;
   padding: 20px;
 }
@@ -129,6 +129,8 @@
   width: 70%;
   color: #666;
   text-decoration: none;
+  display: block;
+  text-align: justify;
 }
 
 @media screen and (max-width: 640px) {
@@ -136,9 +138,25 @@
     padding: 80px 5%;
   }
 
-  /* .site_info_title span {
-    padding: 15px 10%;
-  } */
+  .site_info_sub_title{
+    margin-top: 30px;
+  }
+  .site_info_cotent {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .site_info_cotent li{
+    display: block;
+  }
+
+  .site_info_cotent a{
+    width: 100%;
+    margin-top: 5px;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+  }
+
 }
 
 </style>

@@ -176,6 +176,10 @@
   .container .article_wrap1 {
     padding: 80px 5%;
   }
+
+  .site_info_title p{
+    border: none;
+  }
 }
 
 </style>
