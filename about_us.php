@@ -171,4 +171,15 @@
   text-decoration: none;
   color: #FF6A29;
 }
+
+@media screen and (max-width: 640px) {
+  .container .article_wrap1 {
+    padding: 80px 5%;
+  }
+
+  .site_info_title p{
+    border: none;
+  }
+}
+
 </style>

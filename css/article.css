@@ -45,7 +45,7 @@
   letter-spacing: 0.2em;
   text-align: center;
 }
-.table_of_contents p{
+.table_of_contents_title{
   margin-right: 45%;
   margin-bottom: 10px;
 }
@@ -140,4 +140,36 @@
   margin-bottom: 0;
 }
 
+
+@media screen and (max-width: 640px) {
+
+  .main_article_title h2 {
+    font-size: 18px;
+  }
+  
+  .table_of_contents_title{
+    margin-right: 0;
+  }
+  .table_of_contents_lists {
+    width: 80%;
+  }
+
+  .article_item_title{
+    letter-spacing: 0.1em;
+    padding: 15px 5px;
+    width: 100%;
+    /* font-size: 14px; */
+  }
+
+  .article_text {
+    letter-spacing: 0.2em;
+    line-height: 2;
+    font-size: 13px;
+  }
+  
+  .fixed_btn {
+    right: 10px;
+  }
+  
+}
 

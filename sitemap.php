@@ -29,7 +29,8 @@
       <div class="container">
         <div class="article_wrap1">
           <div class="site_info_title">
-            <span><?php the_title(); ?></span>
+            <span class="pc"><?php the_title(); ?></span>
+            <p class="sp"><?php the_title(); ?></p>
           </div>
           <div class="site_info_cotent">
             <div class="top_page_link">
@@ -115,5 +116,38 @@
   .container .article_wrap1{
     padding: 80px 18%;
     background: #F9F7F4;
+  }
+
+  @media screen and (max-width: 640px) {
+    .container .article_wrap1 {
+      padding: 80px 5%;
+    }
+
+    .site_info_title span {
+      padding: 15px 20%;
+    }
+
+    .sitemap_link{
+      display: block;
+      text-align: left;
+      line-height: 1;
+    }
+    .sitemap_link li{
+      width: 100%;
+      font-size: 16px;
+      margin: 80px 0 80px 30px;
+    }
+
+    .sitemap_link .center{
+    text-align: left;
+  }
+  
+    .sitemap_link .center p{
+      text-align: left;
+      margin-left: 20px;
+    }
+
+
+
   }
 </style>

@@ -520,8 +520,7 @@ a.taxonomy.category:active {
 
 .others_link{
   display: flex;
-
-  
+  justify-content: center;
 }
 
 .others_link a img{
@@ -704,6 +703,7 @@ font-weight: 600;
 
 
 
+
 /* 各ページstyle */
 
 /* ページのタイトル */
@@ -729,13 +729,84 @@ font-weight: 600;
     box-shadow: 0 0 10px #d8d8d8;
   }
   .page_title_content h1{
-    width: 95%;
     font-weight: bold;
     border-bottom: solid 2px #fff;
     padding-bottom: 10px;
   }
+  /* .page_title_content h1 span{
+    border-bottom: solid 2px #fff;
+    padding-bottom: 9px;
+    margin-left: 40px;
+    display: block;
+    text-align: left;
+  } */
 
 
+
+
+
+/* お問い合わせーーーーーーーーー */ 
+ 
+.wpcf7 { 
+  background: #fff; 
+  padding: 10px; 
+} 
+ 
+.wpcf7 p { 
+  margin: 10px; 
+} 
+ 
+.must{ 
+color: #fff; 
+margin-right: 10px; 
+padding: 6px 10px; 
+background: #F92931; 
+border-radius: 20px; 
+} 
+ 
+.free { 
+color: #fff; 
+margin-right: 10px; 
+padding: 6px 10px; 
+background: #424242; 
+border-radius: 20px; 
+} 
+ 
+form p { 
+font-weight: 600; 
+} 
+ 
+input.wpcf7-form-control.wpcf7-text, 
+textarea.wpcf7-form-control.wpcf7-textarea { 
+width: 100%; 
+padding: 8px 15px; 
+margin-right: 10px; 
+margin-top: 10px; 
+border: 1px solid #d0d5d8; 
+border-radius: 3px; 
+} 
+textarea.wpcf7-form-control.wpcf7-textarea { 
+height: 200px; 
+} 
+ 
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required { 
+background: rgba(255, 255, 142, 0.46); 
+} 
+ 
+input.wpcf7-submit { 
+width: 100%; 
+height: 80px; 
+background: #27c038; 
+color: #fff; 
+font-size: 20px; 
+font-weight: 600; 
+} 
+ 
+span.wpcf7-not-valid-tip, 
+.wpcf7-response-output.wpcf7-validation-errors { 
+color: red; 
+font-weight: 600; 
+} 
 
 
 
@@ -754,19 +825,18 @@ font-weight: 600;
   /* spメイン */
 
   .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     font-size: 16px;
   }
 
   .article_wrap1 {
     padding: 80px 5%;
-  }
-
-  .article_wrap2,
-  .article_wrap1{
     text-align: center;
-    padding: 80px 5px;
+  }
+  .article_wrap2 {
+    padding: 80px 2%;
+    text-align: center;
   }
 
   .article_list{
@@ -783,7 +853,12 @@ font-weight: 600;
     margin: 10px 0;
   }
 
-
+  .main_title,
+  .topic_content{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
   .main_title p{
     width: 100%;
     text-align: justify;
@@ -793,7 +868,7 @@ font-weight: 600;
   }
   .topic_title{
     width: 100%;
-
+    font-size: 16px;
   }
   .topic1 .topic_title{
     padding: 20px 0;
@@ -858,6 +933,15 @@ font-weight: 600;
   .topic_content{
     display: block;
   }
+
+  .site_map{
+    padding: 30px 20px 5px;
+  }
+ 
+  .detail_lists{
+    margin-bottom: 40px;
+  }
+
   .others_link{ text-align: center;}
 
   .sns_link img {
