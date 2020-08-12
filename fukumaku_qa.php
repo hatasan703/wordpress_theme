@@ -41,41 +41,40 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
                 </div>
                 <div class="category_articles">
-					    <?php
-        $paged = get_query_var('paged')? get_query_var('paged') : 1;
-        $information= new WP_Query( array(
+					        <?php
+                     $paged = get_query_var('paged')? get_query_var('paged') : 1;
+                     $information= new WP_Query( array(
                     'post_type' => 'post',
                     'paged' => $paged,
                     'post_status' => 'publish',
-                    'posts_per_page' => 3,
-					'cat' =>1
+                    'posts_per_page' => 9,
+					          'cat' =>1
                 ));
-        if ( $information ->have_posts() ) :
-   　?>
-            <!-- ループ -->
+          if ( $information ->have_posts() ) : ?>
             <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
                   <div class="category_article pink_border">
-					                    <a href="<?php the_permalink(); ?>">
-						<time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                  <a href="<?php the_permalink(); ?>">
+                  <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                   <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
-					  <p><?php the_title(); ?></p>
-					  </a>
-                  </div>
+                  <p><?php the_title(); ?></p>
+                  </a>
+                  </div>
         <?php
-		  endwhile;
-			endif;
-        wp_reset_postdata(); 			
-		?>
-			
-<p>まだ記事がありません</p>
+		    endwhile;
+        wp_reset_postdata(); ?>
 
-
-                </div>
+      <?php else: ?>
+      <p>まだ記事がありません</p>
+      <?php endif; ?>
+      </div>
+				  <?php 		 
+              if( function_exists('wp_pagenavi') ) {
+                    wp_pagenavi(array('query' => $information));
+            } 
+	        ?>
               </div>
             </div>
           </div>
-
-
       </div>
     </article>
   </div>
