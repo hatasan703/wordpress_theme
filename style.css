@@ -161,17 +161,9 @@ BreakPoint
   display: flex;
 }
 
-.header_bar {
-  background: #FF6A29;
-  width: 20%;
-	margin: 0 auto;
-	padding: 18px 0;
-	display: flex;
-	align-items: center;
-}
-.header_bar2{
+.header_bar{
   background: #FFA42C;
-  width: 80%;
+  width: 100%;
 }
 .header_bar > li {
 	border-right: 1px solid #FF6A29;
@@ -189,19 +181,26 @@ BreakPoint
 
 /* パンくずリスト */
 .breadcrumbs {
-	font-size: 0.6875rem;
-	padding: 5px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 3;
 }
  
 a.home,
 a.taxonomy.category {
-	color: #000;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.current-item{
+  margin: 0 5px;
 }
 a.home:hover,
 a.home:active,
 a.taxonomy.category:hover,
 a.taxonomy.category:active {
-	color: #32cd32;
+  opacity: 0.5;
 }
 
 /* メイン */
@@ -767,6 +766,14 @@ font-weight: 600;
   .mainNav {
     height: 15px;
   }
+  .header_bar {
+    height: 20px;
+    z-index: 2;
+  }
+
+
+
+
 
 
   /* spメイン */
@@ -966,6 +973,14 @@ font-weight: 600;
     input.wpcf7-submit { 
       width: 100%; 
     } 
+
+    /* スマホパンくずリスト */
+    .breadcrumbs {
+      font-size: 10px;
+      color: #fff;
+      line-height: 2.5;
+
+    }
   
 
 
