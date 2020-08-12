@@ -32,7 +32,9 @@
               <h2><?php the_title(); ?></h2>
             </div>
             <div class="posting_time">
-              2020.08.01
+              <time datetime="<?php the_time('Y.n.j'); ?>">
+                <?php the_time('Y.n.j'); ?>
+              </time>
             </div>
 
             <!-- 固定ボタン -->

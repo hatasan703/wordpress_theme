@@ -58,7 +58,7 @@
             <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
                   <div class="category_article pink_border">
                   <a href="<?php the_permalink(); ?>">
-                  <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                  <time class="artcile_time" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                   <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
                   <p><?php the_title(); ?></p>
                   </a>

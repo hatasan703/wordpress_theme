@@ -82,7 +82,7 @@
   position: relative;
 }
 
- time{
+.category_articles time{
   position: absolute;
   top: 0;
   left: 0;
