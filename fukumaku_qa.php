@@ -9,6 +9,7 @@
 <main>
     <article>
       <div>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <div class="page_title pc">
             <div class="page_title_content">
               <h1>
@@ -41,41 +42,58 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
                 </div>
                 <div class="category_articles">
-					    <?php
-        $paged = get_query_var('paged')? get_query_var('paged') : 1;
-        $information= new WP_Query( array(
-                    'post_type' => 'post',
-                    'paged' => $paged,
-                    'post_status' => 'publish',
-                    'posts_per_page' => 3,
-					'cat' =>1
-                ));
-        if ( $information ->have_posts() ) :
-   　?>
-            <!-- ループ -->
-            <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
                   <div class="category_article pink_border">
-					                    <a href="<?php the_permalink(); ?>">
-						<time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-                  <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
-					  <p><?php the_title(); ?></p>
-					  </a>
-                  </div>
-        <?php
-		  endwhile;
-			endif;
-        wp_reset_postdata(); 			
-		?>
-			
-<p>まだ記事がありません</p>
-
-
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入りますここにテキストが入ります</p>
+                  </div>
+                  <div class="category_article pink_border">
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入りますここにテキストが入ります</p>
+                  </div>
+                  <div class="category_article pink_border">
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入りますここにテキストが入ります</p>
+                  </div>
+                  <div class="category_article pink_border">
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入ります</p>
+                  </div>
+                  <div class="category_article pink_border">
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入ります</p>
+                  </div>
+                  <div class="category_article pink_border">
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入ります</p>
+                  </div>
+                  <div class="category_article pink_border">
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入ります</p>
+                  </div>
+                  <div class="category_article pink_border">
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入ります</p>
+                  </div>
+                  <div class="category_article pink_border">
+                    <time datetime="2020-07-29T10:00">2020.07.29</time>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="体温計">
+                    <p>ここにテキストが入ります</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-
+        <?php endwhile; else : ?>
+          <p>まだ記事がありません</p>
+        <?php endif; ?>
       </div>
     </article>
   </div>

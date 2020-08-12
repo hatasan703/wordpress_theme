@@ -31,7 +31,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
             <h2><?php the_title(); ?></h2>
           </div>
-          <a href="#kayou_table_of_contents">
+          <a href="#top">
             <button class="fixed_btn">
               <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
               TOPへ<br>
@@ -44,7 +44,7 @@
           <!-- <div class="article_text">
             すでに透析を始められている方は、一番つらかった時はいつでしょうか。 「透析を始めましょう」と医師から宣告があった時でしょうか。 実際に透析治療を始めて、なんとか慣れるまでも非常につらかったと思います。 そして今も、透析治療のために通院し、毎日つらい思いをされていることと思います。
           </div>
-          <div id="kayou_table_of_contents" class="table_of_contents">
+          <div id="top" class="table_of_contents">
             <div class="table_of_contents_title">■目次 <i class="fa fa-angle-down" aria-hidden="true"></i></div>
             <ul class="table_of_contents_lists">
               <li><a href="#kayou1">透析治療は様々な制限がある</a></li>

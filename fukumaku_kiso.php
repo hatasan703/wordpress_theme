@@ -31,7 +31,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/42.png" alt="腹膜透析の基礎知識">
             <h2><?php the_title(); ?></h2>
           </div>
-          <a href="#kiso_table_of_contents">
+          <a href="#top">
             <button class="fixed_btn">
               <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
               TOPへ<br>
@@ -41,7 +41,7 @@
 
           <?php the_content(); ?>
         <!-- <br><br><br><br>
-        <div id="kiso_table_of_contents" class="table_of_contents">
+        <div id="top" class="table_of_contents">
         <div class="table_of_contents_title">■目次
           <i class="fa fa-angle-down" aria-hidden="true"></i>
         </div>

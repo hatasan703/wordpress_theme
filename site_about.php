@@ -29,10 +29,10 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="container">
           <div class="article_wrap1">
-            <div class="site_info_title" id="medical_info">
+            <div class="site_info_title" id="top">
               <h2><?php the_title(); ?></h2>
             </div>
-            <a href="#medical_info">
+            <a href="#top">
               <button class="fixed_btn">
                 <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
                 TOPへ<br>

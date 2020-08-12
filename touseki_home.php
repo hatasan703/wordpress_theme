@@ -31,7 +31,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/32.png" alt="おうちでできる腹膜透析">
             <h2><?php the_title(); ?></h2>
           </div>
-          <a href="#home_table_of_contents">
+          <a href="#top">
             <button class="fixed_btn">
               <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
               TOPへ<br>
@@ -46,7 +46,7 @@
             それは知識が不足しているから起きる不安です。透析について学び正しい知識を得ることが大切です。
           </p>
 
-          <div id="home_table_of_contents" class="table_of_contents">
+          <div id="top" class="table_of_contents">
             <div class="table_of_contents_title">■目次
               <i class="fa fa-angle-down" aria-hidden="true"></i></div>
               <ul class="table_of_contents_lists">

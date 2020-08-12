@@ -192,19 +192,6 @@
               </div>
             </div>
 
-            <!-- <div class="sidebar">
-              <div class="sidebar_content">
-                <div class="new_article">■新着・人気の記事</div>
-                  <p><a href="">新着記事</a></p>
-                  <p><a href="">人気の記事</a></p>
-                <div class="category">■カテゴリ</div>
-                  <p><a href="<?php echo home_url(); ?>/qa">腹膜透析Q&A</a></p>
-                  <p><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></p>
-                  <p><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></p>
-                  <p><a href="<?php echo home_url(); ?>/glossary">用語集</a></p>
-              </div>
-            </div> -->
-
           </div>        
         </div>
       </div>
