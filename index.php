@@ -156,7 +156,7 @@
                   <a href="<?php the_permalink(); ?>" class="top_article">
                   <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                   <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
-					  <p><?php the_title(); ?></p></a>
+					        <p><?php the_title(); ?></p></a>
                 <?php
                 endforeach;
                 wp_reset_postdata();
@@ -164,32 +164,36 @@
                 <?php else: ?>
                   <p>表示できる情報はありません。</p>
                 <?php endif; ?>
-                </div>
+
+              </div>
+              
               <div class="new">
                 <span class="new_btn">人気記事</span>
               </div>
-              <div class="article_list">
-              <?php wpp_get_mostpopular(
-                array(
-                  'stats_date' => 1,
-                  'stats_date_format' => 'Y.m.d',
-                  'range' => 'all',
-                  'order_by' => 'views',
-                  'post_type' => 'post',
-                  'limit' => 6,
-                  'stats_views' => 1,
-                  'thumbnail_width' =>244,
-                  'thumbnail_height' => 90,
+              <!-- <div class="article_list"> -->
+                <?php wpp_get_mostpopular(
+                  array(
+                    'wpp_start' => '<div class="article_list">',
+                    'wpp_end' => '</div>',
+                    'stats_date' => 1,
+                    'stats_date_format' => 'Y.m.d',
+                    'range' => 'all',
+                    'order_by' => 'views',
+                    'post_type' => 'post',
+                    'limit' => 6,
+                    'stats_views' => 1,
+                    'thumbnail_width' =>244,
+                    'thumbnail_height' => 90,
 
-                  'post_html' => 
-                  '<li class="top_article">{thumb}
-                  <time>{date}</time>
-                  <p>{title}</p>
-                  </li>'
-                )
-              );
-              ?>
-              </div>
+                    'post_html' => 
+                    '<li class="top_article">{thumb}
+                    <time>{date}</time>
+                    <p>{title}</p>
+                    </li>'
+                  )
+                );
+                ?>
+              <!-- </div> -->
             </div>
 
           </div>        
