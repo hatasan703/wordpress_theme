@@ -112,7 +112,7 @@
 
   <div class="headerWrap">
     
-    <h1 class="logo"><a href="<?php echo home_url(); ?>/home"><img src="<?php echo get_template_directory_uri(); ?>/img/1.png" alt="腹膜透析"></a></h1></li>
+    <h1 class="logo"><a href="<?php echo home_url(); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/1.png" alt="腹膜透析"></a></h1></li>
     <!-- pcーーー -->
     <div class="pc">
       <div class="nav">
@@ -149,14 +149,14 @@
 
   <div class="mainNav">
     <li class="header_bar">
-    </li>
-    <li class="header_bar2">
+      <?php if(!is_home()) : ?>
+        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+          <?php if(function_exists('bcn_display'))
+            {
+                bcn_display();
+            }?>
+          </div>
+      <?php endif; ?>
     </li>
   </div>
-  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-    <?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-</div>
 </header>

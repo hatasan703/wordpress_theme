@@ -1,21 +1,54 @@
 <?php get_header(); ?>
 
-<h1><?php the_search_query(); ?> の検索結果</h1>
- 
-<?php
-if (have_posts() && get_search_query()) : 
-    while (have_posts()) :
-    the_post();
-    get_template_part( 'template-parts/post/content', 'excerpt' );
-endwhile;
-?>
-
-<?php else : ?>
-    <div class="col-full">
-        <div class="wrap-col">
-            <p>検索キーワードに該当する記事がありませんでした。</p>
-        </div>
+<main>
+  <article>
+    <div class="page_title pc">
+      <div class="page_title_content">
+        <h1>
+          <?php the_search_query(); ?> の検索結果
+        </h1>
+      </div>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
     </div>
-<?php endif; ?>
+    <div class="page_title sp">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
+      <div class="page_title_content">
+        <h1>
+          <?php the_search_query(); ?> の検索結果
+        </h1>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="article_wrap2">
+        <div class="category_articles">
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="category_article">
+              <?php get_template_part( 'template-parts/post/content', 'excerpt' ); ?>
+              <a href="<?php the_permalink() ?>" target="_self">
+                  <time><?php the_modified_time('Y年n月j日'); ?></time>
+                  <img src="<?php echo catch_that_image() ?>" width="244" height="90" alt="" class="wpp-thumbnail wpp_featured wpp_def_no_src" loading="lazy"></a>
+                  <p><a href="<?php the_permalink() ?>" class="wpp-post-title" target="_self"><?php the_title(); ?></a></p>
+            </div>
+        
+
+          <?php endwhile; else: ?>
+            <div class="col-full">
+              <div class="wrap-col">
+                <p>検索キーワードに該当する記事がありませんでした。</p>
+              </div>
+            </div>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+
+
+
+
+
 
 <?php get_footer(); ?>

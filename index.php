@@ -69,7 +69,8 @@
           </div>
         </div>
         <div class="topic2">
-          <span class="topic_title">おうちでできる腹膜透析</span>
+          <span class="topic_title pc">おうちでできる腹膜透析</span>
+          <p class="topic_title sp">おうちでできる腹膜透析</p>
           <div class="topic_content">
             <img src="<?php echo get_template_directory_uri(); ?>/img/51.png" alt="握手">
             <p>
@@ -86,7 +87,8 @@
           </div>
         </div>
         <div class="topic3">
-          <span class="topic_title">腹膜透析の基礎知識</span>
+          <span class="topic_title pc">腹膜透析の基礎知識</span>
+          <p class="topic_title sp">腹膜透析の基礎知識</p>
           <div class="topic_content">
             <img src="<?php echo get_template_directory_uri(); ?>/img/11.png" alt="病床">
             <p>
@@ -108,7 +110,8 @@
     <div class="white_wrap">
       <div class="container">
         <div class="article_wrap2">
-          <span class="topic_title">「おうちで透析」の記事</span>
+          <span class="topic_title pc">「おうちで透析」の記事</span>
+          <p class="topic_title sp">「おうちで透析」の記事</p>
           
           <div class="articles_wrap">
             <div class="articles">
@@ -153,7 +156,7 @@
                   <a href="<?php the_permalink(); ?>" class="top_article">
                   <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                   <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
-                            <p><?php the_title(); ?></p>
+					  <p><?php the_title(); ?></p></a>
                 <?php
                 endforeach;
                 wp_reset_postdata();
@@ -177,8 +180,7 @@
                   'stats_views' => 1,
                   'thumbnail_width' =>244,
                   'thumbnail_height' => 90,
-                  'wpp_start' => '<ul class="blog_list">',
-                  'wpp_end' => '</ul>',
+
                   'post_html' => 
                   '<li class="top_article">{thumb}
                   <time>{date}</time>

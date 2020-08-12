@@ -22,7 +22,7 @@
       <div class="article_category">
         <li class="category_title">■記事カテゴリ</li>
         <ul class="detail_lists">
-          <li><a href="<?php echo home_url(); ?>/hukumaku-qa">腹膜透析Q&A</a></li>
+          <li><a href="<?php echo home_url(); ?>/qa">腹膜透析Q&A</a></li>
           <li><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></li>
           <li><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></li>
           <li><a href="<?php echo home_url(); ?>/glossary">用語集</a></li>

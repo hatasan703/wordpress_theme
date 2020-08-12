@@ -29,7 +29,11 @@
           </div>
           <div class="container">
             <div class="article_wrap1">
-              <div class="article_title">
+
+            <?php the_content(); ?>
+
+
+              <!-- <div class="article_title">
                 在宅腹膜透析の実施病院リストです。<br>
                 お住まいの地域をクリックしてください。
               </div>
@@ -46,13 +50,13 @@
                   関東の病院
                 </h2>
                 <div class="hospital_list">
-                  <li class="hospital">
+                  <li>
                     <div class="hospital_top">
                       <p class="hospital_title">柴垣医院 自由が丘</p>
                       <p class="hospital_place">東京都</p>
                     </div>
                     <div class="hospital_bottom">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/28.png" alt="在宅腹膜透析実施病院リスト">
+                      <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
                       <div class="address">
                         <p>〒152-0035</p>
                         <p>
@@ -79,13 +83,13 @@
                     </div>
                   </li>
 
-                  <li class="hospital">
+                  <li>
                     <div class="hospital_top">
                       <p class="hospital_title">柴垣医院 自由が丘</p>
                       <p class="hospital_place">東京都</p>
                     </div>
                     <div class="hospital_bottom">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/28.png" alt="病院">
+                      <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
                       <div class="address">
                         <p>〒152-0035</p>
                         <p>
@@ -116,13 +120,13 @@
                   関西の病院
                 </h2>
                 <div class="hospital_list">
-                  <li class="hospital">
+                  <li>
                     <div class="hospital_top">
                       <p class="hospital_title">柴垣医院 自由が丘</p>
                       <p class="hospital_place">大阪府</p>
                     </div>
                     <div class="hospital_bottom">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/28.png" alt="病院">
+                      <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
                       <div class="address">
                         <p>〒152-0035</p>
                         <p>
@@ -149,13 +153,13 @@
                     </div>
                   </li>
 
-                  <li class="hospital">
+                  <li>
                     <div class="hospital_top">
                       <p class="hospital_title">柴垣医院 自由が丘</p>
                       <p class="hospital_place">京都府</p>
                     </div>
                     <div class="hospital_bottom">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/28.png" alt="病院">
+                      <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
                       <div class="address">
                         <p>〒152-0035</p>
                         <p>
@@ -181,9 +185,9 @@
                       </div>
                     </div>
                   </li>
-
                 </div>
-              </div>
+              </div> -->
+
             </div>
           </div>
         <?php endwhile; else : ?>
@@ -214,6 +218,7 @@
   .hospital_list_btn{
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .hospital_list_btn a{
     font-size: 18px;
@@ -249,7 +254,7 @@
     letter-spacing: 0.2em;
   }
 
-  .hospital{
+  .hospital_list li{
     padding: 0 20px;
   }
   .hospital_top{

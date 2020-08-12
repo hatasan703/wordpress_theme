@@ -102,6 +102,82 @@ function catch_that_image() {
 	$first_img = "wp-content/plugins/wordpress-popular-posts/assets/images/no_thumb.jpg";
 	}
 	return $first_img;
+  }
+  
+  function my_tiny_mce_before_init( $mceInit, $editor_id ) {
+	$mceInit['allow_script_urls'] = true;
+	if ( ! isset( $mceInit['extended_valid_elements'] ) ) {
+		$mceInit['extended_valid_elements'] = '';
+	} else {
+		$mceInit['extended_valid_elements'] .= ',';
 	}
+	$mceInit['extended_valid_elements'] .= 'button[onclick]';
+	return $mceInit;
+}
+add_filter( 'tiny_mce_before_init', 'my_tiny_mce_before_init', 10, 2 );
+
+
+// =============================================================
+// 固定ページページネーション
+
+function custom_wp_link_pages( $args = '' ) {
+  $defaults = array(
+    'before'           => '<div id="page_numbers"><ul>',
+    'after'            => '</ul></div>',
+    'next_or_number'   => 'number',
+    'separator'        => '',
+    'pagelink'         => '%',
+    'echo'             => 1
+  );
+ 
+  $r = wp_parse_args( $args, $defaults );
+  $r = apply_filters( 'wp_link_pages_args', $r );
+  extract( $r, EXTR_SKIP );
+ 
+  global $page, $numpages, $multipage, $more, $pagenow;
+ 
+  $output = '';
+  if ( $multipage ) {
+    if ( 'number' == $next_or_number ) {
+      $output .= $before;
+      for ( $i = 1; $i < ( $numpages + 1 ); $i = $i + 1 ) {
+        $j = str_replace( '%', $i, $pagelink );
+        $output .= ' ';
+        if ( $i != $page || ( ( ! $more ) && ( $page == 1 ) ) )
+          $output .= '<li>' . _wp_link_page( $i );
+        else
+          $output .= '<li class="active_page"><a href="/">';
+ 
+        $output .=   $j ;
+        if ( $i != $page || ( ( ! $more ) && ( $page == 1 ) ) )
+          $output .= '</a></li>';
+        else
+          $output .= '</a></li>';
+      }
+      $output .= $after;
+    } else {
+      if ( $more ) {
+        $output .= $before;
+        $i = $page - 1;
+        if ( $i && $more ) {
+          $output .= _wp_link_page( $i );
+          $output .=  $previouspagelink  . '</a>';
+        }
+        $i = $page + 1;
+        if ( $i <= $numpages && $more ) {
+          $output .= _wp_link_page( $i );
+          $output .= $nextpagelink  . '</a>';
+        }
+        $output .= $after;
+      }
+    }
+  }
+ 
+  if ( $echo )
+    echo $output;
+ 
+  return $output;
+}
+
 
 ?>

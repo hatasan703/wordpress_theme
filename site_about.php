@@ -30,8 +30,7 @@
         <div class="container">
           <div class="article_wrap1">
             <div class="site_info_title" id="medical_info">
-              <span class="pc"><?php the_title(); ?></span>
-              <p class="sp"><?php the_title(); ?></p>
+              <h2><?php the_title(); ?></h2>
             </div>
             <a href="#medical_info">
               <button class="fixed_btn">
@@ -40,14 +39,17 @@
                 戻る
               </button>
             </a>
-            <div class="site_info_cotent">
+
+            <?php the_content(); ?>
+
+            <!-- <div class="site_info_cotent">
               <li>
                 <span>「おうちで透析」を可能にするために</span>
                 <p class="margin0">
                   「おうちで透析」は、自宅や職場、出張先、旅行先など「生活の場」で行うことのできる「透析治療」について、情報提供を行うサイトです。<br><br>
                   わが国の透析治療を行う場所は、97％が医療機関で、在宅での治療はわずか３％にすぎません。先進諸国に比べても、在宅で透析を行う比率は極端に少ない現状があります。しかし何らかの事情で医療機関に通うことが負担になる場合、おうちで透析を行うことができたら負担が軽くなる、生活上の選択肢が増えるというケースもあります。そんな患者さんやご家族のために、おうちで透析が可能になる腹膜透析という手法について情報を提供していきます。
                 </p>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/48.png" alt="会社ロゴ" class="info_img">
+                <img class="alignnone  wp-image-106 info_img" src="http://dev.local/wp-content/uploads/2020/08/48.png" alt="車椅子" width="536" height="357" />
               </li>
               <li>
                 <span class="pc">腹膜透析に移行するためのハードルは様々</span>
@@ -78,7 +80,7 @@
                   その時に選択肢として、生活の場でできる透析治療を知っていただきたいのです。
                   通院での透析が難しくなり、「入院」での透析を選ぶ、「在宅」での透析を選ぶ、この２つの選択ができる社会が必要ではないでしょうか。
                 </p>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/49.png" alt="サイトの目的" class="info_img">
+                <img class="alignnone  wp-image-187 info_img" src="http://dev.local/wp-content/uploads/2020/08/49-1.png" alt="車椅子" width="548" height="365" />
               </li>
               <li>
                 <span class="pc">診療報酬改定・介護保険制度とのかかわり</span>
@@ -145,43 +147,14 @@
                   ユーチューブ（Youtube）などのソーシャルメディアを活用して腹膜透析の正しい情報を広めていきます。
                   それらSNSの情報も同様に医療関係者の監修を経ています。
                 </p>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/50.png" alt="サイトの目的" class="info_img">
+                <img class="alignnone  wp-image-188 info_img" src="http://dev.local/wp-content/uploads/2020/08/50-1.png" alt="メモ" width="445" height="297" />
               </li>
-            </div>
+            </div> -->
+
           </div>
         </div>
 
-      <div class="container">
-        <div class="article_wrap3">
-          <div class="site_map">
-            <div class="first_user">
-              <li class="first_user_title">■はじめての方へ</li>
-              <ul class="detail_lists">
-                <li><a href="<?php echo home_url(); ?>/kayou">透析に通うのがつらいと思ったら</a></li>
-                <li><a href="<?php echo home_url(); ?>/at-home">おうちでできる腹膜透析</a></li>
-                <li><a href="<?php echo home_url(); ?>/basic-knowledge">腹膜透析の基礎知識</a></li>
-              </ul>
-            </div>
-            <div class="detail">
-              <li class="detail_title">■もっと詳しく知る</li>
-              <ul class="detail_lists">
-                <li><a href="<?php echo home_url(); ?>/about">「おうちで透析」について</a></li>
-                <li><a href="<?php echo home_url(); ?>/medical-info">医療関係者の方へ</a></li>
-                <li><a href="<?php echo home_url(); ?>/hospital-list">在宅腹膜透析実施病院リスト</a></li>
-              </ul>
-            </div>
-            <div class="article_category">
-              <li class="category_title">■記事カテゴリ</li>
-              <ul class="detail_lists">
-                <li><a href="<?php echo home_url(); ?>/hukumaku-qa">腹膜透析Q&A</a></li>
-                <li><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></li>
-                <li><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></li>
-                <li><a href="<?php echo home_url(); ?>/glossary">用語集</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <?php endwhile; else : ?>
         <p>まだ記事がありません</p>
