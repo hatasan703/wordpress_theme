@@ -151,7 +151,8 @@ BreakPoint
   
 }
 .headerWrap a{
-  font-size: 16px;
+  font-size: 15px;
+  letter-spacing: 0.15em;
 }
 
 .mainNav {
@@ -184,6 +185,9 @@ BreakPoint
   font-size: 14px;
   color: #fff;
   line-height: 3;
+}
+.taxonomy span{
+  font-size: 14px;
 }
  
 a.home,
@@ -230,7 +234,6 @@ a.taxonomy.category:active {
   padding:0;
   font-size: 24px;
   letter-spacing: 0.3em;
-  border-bottom: solid 3px #fff;
   padding-bottom: 10px;
   font-weight: bold;
 }
@@ -280,6 +283,8 @@ a.taxonomy.category:active {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
+  border-bottom: solid 3px #fff;
+
 }
 
 @keyframes fade-in2 {
@@ -448,7 +453,7 @@ a.taxonomy.category:active {
   height: 150px;
   width: 250px;
   border: solid 3px #FF6A29;
-  margin: 10px 20px 10px 0;
+  margin: 10px 0;
   color: #666666;
   text-decoration: none;
   letter-spacing: 0.1em;
@@ -456,7 +461,15 @@ a.taxonomy.category:active {
 }
 .top_article time{
   background: #FF6A29;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px 10px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #fff;
 }
+
 .top_article p{
   margin: 10px 20px;
 }
@@ -625,6 +638,15 @@ a.taxonomy.category:active {
 .footer_logo{
   font-size: 18px;
   line-height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo img{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .footer_contact a img{
@@ -765,9 +787,9 @@ color: red;
 font-weight: 600; 
 } 
 
-
-
-
+div.whatsnew dt {
+	width: 10.1em !important;
+}
 
 
  /* TOPページスマホ版CSS */
@@ -791,6 +813,22 @@ font-weight: 600;
 
   /* spメイン */
 
+  .top_image .fade_title{
+    font-size: 16px;
+  }
+  .animation1{
+    width: 100%;
+    text-align: center;
+  }
+  .animation2{
+    width: 100%;
+    text-align: center;
+  }
+  .animation3{
+    width: 70%;
+    text-align: center;
+  }
+
   .container {
     width: 95%;
     margin: 0 auto;
@@ -802,7 +840,7 @@ font-weight: 600;
     text-align: center;
   }
   .article_wrap2 {
-    padding: 80px 2%;
+    padding: 80px 5%;
     text-align: center;
   }
 
@@ -822,8 +860,7 @@ font-weight: 600;
 
   .main_title,
   .topic_content{
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
   }
   
   .main_title p{
@@ -837,21 +874,25 @@ font-weight: 600;
     width: 100%;
     font-size: 16px;
     padding: 20px;
+    margin-top: 70px;
   }
   .topic1 .topic_title{
     padding: 20px 0;
     display: inline-block;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
   .topic2 .topic_title{
     padding: 20px 10px;
     display: inline-block;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
   .topic3 .topic_title{
     padding: 20px 10px;
     display: inline-block;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+  }
+
+  .margin{margin-top: 35px;
   }
   .new_btn{
     /* font-size: 18px; */
@@ -881,8 +922,8 @@ font-weight: 600;
     margin-top: 10px;
     width: 100%;
     font-size: 14px;
-    letter-spacing: 0.1em;
-    line-height: 1.5;
+    letter-spacing: 0.15em;
+    line-height: 2;
   }
 
   .topic_content img{
@@ -916,7 +957,6 @@ font-weight: 600;
   }
 
   /* spフッター */
-
   .footerWrap{
     width: 80%;
   }
@@ -925,6 +965,16 @@ font-weight: 600;
     padding: 0;
   }
   
+
+  .footer_logo{
+    font-size: 14px;
+  }
+
+  .footer_logo img{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 3px;
+  }
   .footer_contact a img {
     width: 150px;
     height: 40px;
@@ -991,8 +1041,11 @@ font-weight: 600;
     .breadcrumbs {
       font-size: 10px;
       color: #fff;
-      line-height: 1;
+      line-height: 2;
+    }
 
+    .taxonomy span{
+      font-size: 10px;
     }
   
 

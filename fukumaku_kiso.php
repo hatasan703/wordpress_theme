@@ -27,15 +27,13 @@
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
         <div class="article_wrap2">
-          <div class="main_article_title">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/42.png" alt="腹膜透析の基礎知識">
-            <h2><?php the_title(); ?></h2>
+          <div class="site_info_title">
+            <h2 class=""><?php the_title(); ?></h2>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/53.png" alt="おうちでできる腹膜透析">
           </div>
           <a href="#top">
             <button class="fixed_btn">
-              <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
-              TOPへ<br>
-              戻る
+              <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
             </button>
           </a>
 

@@ -9,7 +9,6 @@
 <main>
     <article>
       <div>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <div class="page_title pc">
             <div class="page_title_content">
               <h1>

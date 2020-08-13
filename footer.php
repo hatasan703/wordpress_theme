@@ -20,7 +20,8 @@
         </ul>
       </div>
       <div class="article_category">
-        <li class="category_title">■記事カテゴリ</li>
+        <li class="category_title"><a href="<?php echo home_url(); ?>/category">■記事カテゴリ</a></li>
+        
         <ul class="detail_lists">
           <li><a href="<?php echo home_url(); ?>/qa">腹膜透析Q&A</a></li>
           <li><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></li>
@@ -38,7 +39,11 @@
 <footer class="footer">
     <div class="footerWrap">
       <div class="footer_top">
-        <li class="footer_logo">おうちで透析</li>
+        <li class="footer_logo">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/home.png" alt="おうちで透析">
+          <p>おうちで透析</p>
+          
+        </li>
         <li class="footer_contact">
           <a href="<?php echo home_url(); ?>/contact"><img src="<?php echo get_template_directory_uri(); ?>/img/26.png" alt="お問い合わせ"></a>
         </li>

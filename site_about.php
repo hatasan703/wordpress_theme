@@ -34,9 +34,7 @@
             </div>
             <a href="#top">
               <button class="fixed_btn">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
-                TOPへ<br>
-                戻る
+                <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
               </button>
             </a>
 

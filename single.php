@@ -21,6 +21,16 @@
     <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="container">
+          <div class="change_size_container">
+
+            <div class="change_font_size">
+              <p class="change_text">文字サイズ</p>
+              <p class="size-button small" data-font="12">小</p>
+              <p class="size-button midium active" data-font="16">中</p>
+              <p class="size-button large" data-font="20">大</p>
+            </div>
+          </div>
+
           <div class="article_wrap1">
 
             <div class="tag_list">
@@ -37,16 +47,6 @@
               </time>
             </div>
 
-            <!-- 固定ボタン -->
-            <a href="#top">
-              <button class="fixed_btn">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
-                TOPへ<br>
-                戻る
-              </button>
-            </a>
-            <!-- ーーーー -->
-
             <!-- 本文 -->
             <div class="site_info_cotent">
 
@@ -62,7 +62,7 @@
               <?php the_content(); ?>
             </div>
 
-             <!-- 固定サイドバー -->
+             <!-- 固定-->
              <div class="sidebar fixed pc">
               <div class="sidebar_content">
                 <div class="new_article">■新着・人気の記事</div>
@@ -75,6 +75,11 @@
                   <p><a href="<?php echo home_url(); ?>/glossary">用語集</a></p>
               </div>
             </div>
+            <a href="#top">
+              <button class="fixed_btn">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
+              </button>
+            </a>
             <!-- -------- -->
 
           </div>
@@ -94,6 +99,10 @@
 
 
 <style>
+  .container .change_size_container {
+    padding: 50px 0 10px;
+    background: #fff;
+  }
 
   .tag_list{
     display: flex;
@@ -115,8 +124,8 @@
     margin-top: 10px;
   }
   .fixed_btn{
-    right: 0;
-    bottom: 20px;
+    right: -98px;
+    bottom: 10px;
     z-index: 1;
   }
   .fixed_btn:hover{
@@ -126,9 +135,10 @@
     text-align: left;
     border: 3px solid #FF6A29;
     padding: 25px;
+    letter-spacing: 0.15em;
   }
   .container .article_wrap1{
-    padding: 80px 15%;
+    padding: 0px 15% 80px;
     background: #fff;
     line-height: 30px;
     margin-top: 0;
@@ -148,6 +158,7 @@
     margin: 40px 0;
     text-align: left;
     text-align: justify;
+    letter-spacing: 0.15em;
   }
 
   .site_info_cotent h3{

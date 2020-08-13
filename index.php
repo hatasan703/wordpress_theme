@@ -27,8 +27,12 @@
           <img src="<?php echo get_template_directory_uri(); ?>/img/27.png" alt="トップ画像">
             <p class="fade_title animation1">もう病院に通えない。</p>
             <p class="fade_title animation2">どうすればいい？</p>
-            <p class="fade_title animation3">
+            <p class="fade_title animation3 pc">
               ・・・　・・<br>
+              おうちで透析という選択肢
+            </p>
+            <p class="fade_title animation3 sp">
+              ・・・　・・　　　　　　<br>
               おうちで透析という選択肢
             </p>
         </h2>
@@ -115,7 +119,7 @@
           
           <div class="articles_wrap">
             <div class="articles">
-              <div class="new">
+              <div class="new margin">
                 <span class="new_btn pc">カテゴリ</span>
                 <span class="sp">記事カテゴリ</span>
               </div>
@@ -227,3 +231,14 @@
 </body>
 
 <?php get_footer(); ?>
+
+
+<style>
+
+@media screen and (max-width: 640px) {
+   
+  .article_wrap2{
+    padding-top: 5px;
+  }
+}
+</style>

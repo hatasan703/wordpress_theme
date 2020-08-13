@@ -29,41 +29,42 @@
 </script>
 
   <?php wp_head(); ?>
+
   <script type="text/javascript">
-    jQuery(function($){
-      var $dropdown = $('#js-dropdown');
-      var DURATION = 200; //アニメーションの速さ
+  //   jQuery(function($){
+  //     var $dropdown = $('#js-dropdown');
+  //     var DURATION = 200; //アニメーションの速さ
 
-      function fadeOutMenu(){
-        $dropdown.removeClass('is-active')
-          .next('#js-dropdown-menu')
-          .stop()
-          .slideUp(DURATION);
-      }
+  //     function fadeOutMenu(){
+  //       $dropdown.removeClass('is-active')
+  //         .next('#js-dropdown-menu')
+  //         .stop()
+  //         .slideUp(DURATION);
+  //     }
 
-      //表示を切り替える
-      function toggleMenu(){
-        var $self = $(this); //thisにはクリックした時の要素が入る
-        //要素が.is-activeを持っていない場合
-        if(!$self.hasClass('is-active')){
-          fadeOutMenu();
-        }
-        //クリックした要素を表示させる
-        $self.toggleClass('is-active')
-          .next('#js-dropdown-menu')
-          .stop().slideToggle(DURATION);
-      }
+  //     //表示を切り替える
+  //     function toggleMenu(){
+  //       var $self = $(this); //thisにはクリックした時の要素が入る
+  //       //要素が.is-activeを持っていない場合
+  //       if(!$self.hasClass('is-active')){
+  //         fadeOutMenu();
+  //       }
+  //       //クリックした要素を表示させる
+  //       $self.toggleClass('is-active')
+  //         .next('#js-dropdown-menu')
+  //         .stop().slideToggle(DURATION);
+  //     }
 
-      $dropdown.on('click', toggleMenu);
+  //     $dropdown.on('click', toggleMenu);
     
-      //別の場所をクリックすると閉じる処理
-      $(document).on('click touchend', function(event) {
-      if (!$(event.target).closest('body').length) {
-        // ここに処理;
-        fadeOutMenu();//関数呼びだし
-      }
-     });
-  });
+  //     //別の場所をクリックすると閉じる処理
+  //     $(document).on('click touchend', function(event) {
+  //     if (!$(event.target).closest('body').length) {
+  //       // ここに処理;
+  //       fadeOutMenu();//関数呼びだし
+  //     }
+  //    });
+  // });
 
 
   // ハンバーガーメニュー
@@ -94,6 +95,34 @@
   })(jQuery);
 });
 
+  jQuery(function($){
+    $(function(){
+      function initFontSize() {
+        var size = (sessionStorage.getItem('fontSize'))? sessionStorage.getItem('fontSize') : '16';
+        changeFontSize(size);
+      }
+      
+      function changeFontSize(size){
+        $('.site_info_cotent').css('font-size', size + 'px');
+        $('[data-font!=' + size + ']').removeClass('active');
+        $('[data-font=' + size + ']').addClass('active');
+        sessionStorage.setItem('fontSize', size);
+      }
+      
+      function addListeners() {
+        $('[data-font]').on('click', function(){
+          changeFontSize($(this).data('font'));
+        });
+      }
+      
+      function init() {
+        initFontSize();
+        addListeners();
+      }
+      
+      init();
+    });
+  });
 
   </script>
 </head>

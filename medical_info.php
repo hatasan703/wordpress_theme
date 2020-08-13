@@ -33,9 +33,7 @@
             </div>
             <a href="#top">
               <button class="fixed_btn">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
-                TOPへ<br>
-                戻る
+                <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
               </button>
             </a>
 
@@ -49,7 +47,7 @@
               <li>
                 <span>サイトの運営</span>
                 <p class="margin0">
-                  当サイトおよび関連SNSの運営は、一般社団法人リンクア（https://linqua.jp/message/）が行っております。同法人は、
+                  当サイトおよび関連SNSの運営は、<a href="https://linqua.jp/message/">一般社団法人リンクア</a>が行っております。同法人は、
                   「医療者同士」「医療者と非医療者」「医療とシステム」などが繋がることで、より良い社会循環が図れると考え、
                   情報循環を促進する為の媒体になることを目的に設立されました。シームレスな情報の共有や相互理解によってチーム医療を促進し、
                   またシステム間連携や既存システムを利用した新たなイノベーションによって医療現場における非効率性を排除することで、
@@ -61,7 +59,7 @@
               <li>
                 <span>サイトの監修</span>
                 <p>
-                  当サイトおよび関連SNSの監修は、一般社団法人リンクアの理事でもある「医療法人社団明洋会（https://www.shibagaki-zaitaku.com/）」様にお願いしております。
+                  当サイトおよび関連SNSの監修は、一般社団法人リンクアの理事でもある「<a href="https://www.shibagaki-zaitaku.com/">医療法人社団明洋会</a>」様にお願いしております。
                   同法人は、40年以上の歴史を持つ血液透析（HD）の診療所と、腹膜透析（PD）を専門的に行う在宅療養支援診療所の両者を組み合わせて、
                   「100人いれば100通りの透析医療」の考えのもと運営している法人です。
                 </p>

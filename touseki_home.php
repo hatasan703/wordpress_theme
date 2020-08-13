@@ -27,15 +27,14 @@
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
         <div class="article_wrap2">
-          <div class="main_article_title">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/32.png" alt="おうちでできる腹膜透析">
-            <h2><?php the_title(); ?></h2>
+          <div class="site_info_title">
+            <h2 class=""><?php the_title(); ?></h2>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/55.png" alt="おうちでできる腹膜透析">
           </div>
+
           <a href="#top">
             <button class="fixed_btn">
-              <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
-              TOPへ<br>
-              戻る
+              <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
             </button>
           </a>
 
@@ -53,8 +52,8 @@
                 <li><a href="#home1">透析患者の数</a></li>
                 <li><a href="#home2">なぜ、透析が必要なの？</a></li>
                 <li><a href="#home3">どんな治療方法があるの</a></li>
-                <li><a href="#home4">血液透析とは</a></li>
-                <li><a href="#home5">腹膜透析とは</a></li>
+                <li class="sub"><a href="#home4">血液透析とは</a></li>
+                <li class="sub"><a href="#home5">腹膜透析とは</a></li>
                 <li><a href="#home6">おうちでできる透析がある</a></li>
                 <li><a href="#home7">新型コロナウイルス感染症と透析治療</a></li>
                 <li><a href="#home8">ライフスタイルに合わせて治療方法を選べる時代</a></li>
