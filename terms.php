@@ -60,10 +60,12 @@
 
 
 <style>
+
   @media screen and (max-width: 640px) {
     .page_title_content h1{
      width: 50%;
     }
+
   }
    
 </style>

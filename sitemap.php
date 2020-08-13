@@ -87,13 +87,12 @@
 
 <style>
   .container .article_wrap1{
-    padding: 80px 18%;
-    background: #F9F7F4;
+    padding: 40px 18%;
   }
 
   @media screen and (max-width: 640px) {
-    .container .article_wrap1 {
-      padding: 80px 5%;
+    .container .article_wrap1{
+      padding: 20px 5%;
     }
 
     .site_info_title span {

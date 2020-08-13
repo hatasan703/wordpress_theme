@@ -128,10 +128,7 @@
 
 <style>
   .container .article_wrap1{
-    padding: 80px 15%;
-    background: #fff;
     line-height: 23px;
-    margin-top: 0;
   }
 
   .privacy_text p{
@@ -155,9 +152,6 @@
   }
 
   @media screen and (max-width: 640px) {
-    .container .article_wrap1 {
-      padding: 80px 10%;
-    }
 
     .privacy_text .privacy_title{
       letter-spacing: 0.1em;

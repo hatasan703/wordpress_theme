@@ -73,10 +73,8 @@
 <style>
 
 .container .article_wrap1{
-    padding: 0 15% 200px;
-    background: #fff;
+    padding-bottom: 200px;
     line-height: 28px;
-    margin-top: 0;
   }
 
   .site_info_sub_title{
@@ -110,9 +108,6 @@
 }
 
 @media screen and (max-width: 640px) {
-  .container .article_wrap1 {
-    padding: 80px 5%;
-  }
 
   .page_title_content h1{
     width: 70%;

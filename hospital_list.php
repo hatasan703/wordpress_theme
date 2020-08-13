@@ -214,6 +214,11 @@
 
 <style>
 
+  .container .article_wrap1{
+    line-height: 1;
+    }
+
+
   /* --------メインコンテンツ */
   .article_wrap1{
     margin-top: 0;
@@ -345,7 +350,10 @@
 
   @media screen and (max-width: 640px) {
     
-
+    .container .article_wrap1{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 
     .page_title_content h1{
       width: 70%;
@@ -369,7 +377,7 @@
     .hospital_list_btn a {
       width: 45%;
       margin: 5px auto;
-      padding: 20px 5px 20px 0;
+      padding: 10px 5px;
       font-size: 14px;
     }
 

@@ -347,7 +347,4 @@
 
 
 <style>
-   .container .article_wrap1{
-      margin-top: 0;
-    }
 </style>

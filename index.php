@@ -233,6 +233,12 @@
 
 <style>
 
+.container .article_wrap1 {
+	padding: 80px 10%;
+  margin: -2px 0 50px;
+  line-height: 1;
+}
+
 @media screen and (max-width: 640px) {
    
   .article_wrap2{
@@ -244,6 +250,10 @@
   }
   .site_map{
     margin-bottom: 100px;
+  }
+
+  .container .article_wrap1 {
+    padding: 80px 7%;
   }
 }
 </style>

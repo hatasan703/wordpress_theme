@@ -15,7 +15,7 @@
       <div class="page_title_content">
         <div class="page_title_border"></div>
         <h1>
-          <span><?php the_title(); ?></span>
+        <?php the_title(); ?>
         </h1>
       </div>
     </div>
@@ -168,13 +168,10 @@
   .indi_article_title{
     text-align: left;
     border: 3px solid #FF6A29;
-    padding: 25px;
-    letter-spacing: 0.15em;
+    padding: 25px 10px;
+    letter-spacing: 0.1em;
   }
   .container .article_wrap1{
-    padding: 0px 15% 80px;
-    background: #fff;
-    line-height: 30px;
     margin-top: 0;
   }
 
@@ -220,7 +217,7 @@
 
 
     .container .article_wrap1{
-      padding: 80px 5%;
+      padding: 20px 5% 40px;
       background: #fff;
       line-height: 30px;
       margin-top: 0;
@@ -229,6 +226,10 @@
     .related_article{
       width: 100%;
       text-align: left;
+    }
+
+    .breadcrumbs {
+      line-height: 1.3;
     }
   }
 </style>

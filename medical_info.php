@@ -130,10 +130,7 @@
 <style>
 
 .container .article_wrap1{
-    padding: 80px 15%;
-    background: #fff;
     line-height: 30px;
-    margin-top: 0;
   }
 
   .site_info_cotent li img{
@@ -182,9 +179,6 @@
   }
 
   @media screen and (max-width: 640px) {
-    .container .article_wrap1 {
-      padding: 80px 10%;
-    }
     .page_title_content h1{
      width: 80%;
     }

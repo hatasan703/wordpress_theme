@@ -305,10 +305,12 @@ a.taxonomy.category:active {
 
 /* コンテンツ */
 
-.article_wrap1 {
-	padding: 80px 10%;
-	margin: -2px 0 50px;
-	background: #fff;
+
+.container .article_wrap1{
+  padding: 40px 15% 80px;
+  background: #fff;
+  line-height: 30px;
+  margin-top: 0;
 }
 
 
@@ -824,6 +826,9 @@ div.whatsnew dt {
 
 
   /* spメイン */
+  .container .article_wrap1{
+    padding: 20px 10% 80px;
+  }
 
   .top_image .fade_title{
     font-size: 16px;

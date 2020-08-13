@@ -209,8 +209,8 @@
             </div>
             <div class="article_item">
             <h3>
-              <span id="home10" class="article_item_titl pce pc">治療法を選択する勇気</span>
-              <p id="home10" class="article_item_titl spe sp">治療法を選択する勇気</p>
+              <span id="home10" class="article_item_title pc">治療法を選択する勇気</span>
+              <p id="home10" class="article_item_title sp">治療法を選択する勇気</p>
             </h3>
             <p class="article_text">
               医師から透析の宣告を受けた際、「自ら治療法を選択する勇気」を持って頂きたいのです。
@@ -240,9 +240,6 @@
 
 
 <style>
-  .container .article_wrap1{
-      margin-top: 0;
-    }
 @media screen and (max-width: 640px) {
   #home7{
     padding: 15px 0;

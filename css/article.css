@@ -58,6 +58,10 @@
   color: #FF6A29;
 }
 
+.table_of_contents_title .fa-angle-down{
+  line-height: 30px;
+}
+
 
 /* メイン記事 */
 
@@ -194,11 +198,11 @@
 
 @media screen and (max-width: 640px) {
   .container .change_size_container {
-    padding: 50px 0 10px;
+    /* padding: 50px 0 10px;
     background: #fff;
     position: absolute;
     bottom: 401px;
-    width: 95%;
+    width: 95%; */
   }
 
   .main_article_title h2 {
@@ -217,10 +221,9 @@
   }
 
   .article_item_title{
-    letter-spacing: 0.1em;
-    padding: 15px 5px;
+    letter-spacing: 0.05em;
+    padding: 10px 5px;
     width: 100%;
-    /* font-size: 14px; */
   }
 
   .article_text {

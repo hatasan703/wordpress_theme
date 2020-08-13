@@ -98,10 +98,7 @@
 <style>
 
 .container .article_wrap1{
-    padding: 80px 15%;
-    background: #fff;
     line-height: 28px;
-    margin-top: 0;
   }
 
 .company_margin{
@@ -127,7 +124,7 @@
   display: flex;
   /* margin: 40px; */
   border-bottom: 1px solid #666;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 .site_info_cotent h3{
@@ -159,9 +156,6 @@
 }
 
 @media screen and (max-width: 640px) {
-  .container .article_wrap1 {
-    padding: 80px 5%;
-  }
 
   .site_info_title p{
     border: none;

@@ -179,9 +179,6 @@
 <?php get_footer(); ?>
 
 <style>
-  .container .article_wrap1{
-      margin-top: 0;
-    }
   @media screen and (max-width: 640px) {
     #kayou7{
       letter-spacing: 0em;
@@ -193,9 +190,7 @@
     .main_article_title h2 {
       letter-spacing: 0em;
     }
-    .container .article_wrap1{
-      margin-top: 0;
-    }
+  
 
     .page_title_content h1{
       width: 70%;
@@ -205,7 +200,6 @@
     .page_title_border {
       margin-top: 40px;
     }
-  
 
   }
   

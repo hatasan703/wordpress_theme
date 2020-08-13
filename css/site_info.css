@@ -93,6 +93,8 @@
 
   .site_info_title h2{
     width: 100%;
+    padding: 10px;
+    letter-spacing: 0.05em;
   }
 
   .top_page_link a{
