@@ -21,6 +21,16 @@
     <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="container">
+          <div class="change_size_container">
+
+            <div class="change_font_size">
+              <p class="change_text">文字サイズ</p>
+              <p class="size-button small" data-font="12">小</p>
+              <p class="size-button midium active" data-font="16">中</p>
+              <p class="size-button large" data-font="20">大</p>
+            </div>
+          </div>
+
           <div class="article_wrap1">
 
             <div class="tag_list">
@@ -32,18 +42,10 @@
               <h2><?php the_title(); ?></h2>
             </div>
             <div class="posting_time">
-              2020.08.01
+              <time datetime="<?php the_time('Y.n.j'); ?>">
+                <?php the_time('Y.n.j'); ?>
+              </time>
             </div>
-
-            <!-- 固定ボタン -->
-            <a href="#top">
-              <button class="fixed_btn">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
-                TOPへ<br>
-                戻る
-              </button>
-            </a>
-            <!-- ーーーー -->
 
             <!-- 本文 -->
             <div class="site_info_cotent">
@@ -59,8 +61,33 @@
 
               <?php the_content(); ?>
             </div>
+			          <div class="category_articles">
 
-             <!-- 固定サイドバー -->
+<?php
+$categories = wp_get_post_categories($post->ID, array('orderby'=>'rand')); // 複数カテゴリーを持つ場合ランダムで取得
+if ($categories) {
+	$args = array(
+		'category__in' => array($categories[0]), // カテゴリーのIDで記事を取得
+		'post__not_in' => array($post->ID), // 表示している記事を除く
+		'showposts'=>3, // 取得記事数
+        'ignore_sticky_posts'=>1, // 取得した記事の何番目から表示するか
+		'orderby'=> 'DESC' // 記事をランダムで取得
+	); 
+	$my_query = new WP_Query($args); 
+	if( $my_query->have_posts() ) { ?>
+<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+            <div class="category_article">
+              <?php get_template_part( 'template-parts/post/content', 'excerpt' ); ?>
+              <a href="<?php the_permalink() ?>" target="_self">
+                  <time><?php the_modified_time('Y年n月j日'); ?></time>
+                  <img src="<?php echo catch_that_image() ?>" width="244" height="90" alt="" class="wpp-thumbnail wpp_featured wpp_def_no_src" loading="lazy"></a>
+                  <p><a href="<?php the_permalink() ?>" class="wpp-post-title" target="_self"><?php the_title(); ?></a></p>
+            </div>
+<?php endwhile; } wp_reset_query(); } ?>
+			              </div>
+
+			  
+             <!-- 固定-->
              <div class="sidebar fixed pc">
               <div class="sidebar_content">
                 <div class="new_article">■新着・人気の記事</div>
@@ -73,6 +100,13 @@
                   <p><a href="<?php echo home_url(); ?>/glossary">用語集</a></p>
               </div>
             </div>
+            <a href="#top">
+            <button class="fixed_btn">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i><br>
+              TOPへ<br>
+              戻る
+            </button>
+          </a>
             <!-- -------- -->
 
           </div>
@@ -92,6 +126,10 @@
 
 
 <style>
+  .container .change_size_container {
+    padding: 50px 0 10px;
+    background: #fff;
+  }
 
   .tag_list{
     display: flex;
@@ -124,9 +162,10 @@
     text-align: left;
     border: 3px solid #FF6A29;
     padding: 25px;
+    letter-spacing: 0.15em;
   }
   .container .article_wrap1{
-    padding: 80px 15%;
+    padding: 0px 15% 80px;
     background: #fff;
     line-height: 30px;
     margin-top: 0;
@@ -146,6 +185,7 @@
     margin: 40px 0;
     text-align: left;
     text-align: justify;
+    letter-spacing: 0.15em;
   }
 
   .site_info_cotent h3{
