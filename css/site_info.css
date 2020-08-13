@@ -94,5 +94,13 @@
   .site_info_title h2{
     width: 100%;
   }
+
+  .top_page_link a{
+    display: block;
+  }
+  .top_page_link p{
+    width: 40%;
+    margin: 20px auto 0;
+  }
   
 }

@@ -11,8 +11,9 @@
       <div>
           <div class="page_title pc">
             <div class="page_title_content">
+              <div class="page_title_border"></div>
               <h1>
-                「おうちで透析」の記事
+                <span>「おうちで透析」の記事</span>
               </h1>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
@@ -20,6 +21,7 @@
           <div class="page_title sp">
             <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
             <div class="page_title_content">
+              <div class="page_title_border"></div>
               <h1>
                 「おうちで透析」の記事
               </h1>
@@ -27,6 +29,14 @@
           </div>
 
           <div class="container">
+            <div class="change_size_container">
+              <div class="change_font_size">
+                <p class="change_text">文字サイズ</p>
+                <p class="size-button small" data-font="12">小</p>
+                <p class="size-button midium active" data-font="16">中</p>
+                <p class="size-button large" data-font="20">大</p>
+              </div>
+            </div>
             <div class="article_wrap1">
               <a href="<?php echo home_url(); ?>/category" class="back_btn">
                 <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
@@ -49,29 +59,29 @@
                     'post_status' => 'publish',
                     'posts_per_page' => 9,
 					          'cat' =>1
-                ));
-          if ( $information ->have_posts() ) : ?>
-            <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
-                  <div class="category_article pink_border">
-                  <a href="<?php the_permalink(); ?>">
-                  <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-                  <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
-                  <p><?php the_title(); ?></p>
-                  </a>
-                  </div>
-        <?php
-		    endwhile;
-        wp_reset_postdata(); ?>
+                  ));
+                    if ( $information ->have_posts() ) : ?>
+                      <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
+                            <div class="category_article pink_border">
+                            <a href="<?php the_permalink(); ?>">
+                            <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                            <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
+                            <p><?php the_title(); ?></p>
+                            </a>
+                            </div>
+                      <?php
+                    endwhile;
+                    wp_reset_postdata(); ?>
 
-      <?php else: ?>
-      <p>まだ記事がありません</p>
-      <?php endif; ?>
-      </div>
-				  <?php 		 
-              if( function_exists('wp_pagenavi') ) {
-                    wp_pagenavi(array('query' => $information));
-            } 
-	        ?>
+                  <?php else: ?>
+                  <p>まだ記事がありません</p>
+                  <?php endif; ?>
+                </div>
+                <?php 		 
+                    if( function_exists('wp_pagenavi') ) {
+                          wp_pagenavi(array('query' => $information));
+                  } 
+                ?>
               </div>
             </div>
           </div>

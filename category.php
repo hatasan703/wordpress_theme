@@ -1,4 +1,4 @@
-<?php
+  <?php
 /*
  * Template Name: カテゴリ一覧
  */
@@ -11,8 +11,9 @@
     <div>
         <div class="page_title pc">
           <div class="page_title_content">
+            <div class="page_title_border"></div>
             <h1>
-              <?php the_title(); ?>
+              <span><?php the_title(); ?></span>
             </h1>
           </div>
           <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="カテゴリ一覧">
@@ -27,6 +28,14 @@
         </div>
         
         <div class="container">
+          <div class="change_size_container">
+            <div class="change_font_size">
+              <p class="change_text">文字サイズ</p>
+              <p class="size-button small" data-font="12">小</p>
+              <p class="size-button midium active" data-font="16">中</p>
+              <p class="size-button large" data-font="20">大</p>
+            </div>
+          </div>
           <div class="article_wrap1">
             <div class="site_info_title">
               <h2 class=""><?php the_title(); ?></h2>
@@ -124,7 +133,7 @@
                   </div>
                   <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
                 </div>
-                <div class="category_articles green_border">
+                <div class="category_articles">
                                         <?php
                       $paged = get_query_var('paged')? get_query_var('paged') : 1;
                       $information= new WP_Query( array(
@@ -210,3 +219,7 @@
 
 
 <?php get_footer(); ?>
+
+
+<style>
+</style>

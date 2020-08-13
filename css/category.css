@@ -1,11 +1,11 @@
-.article_wrap1{margin-top: 0;}
+/* .article_wrap1{margin-top: 0;} */
 /* 戻るボタン */
 .back_btn{
   color: #FF6A29;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.2em;
-  padding: 80px 10px 30px;
+  padding: 0px 10px 30px;
   align-items: center;
   display: flex;
   align-items: center;

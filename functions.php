@@ -1,6 +1,7 @@
 <?php
 
 if ( ! function_exists( 'lab_setup' ) ) :
+  
 
 function lab_setup() {
 	/*
@@ -116,68 +117,46 @@ function catch_that_image() {
 }
 add_filter( 'tiny_mce_before_init', 'my_tiny_mce_before_init', 10, 2 );
 
-
-// =============================================================
-// 固定ページページネーション
-
-function custom_wp_link_pages( $args = '' ) {
-  $defaults = array(
-    'before'           => '<div id="page_numbers"><ul>',
-    'after'            => '</ul></div>',
-    'next_or_number'   => 'number',
-    'separator'        => '',
-    'pagelink'         => '%',
-    'echo'             => 1
-  );
- 
-  $r = wp_parse_args( $args, $defaults );
-  $r = apply_filters( 'wp_link_pages_args', $r );
-  extract( $r, EXTR_SKIP );
- 
-  global $page, $numpages, $multipage, $more, $pagenow;
- 
-  $output = '';
-  if ( $multipage ) {
-    if ( 'number' == $next_or_number ) {
-      $output .= $before;
-      for ( $i = 1; $i < ( $numpages + 1 ); $i = $i + 1 ) {
-        $j = str_replace( '%', $i, $pagelink );
-        $output .= ' ';
-        if ( $i != $page || ( ( ! $more ) && ( $page == 1 ) ) )
-          $output .= '<li>' . _wp_link_page( $i );
-        else
-          $output .= '<li class="active_page"><a href="/">';
- 
-        $output .=   $j ;
-        if ( $i != $page || ( ( ! $more ) && ( $page == 1 ) ) )
-          $output .= '</a></li>';
-        else
-          $output .= '</a></li>';
-      }
-      $output .= $after;
-    } else {
-      if ( $more ) {
-        $output .= $before;
-        $i = $page - 1;
-        if ( $i && $more ) {
-          $output .= _wp_link_page( $i );
-          $output .=  $previouspagelink  . '</a>';
-        }
-        $i = $page + 1;
-        if ( $i <= $numpages && $more ) {
-          $output .= _wp_link_page( $i );
-          $output .= $nextpagelink  . '</a>';
-        }
-        $output .= $after;
-      }
+/**
+ * ビジュアルエディタに切り替えで、空の span タグや i タグが消されるのを防止
+ */
+if ( ! function_exists('tinymce_init') ) {
+    function tinymce_init( $init ) {
+        $init['verify_html'] = false; // 空タグや属性なしのタグを消させない
+        $initArray['valid_children'] = '+body[style], +div[div|span|a], +span[span]'; // 指定の子要素を消させない
+        return $init;
     }
-  }
- 
-  if ( $echo )
-    echo $output;
- 
-  return $output;
+    add_filter( 'tiny_mce_before_init', 'tinymce_init', 100 );
 }
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+remove_filter( 'the_content', 'wptexturize' );
+remove_filter( 'the_excerpt', 'wptexturize' );
+remove_filter( 'the_content', 'convert_chars' );
+remove_filter( 'the_excerpt', 'convert_chars' );
+ 
+add_filter('tiny_mce_before_init', function($init) {
+$init['wpautop'] = false;
+$init['apply_source_formatting'] = true;
+return $init;
+});
+
+
+function override_mce_options( $init_array ) {
+    global $allowedposttags;
+
+    $init_array['valid_elements']          = '*[*]';
+    $init_array['extended_valid_elements'] = '*[*]';
+    $init_array['valid_children']          = '+a[' . implode( '|', array_keys( $allowedposttags ) ) . ']';
+    $init_array['indent']                  = true;
+    $init_array['wpautop']                 = false;
+    $init_array['force_p_newlines']        = false;
+
+    return $init_array;
+}
+
+add_filter( 'tiny_mce_before_init', 'override_mce_options' );
 
 
 ?>

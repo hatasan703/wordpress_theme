@@ -13,8 +13,9 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <div class="page_title pc">
             <div class="page_title_content">
+              <div class="page_title_border"></div>
               <h1>
-                <?php the_title(); ?>
+                <span><?php the_title(); ?></span>
               </h1>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/29.png" alt="在宅腹膜透析実施病院リスト">
@@ -22,14 +23,25 @@
           <div class="page_title sp">
             <img src="<?php echo get_template_directory_uri(); ?>/img/29.png" alt="在宅腹膜透析実施病院リスト">
             <div class="page_title_content">
+              <div class="page_title_border"></div>
               <h1>
                 <?php the_title(); ?>
               </h1>
             </div>
           </div>
           <div class="container">
+            <div class="change_size_container">
+              <div class="change_font_size">
+                <p class="change_text">文字サイズ</p>
+                <p class="size-button small" data-font="12">小</p>
+                <p class="size-button midium active" data-font="16">中</p>
+                <p class="size-button large" data-font="20">大</p>
+              </div>
+            </div>
             <div class="article_wrap1">
 
+
+            <?php echo do_shortcode('[addtoany]'); ?>
             <?php the_content(); ?>
 
 
@@ -332,10 +344,18 @@
 
 
   @media screen and (max-width: 640px) {
+    
+
 
     .page_title_content h1{
-      width: 67%;
+      width: 70%;
+      padding-bottom: 40px;
     }
+
+    .page_title_border {
+      margin-top: 40px;
+    }
+  
     .article_title{
       padding: 0 5% 20px;
       font-size: 14px;

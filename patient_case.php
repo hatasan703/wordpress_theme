@@ -11,8 +11,9 @@
       <div>
           <div class="page_title pc">
             <div class="page_title_content">
+              <div class="page_title_border"></div>
               <h1>
-                「おうちで透析」の記事
+                <span>「おうちで透析」の記事</span>
               </h1>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
@@ -20,6 +21,7 @@
           <div class="page_title sp">
             <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
             <div class="page_title_content">
+              <div class="page_title_border"></div>
               <h1>
                 「おうちで透析」の記事
               </h1>
@@ -27,6 +29,14 @@
           </div>
 
           <div class="container">
+            <div class="change_size_container">
+              <div class="change_font_size">
+                <p class="change_text">文字サイズ</p>
+                <p class="size-button small" data-font="12">小</p>
+                <p class="size-button midium active" data-font="16">中</p>
+                <p class="size-button large" data-font="20">大</p>
+              </div>
+            </div>
             <div class="article_wrap1">
               <a href="<?php echo home_url(); ?>/category" class="back_btn">
                 <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>

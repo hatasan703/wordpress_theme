@@ -4,8 +4,9 @@
   <article>
     <div class="page_title pc">
       <div class="page_title_content">
+        <div class="page_title_border"></div>
         <h1>
-          検索結果
+          <span>検索結果</span>
         </h1>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="透析に通うのがツライと思ったら">
@@ -13,8 +14,9 @@
     <div class="page_title sp">
       <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="透析に通うのがツライと思ったら">
       <div class="page_title_content">
+        <div class="page_title_border"></div>
         <h1>
-          検索結果
+          <span>検索結果</span>
         </h1>
       </div>
     </div>

@@ -10,8 +10,9 @@
   <article>
     <div class="page_title pc">
       <div class="page_title_content">
+        <div class="page_title_border"></div>
         <h1>
-          <?php the_title(); ?>
+          <span><?php the_title(); ?></span>
         </h1>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
@@ -19,6 +20,7 @@
     <div class="page_title sp">
       <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
       <div class="page_title_content">
+        <div class="page_title_border"></div>
         <h1>
           <?php the_title(); ?>
         </h1>
@@ -26,17 +28,27 @@
     </div>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
-        <div class="article_wrap2">
+        <div class="change_size_container">
+          <div class="change_font_size">
+            <p class="change_text">文字サイズ</p>
+            <p class="size-button small" data-font="12">小</p>
+            <p class="size-button midium active" data-font="16">中</p>
+            <p class="size-button large" data-font="20">大</p>
+          </div>
+        </div>
+
+        <div class="article_wrap1">
           <div class="site_info_title">
             <h2 class=""><?php the_title(); ?></h2>
             <img src="<?php echo get_template_directory_uri(); ?>/img/54.png" alt="おうちでできる腹膜透析">
           </div>
-          <a href="#top">
-            <button class="fixed_btn">
+          <button class="fixed_btn">
+            <a href="#top">
               <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
-            </button>
-          </a>
+            </a>
+          </button>
 
+          <?php echo do_shortcode('[addtoany]'); ?>
           <?php the_content(); ?>
 
           <!-- <div class="article_text">
@@ -137,9 +149,8 @@
           <div class="article_item">
             <h3>
               <span id="kayou9" class="article_item_title pc">高齢のため、血液透析に通うのが難しくなったら</span>
-              <p id="kayou9" class="article_item_title sp">高齢のため、血液透析に通うのが<br />
+              <p id="kayou9" class="article_item_title sp">高齢のため、血液透析に通うのが難しくなったら</p>
             </h3>
-            難しくなったら</p>
             <p class="article_text">長く血液透析を続け、年齢を重ねていくと、いずれ体力が落ち、歩くことも困難になっていきます。 そうなると、血液透析に医療機関に通うのが難しくなっていきます。また、送迎してくれる家族も同じように高齢になっていきます。 そうなると、入院での透析治療を行う必要が出てきます。「入院での透析」を選ぶか、「在宅での透析」を選ぶかは、ご自身の選択によります。<br />
             「限られた時間を家族といっしょに過ごしたい」「最期は自分の家で」と考えるならば、是非「おうちで透析」を選んでください。 最期は患者さん自身のものだけではありません。見守る家族も家で看取ることができるということは、幸せなことなのです。 入院患者の方の約８割が自分の家で死にたいと望むという事実が物語っています。<br />
             最期に見える景色が、家族の顔や安心できる家であることは、最高の幸せと言えるかもしれません。<br />
@@ -168,6 +179,9 @@
 <?php get_footer(); ?>
 
 <style>
+  .container .article_wrap1{
+      margin-top: 0;
+    }
   @media screen and (max-width: 640px) {
     #kayou7{
       letter-spacing: 0em;
@@ -179,6 +193,19 @@
     .main_article_title h2 {
       letter-spacing: 0em;
     }
+    .container .article_wrap1{
+      margin-top: 0;
+    }
+
+    .page_title_content h1{
+      width: 70%;
+      padding-bottom: 40px;
+    }
+
+    .page_title_border {
+      margin-top: 40px;
+    }
+  
 
   }
   

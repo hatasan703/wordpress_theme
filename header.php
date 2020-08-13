@@ -104,6 +104,10 @@
       
       function changeFontSize(size){
         $('.site_info_cotent').css('font-size', size + 'px');
+        $('.article_text').css('font-size', size + 'px');
+        $('.hospital_list').css('font-size', size + 'px');
+        $('.category').css('font-size', size + 'px');
+        $('.wpcf7').css('font-size', size + 'px');
         $('[data-font!=' + size + ']').removeClass('active');
         $('[data-font=' + size + ']').addClass('active');
         sessionStorage.setItem('fontSize', size);

@@ -10,8 +10,9 @@
   <article>
     <div class="page_title pc">
       <div class="page_title_content">
+        <div class="page_title_border"></div>
         <h1>
-          <?php the_title(); ?>
+          <span><?php the_title(); ?></span>
         </h1>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/img/35.png" alt="腹膜透析の基礎知識">
@@ -19,6 +20,7 @@
     <div class="page_title sp">
       <img src="<?php echo get_template_directory_uri(); ?>/img/35.png" alt="腹膜透析の基礎知識">
       <div class="page_title_content">
+        <div class="page_title_border"></div>
         <h1>
           <?php the_title(); ?>
         </h1>
@@ -26,17 +28,26 @@
     </div>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
-        <div class="article_wrap2">
+        <div class="change_size_container">
+          <div class="change_font_size">
+            <p class="change_text">文字サイズ</p>
+            <p class="size-button small" data-font="12">小</p>
+            <p class="size-button midium active" data-font="16">中</p>
+            <p class="size-button large" data-font="20">大</p>
+          </div>
+        </div>
+        <div class="article_wrap1">
           <div class="site_info_title">
             <h2 class=""><?php the_title(); ?></h2>
             <img src="<?php echo get_template_directory_uri(); ?>/img/53.png" alt="おうちでできる腹膜透析">
           </div>
-          <a href="#top">
-            <button class="fixed_btn">
+          <button class="fixed_btn">
+            <a href="#top">
               <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
-            </button>
-          </a>
+            </a>
+          </button>
 
+          <?php echo do_shortcode('[addtoany]'); ?>
           <?php the_content(); ?>
         <!-- <br><br><br><br>
         <div id="top" class="table_of_contents">
@@ -333,3 +344,10 @@
 </main>
 
 <?php get_footer(); ?>
+
+
+<style>
+   .container .article_wrap1{
+      margin-top: 0;
+    }
+</style>

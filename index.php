@@ -159,8 +159,8 @@
                 ?>
                   <a href="<?php the_permalink(); ?>" class="top_article">
                   <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-                  <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
-					        <p><?php the_title(); ?></p></a>
+					<?php the_post_thumbnail('thumbnail'); ?>
+					  <p><?php the_title(); ?></p></a>
                 <?php
                 endforeach;
                 wp_reset_postdata();
@@ -174,31 +174,29 @@
               <div class="new">
                 <span class="new_btn">人気記事</span>
               </div>
-              <!-- <div class="article_list"> -->
-                <?php wpp_get_mostpopular(
-                  array(
-                    'wpp_start' => '<div class="article_list">',
-                    'wpp_end' => '</div>',
-                    'stats_date' => 1,
-                    'stats_date_format' => 'Y.m.d',
-                    'range' => 'all',
-                    'order_by' => 'views',
-                    'post_type' => 'post',
-                    'limit' => 6,
-                    'stats_views' => 1,
-                    'thumbnail_width' =>244,
-                    'thumbnail_height' => 90,
+			                <div class="article_list">
 
-                    'post_html' => 
-                    '<li class="top_article">{thumb}
-                    <time>{date}</time>
-                    <p>{title}</p>
-                    </li>'
-                  )
-                );
-                ?>
-              <!-- </div> -->
+<?php
+ $args = array(/* 配列に複数の引数を追加 */
+     'order' => 'DESC', /* 並び替えの順番 ASC：昇順、DESC：降順 */
+     'orderby' => 'meta_value_num',  /*カスタムフィールドの内容を数値として扱う */
+     'meta_key' => 'views',  /*カスタムフィールド名 */
+     'post_type' => 'post',   //投稿（ポスト）タイプ
+     'meta_value' => '1',  //カウント条件
+	'posts_per_page' => 6, /* 表示するページ数 */
+     'meta_compare' => '>=',
+); ?>
+<?php query_posts( $args ); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                  <a href="<?php the_permalink(); ?>" class="top_article">
+                  <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+					<?php the_post_thumbnail('thumbnail'); ?>
+					  <p><?php the_title(); ?></p></a>
+<?php endwhile; else: ?>
+<p><?php _e('ありませんでした。'); ?></p>
+			  <?php endif; ?>
             </div>
+              </div>
 
           </div>        
         </div>
@@ -239,6 +237,13 @@
    
   .article_wrap2{
     padding-top: 5px;
+  }
+
+  .container .article_wrap3{
+    margin-bottom: 0;
+  }
+  .site_map{
+    margin-bottom: 100px;
   }
 }
 </style>

@@ -10,8 +10,9 @@
   <article>
     <div class="page_title pc">
       <div class="page_title_content">
+        <div class="page_title_border"></div>
         <h1>
-          <?php the_title(); ?>
+          <span><?php the_title(); ?></span>
         </h1>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
@@ -27,16 +28,25 @@
     <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="container">
+          <div class="change_size_container">
+            <div class="change_font_size">
+              <p class="change_text">文字サイズ</p>
+              <p class="size-button small" data-font="12">小</p>
+              <p class="size-button midium active" data-font="16">中</p>
+              <p class="size-button large" data-font="20">大</p>
+            </div>
+          </div>
           <div class="article_wrap1">
             <div class="site_info_title" id="top">
               <h2><?php the_title(); ?></h2>
             </div>
-            <a href="#top">
-              <button class="fixed_btn">
+            <button class="fixed_btn">
+              <a href="#top">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
-              </button>
-            </a>
+              </a>
+            </button>
 
+            <?php echo do_shortcode('[addtoany]'); ?>
             <?php the_content(); ?>
 
             <!-- <div class="site_info_cotent">
@@ -165,10 +175,20 @@
     margin: 40px 0 70px;
   }
 
+
+  .site_info_cotent li p img{
+    display: block;
+    margin: 30px auto 100px;
+  }
+
   @media screen and (max-width: 640px) {
     .container .article_wrap1 {
       padding: 80px 10%;
     }
+    .page_title_content h1{
+     width: 80%;
+    }
+
 
     /* .site_info_title span {
       padding: 15px 10%;
