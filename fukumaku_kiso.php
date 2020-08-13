@@ -20,7 +20,6 @@
     <div class="page_title sp">
       <img src="<?php echo get_template_directory_uri(); ?>/img/35.png" alt="腹膜透析の基礎知識">
       <div class="page_title_content">
-        <div class="page_title_border"></div>
         <h1>
           <?php the_title(); ?>
         </h1>
@@ -347,4 +346,5 @@
 
 
 <style>
+
 </style>

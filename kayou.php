@@ -20,7 +20,6 @@
     <div class="page_title sp">
       <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="透析に通うのがツライと思ったら">
       <div class="page_title_content">
-        <div class="page_title_border"></div>
         <h1>
           <?php the_title(); ?>
         </h1>
@@ -193,8 +192,9 @@
   
 
     .page_title_content h1{
-      width: 70%;
-      padding-bottom: 40px;
+      width: 100%;
+      font-size: 16px;
+      letter-spacing: 0;
     }
 
     .page_title_border {

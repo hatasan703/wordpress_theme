@@ -20,7 +20,6 @@
     <div class="page_title sp">
       <img src="<?php echo get_template_directory_uri(); ?>/img/46.png" alt="利用規約">
       <div class="page_title_content">
-        <div class="page_title_border"></div>
         <h1>
           <?php the_title(); ?>
         </h1>

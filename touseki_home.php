@@ -20,7 +20,6 @@
     <div class="page_title sp">
       <img src="<?php echo get_template_directory_uri(); ?>/img/32.png" alt="おうちでできる腹膜透析">
       <div class="page_title_content">
-        <div class="page_title_border"></div>
         <h1>
           <?php the_title(); ?>
         </h1>

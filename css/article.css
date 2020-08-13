@@ -244,7 +244,7 @@
 .change_font_size{
   display: flex;
   background: #e6e6e6;
-  padding: 10px 20px;
+  padding: 10px;
   margin-bottom: 20px;
   width: 80%;
   align-items: flex-end;
@@ -253,7 +253,7 @@
 
 
 .change_text{
-  margin: 0px 10px 5px;
+  margin: 0px 5px 5px;
 }
 
 .size-button{

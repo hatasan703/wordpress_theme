@@ -21,7 +21,6 @@
           <div class="page_title sp">
             <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
             <div class="page_title_content">
-              <div class="page_title_border"></div>
               <h1>
                 「おうちで透析」の記事
               </h1>
