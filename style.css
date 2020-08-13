@@ -1032,11 +1032,11 @@ div.whatsnew dt {
   .page_title{
     width: 100%;
     margin-bottom: 100px;
-    height: 96px;
+    height: 100px;
   }
   .page_title img{
     width: 100%;
-    /* height: 100px; */
+    height: 98px;
   }
 
   .page_title .page_title_content{
