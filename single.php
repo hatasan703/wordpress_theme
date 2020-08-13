@@ -32,13 +32,21 @@
           </div>
 
           <div class="article_wrap1">
-
-            <div class="tag_list">
-              <li class="tag">#腹膜透析Q&A</li>
-              <li class="tag">#通院</li>
-              <li class="tag">#初心者</li>
-            </div>
-            <div class="indi_article_title" id="top">
+				<ul class="tag_list">
+          <?php $postcat = get_the_category();
+            if ($postcat) {
+              foreach($postcat as $cat) {
+              echo '<li class="tag"><a href="/' .$cat->name. '">#' . $cat->name . '</a></li>';}
+              }
+            ?>
+          <?php $posttags = get_the_tags();
+            if ($posttags) {
+              foreach($posttags as $tag) {
+              echo '<li class="tag"><a href="/' .$tag->name. '">#' . $tag->name . '</a></li>';}
+              }
+          ?>
+		  </ul>
+	            <div class="indi_article_title" id="top">
               <h2><?php the_title(); ?></h2>
             </div>
             <div class="posting_time">
