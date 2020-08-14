@@ -5,6 +5,7 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="65ijLLAo2kRKGOEu1pL9pjOJcbFaf2Fi89ozBnCzGMc" />
   <link href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>"
     rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet" type="text/css">

@@ -705,7 +705,7 @@ a.taxonomy.category:active {
     height: 170px;
     width: 40%;
     padding: 100px 80px 60px 0;
-    text-align: right;
+    text-align: left;
     box-shadow: 0 0 10px #d8d8d8;
     display: flex;
   }
@@ -1039,10 +1039,12 @@ div.whatsnew dt {
     height: 98px;
   }
 
+
   .page_title .page_title_content{
     width: 100%;
     padding: 13% 20% 10% 0;
     height: 100px;
+    text-align: right;
   }
 
   .page_title_content h1{
