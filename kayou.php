@@ -41,8 +41,13 @@
             <h2 class=""><?php the_title(); ?></h2>
             <img src="<?php echo get_template_directory_uri(); ?>/img/54.png" alt="おうちでできる腹膜透析">
           </div>
-          <button class="fixed_btn">
+          <button class="fixed_btn pc">
             <a href="#top">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
+            </a>
+          </button>
+          <button class="fixed_btn sp">
+            <a href="#top_sp">
               <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
             </a>
           </button>
@@ -53,8 +58,10 @@
           <!-- <div class="article_text">
             すでに透析を始められている方は、一番つらかった時はいつでしょうか。 「透析を始めましょう」と医師から宣告があった時でしょうか。 実際に透析治療を始めて、なんとか慣れるまでも非常につらかったと思います。 そして今も、透析治療のために通院し、毎日つらい思いをされていることと思います。
           </div>
-          <div id="top" class="table_of_contents">
-            <div class="table_of_contents_title">■目次 <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+          <div id="top" class="table_of_contents pc">
+            <div class="table_of_contents_title">■目次 
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
             <ul class="table_of_contents_lists">
               <li><a href="#kayou1">透析治療は様々な制限がある</a></li>
               <li><a href="#kayou2">「おうちで透析」という選択肢</a></li>
@@ -68,17 +75,34 @@
               <li><a href="#kayou10">治療はひとりではできない、しっかりとコミュケーションをとること</a></li>
             </ul>
           </div>
+          <div id="top_sp" class="table_of_contents sp">
+            <div class="table_of_contents_title">■目次 
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+            <ul class="table_of_contents_lists">
+              <li><a href="#kayou1_sp">透析治療は様々な制限がある</a></li>
+              <li><a href="#kayou2_sp">「おうちで透析」という選択肢</a></li>
+              <li><a href="#kayou3_sp">血液透析と腹膜透析は併用できる</a></li>
+              <li><a href="#kayou4_sp">血液透析、腹膜透析、併用療法</a></li>
+              <li><a href="#kayou5_sp">「治療」の違い</a></li>
+              <li><a href="#kayou6_sp">「生活」の違い</a></li>
+              <li><a href="#kayou7_sp">「働く」ことは生きがいや希望につながる</a></li>
+              <li><a href="#kayou8_sp">生きるために透析をする</a></li>
+              <li><a href="#kayou9_sp">高齢のため、血液透析に通うのが難しくなったら</a></li>
+              <li><a href="#kayou10_sp">治療はひとりではできない、しっかりとコミュケーションをとること</a></li>
+            </ul>
+          </div>
           <div class="article_item">
             <h3>
               <span id="kayou1" class="article_item_title pc">透析治療は様々な制限がある</span>
-              <p id="kayou1" class="article_item_title sp">透析治療は様々な制限がある</p>
+              <p id="kayou1_sp" class="article_item_title sp">透析治療は様々な制限がある</p>
             </h3>
             <p class="article_text">血液透析は、週の半分以上（基本は週３回）を透析治療に費やすことになります。 これまで続けてきた仕事も、家族友人との遊びも、日々の食事も多くの制限があり、これまでの普通な生活が一変します。 また、透析をする前と後の体調の不安定さが伴いますので、精神的にも大きな負担があることでしょう。 この透析中心の生活を、ずっと続けていくと考えると、途方に暮れてしまいます。</p>
           </div>
           <div class="article_item">
             <h3>
               <span id="kayou2" class="article_item_title pc">「おうちで透析」という選択肢</span>
-              <p id="kayou2" class="article_item_title sp">「おうちで透析」という選択肢</p>
+              <p id="kayou2_sp" class="article_item_title sp">「おうちで透析」という選択肢</p>
             </h3>
             <p class="article_text">もっと制限の少ない、ライフスタイルに合わせてできる透析治療はないものでしょうか。 そう考えたなら、「おうちで透析」を一度、検討してみてください。<br />
             わが国は血液透析がメジャーな治療で、（おうちでできる）腹膜透析はマイナーな治療です。 みんなが血液透析を選ぶから、疑わずに選んでいたのかもしれません。 限られた時間に意思決定を迫られ、十分に話し合う時間もなく、また情報量の少なさから、 自ら選択ができることをあきらめていたのかもしれません。<br />
@@ -87,14 +111,14 @@
           <div class="article_item">
             <h3>
               <span id="kayou3" class="article_item_title pc">血液透析と腹膜透析は併用できる</span>
-              <p id="kayou3" class="article_item_title sp">血液透析と腹膜透析は併用できる</p>
+              <p id="kayou3_sp" class="article_item_title sp">血液透析と腹膜透析は併用できる</p>
             </h3>
             <p class="article_text">血液透析と腹膜透析は併用することが可能です。 たとえば、「腹膜透析を週５回自宅で行い、週１回だけ血液透析のために通院する。 そして、週１回はお休みする」。この選択をすると、生活の幅は大きく広がります。 腹膜透析は、自身のライフスタイルに合わせてオーダーメイドできる治療方法です。</p>
           </div>
           <div class="article_item">
             <h3>
               <span id="kayou4" class="article_item_title pc">血液透析、腹膜透析、併用療法</span>
-              <p id="kayou4" class="article_item_title sp">血液透析、腹膜透析、併用療法</p>
+              <p id="kayou4_sp" class="article_item_title sp">血液透析、腹膜透析、併用療法</p>
             </h3>
             <div class="article_text">
               <p>血液透析、腹膜透析、併用療法、それぞれのメリットデメリットを知り、 ご自身にあったものは何なのか、以下の表を参考にしてみてください。</p>
@@ -105,7 +129,7 @@
           <div class="article_item">
             <h3>
               <span id="kayou5" class="article_item_title pc">「治療」の違い</span>
-              <p id="kayou5" class="article_item_title sp">「治療」の違い</p>
+              <p id="kayou5_sp" class="article_item_title sp">「治療」の違い</p>
             </h3>
             <p class="article_text">「血液透析」は、通常は週３回、診療所や病院に通院して行う治療法です。 それに対して、「腹膜透析」は自宅で自ら毎日行う治療法です。「併用療法（ハイブリット）」は、その両方を組み合わせた治療法です。 どの透析療法も事前に「手術」が必要です。<br />
             血液透析は、両手にシャントと呼ばれる太い血管を作る手術を行います。 一方、腹膜透析は透析液をお腹にいれるために、カテーテルと呼ばれるチューブをお腹に入れる手術を行います。<br />
@@ -117,7 +141,7 @@
           <div class="article_item">
             <h3>
               <span id="kayou6" class="article_item_title pc">「生活」の違い</span>
-              <p id="kayou6" class="article_item_title sp">「生活」の違い</p>
+              <p id="kayou6_sp" class="article_item_title sp">「生活」の違い</p>
             </h3>
             <div class="article_text">
               <p>生活の視点で、血液透析と腹膜透析の違いはどうでしょうか。</p>
@@ -132,7 +156,7 @@
           <div class="article_item">
             <h3>
               <span id="kayou7" class="article_item_title pc">「働く」ことは生きがいや希望につながる</span>
-              <p id="kayou7" class="article_item_title sp">「働く」ことは生きがいや希望につながる</p>
+              <p id="kayou7_sp" class="article_item_title sp">「働く」ことは生きがいや希望につながる</p>
             </h3>
             <p class="article_text">もし、透析治療を40代から始める必要となった場合、これから働ける時間はたくさんあります。 働き続けなくてはならない理由もたくさんあります。 働き続けることは、経済的な面はもちろんですが、生きがいや希望にもつながります。<br />
             いま、政府が進めている「働き方改革」は、残業の上限規制、有給休暇の取得、同一労働同一賃金など、 様々ありますが、これまでなかなか進まなかった、働きたくても働けなかった方が「社会復帰をしやすい社会」を作ろうとする改革のことです。 現在、新型コロナウイルスの感染拡大により、働く環境も大きく変わろうとしています。出勤を極力せずに、 自宅でリモートワークを勧める会社がどんどん増えています。 このような状況下で、「透析をしながら働くこと」に対して、職場の理解も進んでいくことでしょう。 おうちで透析は、働きながら透析治療を行う上で最適です。<br />
@@ -141,14 +165,14 @@
             <div class="article_item">
             <h3>
               <span id="kayou8" class="article_item_title pc">生きるために透析をする</span>
-              <p id="kayou8" class="article_item_title sp">生きるために透析をする</p>
+              <p id="kayou8_sp" class="article_item_title sp">生きるために透析をする</p>
             </h3>
             <p class="article_text">本来は生きるために透析を選択しているはずです。 しかしながら、つらい期間が続くと、つらいことが仕方のないと受け入れ、透析のために生きているような感覚になってきます。 当たり前を変えるのはご自身であり、生き方を変えるのもご自身です。透析の治療法はいつでも変更が可能です。 つらいと感じたら、治療法を変えてみてはいかがでしょうか。変えるという選択をすることで、いまより生活が楽になるかもしれません。</p>
           </div>
           <div class="article_item">
             <h3>
               <span id="kayou9" class="article_item_title pc">高齢のため、血液透析に通うのが難しくなったら</span>
-              <p id="kayou9" class="article_item_title sp">高齢のため、血液透析に通うのが難しくなったら</p>
+              <p id="kayou9_sp" class="article_item_title sp">高齢のため、血液透析に通うのが難しくなったら</p>
             </h3>
             <p class="article_text">長く血液透析を続け、年齢を重ねていくと、いずれ体力が落ち、歩くことも困難になっていきます。 そうなると、血液透析に医療機関に通うのが難しくなっていきます。また、送迎してくれる家族も同じように高齢になっていきます。 そうなると、入院での透析治療を行う必要が出てきます。「入院での透析」を選ぶか、「在宅での透析」を選ぶかは、ご自身の選択によります。<br />
             「限られた時間を家族といっしょに過ごしたい」「最期は自分の家で」と考えるならば、是非「おうちで透析」を選んでください。 最期は患者さん自身のものだけではありません。見守る家族も家で看取ることができるということは、幸せなことなのです。 入院患者の方の約８割が自分の家で死にたいと望むという事実が物語っています。<br />
@@ -158,7 +182,7 @@
           <div class="article_item">
             <h3>
               <span id="kayou10" class="article_item_title pc">治療はひとりではできない、しっかりとコミュニケーションをとること</span>
-              <p id="kayou10" class="article_item_title sp">治療はひとりではできない、しっかりとコミュニケーションをとること</p>
+              <p id="kayou10_sp" class="article_item_title sp">治療はひとりではできない、しっかりとコミュニケーションをとること</p>
             </h3>
             <p class="article_text">自らが幸せに過ごすためには、治療方法を選ぶことが大切です。 しかしながら、自らが選んだ治療方法が家族に迷惑をかけるのではないかと恐れる気持ちはわかります。 だからこそ、コミュニケーションを大事にしてください。<br />
             透析治療は一人ではできません。医師、看護師、家族、同僚、友達と一緒に進める必要があるのです。 是非、話し合ってください。何でも言い合える関係性を構築することも、患者さんの未来を左右します。 きちんと患者さんを理解して治療法や生活スタイルを提案してくれる医師であるかどうか、 在宅を選んだ際に家族は協力してくれるか、何度も何度も繰り返し話し合ってください。<br />

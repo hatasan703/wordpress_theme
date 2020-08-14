@@ -221,5 +221,12 @@
 <?php get_footer(); ?>
 
 
+
 <style>
+@media screen and (max-width: 640px) {
+  .container .article_wrap1{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
 </style>

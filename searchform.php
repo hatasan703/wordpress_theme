@@ -1,5 +1,5 @@
 
-<form id="search_form" action="http://dev.local/" method="get">
+<form id="search_form" action="https://fukumakutouseki.com/" method="get">
   <button type="submit" id="sbtn"><i class="fas fa-search"></i></button>
   <input id="sbox2"  id="s" name="s" type="text" placeholder="サイト内検索"/>
 </form>

@@ -239,7 +239,17 @@
   line-height: 1;
 }
 
+.article_wrap1{
+  background: #fff;
+  padding: 100px 0;
+}
+
 @media screen and (max-width: 640px) {
+
+  .article_wrap1{
+    background: #fff;
+    padding: 50px 0;
+  }
    
   .article_wrap2{
     padding-top: 5px;

@@ -109,6 +109,7 @@
         $('.hospital_list').css('font-size', size + 'px');
         $('.category').css('font-size', size + 'px');
         $('.wpcf7').css('font-size', size + 'px');
+        $('.privacy_text p').css('font-size', size + 'px');
         $('[data-font!=' + size + ']').removeClass('active');
         $('[data-font=' + size + ']').addClass('active');
         sessionStorage.setItem('fontSize', size);
@@ -194,3 +195,4 @@
     </li>
   </div>
 </header>
+

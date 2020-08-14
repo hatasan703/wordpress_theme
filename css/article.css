@@ -294,3 +294,10 @@
   
 }
 
+
+@media screen and (max-width: 640px) {
+  .fixed_btn img{
+    height: 20%;
+    width: 20%;
+  }
+}

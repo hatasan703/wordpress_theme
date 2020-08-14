@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="article_wrap1">
-          <?php the_content(); ?>
+            <?php the_content(); ?>
             <!-- <div class="site_info_title">
               <h2>運営者情報</h2>
               <img class="alignnone wp-image-112" src="http://dev.local/wp-content/uploads/2020/08/company_logo.png" alt="会社ロゴ " width="291" height="56" />
@@ -51,7 +51,8 @@
                 <p>一般社団法人リンクア</p>
               </li>
               <li>
-                <h3>事業内容</h3>
+                <h3 class="pc">事業内容</h3>
+                <h3 class="sp">事業<br>内容</h3>
                 <div class="business_content">
                   <p>当法人は、新しい医療スタイルを構築し、医療分野の育成発展に貢献することを目的とし、その目的に資するため、次の事業を行っています。</p>
                   <p>医療関連の各種研修・セミナー・イベントの企画・運営・管理業務</p>
@@ -73,7 +74,8 @@
                 <p>2019年4月17日</p>
               </li>
               <li>
-                <h3>本社所在地</h3>
+                <h3 class="pc">本社所在地</h3>
+                <h3 class="sp">本社<br>所在地</h3>
                 <p>東京都目黒区自由が丘1-13-4 シャイン自由が丘ビル4F</p>
               </li>
               <div class="contact_link">
@@ -81,6 +83,8 @@
                 <a href="<?php echo home_url(); ?>/">こちら</a>
               </div>
             </div> -->
+
+
           </div>
         </div>
 
@@ -163,6 +167,9 @@
      width: 60%;
     }
 
+    .business_content p{
+      letter-spacing: 0.15em;
+    }
     
 }
     

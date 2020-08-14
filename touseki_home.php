@@ -41,8 +41,13 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/55.png" alt="おうちでできる腹膜透析">
           </div>
 
-          <button class="fixed_btn">
+          <button class="fixed_btn pc">
             <a href="#top">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
+            </a>
+          </button>
+          <button class="fixed_btn sp">
+            <a href="#top_sp">
               <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
             </a>
           </button>
@@ -56,26 +61,44 @@
             それは知識が不足しているから起きる不安です。透析について学び正しい知識を得ることが大切です。
           </p>
 
-          <div id="top" class="table_of_contents">
+          <div id="top" class="table_of_contents pc">
             <div class="table_of_contents_title">■目次
-              <i class="fa fa-angle-down" aria-hidden="true"></i></div>
-              <ul class="table_of_contents_lists">
-                <li><a href="#home1">透析患者の数</a></li>
-                <li><a href="#home2">なぜ、透析が必要なの？</a></li>
-                <li><a href="#home3">どんな治療方法があるの</a></li>
-                <li class="sub"><a href="#home4">血液透析とは</a></li>
-                <li class="sub"><a href="#home5">腹膜透析とは</a></li>
-                <li><a href="#home6">おうちでできる透析がある</a></li>
-                <li><a href="#home7">新型コロナウイルス感染症と透析治療</a></li>
-                <li><a href="#home8">ライフスタイルに合わせて治療方法を選べる時代</a></li>
-                <li><a href="#home9">仕事をしながら治療ができる</a></li>
-                <li><a href="#home10">治療法を選択する勇気</a></li>
-              </ul>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
             </div>
+            <ul class="table_of_contents_lists">
+              <li><a href="#home1">透析患者の数</a></li>
+              <li><a href="#home2">なぜ、透析が必要なの？</a></li>
+              <li><a href="#home3">どんな治療方法があるの</a></li>
+              <li class="sub"><a href="#home4">血液透析とは</a></li>
+              <li class="sub"><a href="#home5">腹膜透析とは</a></li>
+              <li><a href="#home6">おうちでできる透析がある</a></li>
+              <li><a href="#home7">新型コロナウイルス感染症と透析治療</a></li>
+              <li><a href="#home8">ライフスタイルに合わせて治療方法を選べる時代</a></li>
+              <li><a href="#home9">仕事をしながら治療ができる</a></li>
+              <li><a href="#home10">治療法を選択する勇気</a></li>
+            </ul>
+          </div>
+          <div id="top_sp" class="table_of_contents sp">
+            <div class="table_of_contents_title">■目次
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+            <ul class="table_of_contents_lists">
+              <li><a href="#home1_sp">透析患者の数</a></li>
+              <li><a href="#home2_sp">なぜ、透析が必要なの？</a></li>
+              <li><a href="#home3_sp">どんな治療方法があるの</a></li>
+              <li class="sub"><a href="#home4_sp">血液透析とは</a></li>
+              <li class="sub"><a href="#home5_sp">腹膜透析とは</a></li>
+              <li><a href="#home6_sp">おうちでできる透析がある</a></li>
+              <li><a href="#home7_sp">新型コロナウイルス感染症と透析治療</a></li>
+              <li><a href="#home8_sp">ライフスタイルに合わせて治療方法を選べる時代</a></li>
+              <li><a href="#home9_sp">仕事をしながら治療ができる</a></li>
+              <li><a href="#home10_sp">治療法を選択する勇気</a></li>
+            </ul>
+          </div>
             <div class="article_item">
               <h3>
                 <span id="home1" class="article_item_title pc">透析患者の数</span>
-                <p id="home1" class="article_item_title sp">透析患者の数</p>
+                <p id="home1_sp" class="article_item_title sp">透析患者の数</p>
               </h3>
               <p class="article_text">現在、我が国では約34万人（2018年末時点）の患者が透析治療を行っており、380人に１人の割合で透析患者がいる計算となります。
               透析患者数は台湾に次いで、世界で第二位です。
@@ -87,7 +110,7 @@
             <div class="article_item">
               <h3>
                 <span id="home2" class="article_item_title pc">なぜ、透析が必要なの？</span>
-                <p id="home2" class="article_item_title sp">なぜ、透析が必要なの？</p>
+                <p id="home2_sp" class="article_item_title sp">なぜ、透析が必要なの？</p>
               </h3>
               <p class="article_text">そもそもなぜ、透析が必要なのでしょうか。透析は、病気により腎臓の機能が低下し、
               腎不全（正常の時の10%以下）になると必要になります。
@@ -101,7 +124,7 @@
             <div class="article_item">
               <h3>
                 <span id="home3" class="article_item_title pc">どんな治療方法があるの</span>
-                <p id="home3" class="article_item_title sp">どんな治療方法があるの</p>
+                <p id="home3_sp" class="article_item_title sp">どんな治療方法があるの</p>
               </h3>
               <p class="article_text">
                 医師から突然、「透析が必要」と告げられたら、誰もがどう受け止めたら良いのか途方に暮れることでしょう。
@@ -144,7 +167,7 @@
             <div class="article_item">
               <h3>
                 <span id="home6" class="article_item_title pc">おうちでできる透析がある</span>
-                <p id="home6" class="article_item_title sp">おうちでできる透析がある</p>
+                <p id="home6_sp" class="article_item_title sp">おうちでできる透析がある</p>
               </h3>
               <p class="article_text">
                 腹膜透析は自宅でできる、つまり「おうちでできる透析治療」です。
@@ -158,7 +181,7 @@
             <div class="article_item">
               <h3>
                 <span id="home7" class="article_item_title pc">新型コロナウイルス感染症と透析治療</span>
-                <p id="home7" class="article_item_title sp">新型コロナウイルス感染症と透析治療</p>
+                <p id="home7_sp" class="article_item_title sp">新型コロナウイルス感染症と透析治療</p>
               </h3>
               <p class="article_text">
                 「現在、「新型コロナウイルス感染症」が世界的に感染が拡大しています。
@@ -177,7 +200,7 @@
             <div class="article_item">
               <h3>
                 <span id="home8" class="article_item_title pc">ライフスタイルに合わせて治療方法を選べる時代</span>
-                <p id="home8" class="article_item_title sp">ライフスタイルに合わせて治療方法を選べる時代</p>
+                <p id="home8_sp" class="article_item_title sp">ライフスタイルに合わせて治療方法を選べる時代</p>
               </h3>
               <p class="article_text">
                 ライフスタイルに合わせてご自身で治療方法を選択する時代がやってきました。
@@ -194,7 +217,7 @@
             <div class="article_item">
             <h3>
               <span id="home9" class="article_item_title pc">仕事をしながら治療ができる</span>
-              <p id="home9" class="article_item_title sp">仕事をしながら治療ができる</p>
+              <p id="home9_sp" class="article_item_title sp">仕事をしながら治療ができる</p>
             </h3>
             <p class="article_text">
               腹膜透析は、自らが透析治療を行うため、仕事もできます。出張もできます。
@@ -209,7 +232,7 @@
             <div class="article_item">
             <h3>
               <span id="home10" class="article_item_title pc">治療法を選択する勇気</span>
-              <p id="home10" class="article_item_title sp">治療法を選択する勇気</p>
+              <p id="home10_sp" class="article_item_title sp">治療法を選択する勇気</p>
             </h3>
             <p class="article_text">
               医師から透析の宣告を受けた際、「自ら治療法を選択する勇気」を持って頂きたいのです。
