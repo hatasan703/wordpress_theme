@@ -57,7 +57,7 @@
                     'paged' => $paged,
                     'post_status' => 'publish',
                     'posts_per_page' => 9,
-					          'cat' =>2,
+					          'cat' =>6,
                   ));
                     if ( $information ->have_posts() ) : ?>
                       <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>

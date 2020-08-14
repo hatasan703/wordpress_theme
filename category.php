@@ -57,7 +57,7 @@
                             'paged' => $paged,
                             'post_status' => 'publish',
                             'posts_per_page' => 3,
-                            'cat' =>2,
+                            'cat' =>6,
                         ));
                         if ( $information ->have_posts() ) : ?>
                           <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
@@ -99,7 +99,7 @@
                               'paged' => $paged,
                               'post_status' => 'publish',
                               'posts_per_page' => 3,
-                              'cat' =>6,
+                              'cat' =>4,
                           ));
                       if ( $information ->have_posts() ) : ?>
                         <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
@@ -141,7 +141,7 @@
                       'paged' => $paged,
                       'post_status' => 'publish',
                       'posts_per_page' => 3,
-                      'cat' =>7,
+                      'cat' =>3,
                   ));
                             if ( $information ->have_posts() ) : ?>
                             <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
@@ -184,7 +184,7 @@
                         'paged' => $paged,
                         'post_status' => 'publish',
                         'posts_per_page' => 3,
-                        'cat' =>8,
+                        'cat' =>5,
                     ));
                       if ( $information ->have_posts() ) : ?>
                         <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>

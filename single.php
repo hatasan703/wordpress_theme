@@ -79,8 +79,9 @@
                       'category__in' => array($categories[0]), // カテゴリーのIDで記事を取得
                       'post__not_in' => array($post->ID), // 表示している記事を除く
                       'showposts'=>3, // 取得記事数
-                          'ignore_sticky_posts'=>1, // 取得した記事の何番目から表示するか
-                      'orderby'=> 'DESC' // 記事をランダムで取得
+                      'ignore_sticky_posts'=>1, // 取得した記事の何番目から表示するか
+                      'orderby'=> 'DESC', // 記事をランダムで取得
+                      'cat' => -2,
                     ); 
                     $my_query = new WP_Query($args); 
                     if( $my_query->have_posts() ) { ?>

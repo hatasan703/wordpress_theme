@@ -149,7 +149,8 @@
               <div class="article_list">
                 <?php
                   $information= get_posts( array(
-                  'posts_per_page' => 6
+                  'posts_per_page' => 6,
+                  'category' => -2,
                   ));
                   if( $information):
                 ?>
@@ -159,8 +160,8 @@
                 ?>
                   <a href="<?php the_permalink(); ?>" class="top_article">
                   <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-					<?php the_post_thumbnail('thumbnail'); ?>
-					  <p><?php the_title(); ?></p></a>
+					    <?php the_post_thumbnail('thumbnail'); ?>
+					      <p><?php the_title(); ?></p></a>
                 <?php
                 endforeach;
                 wp_reset_postdata();
@@ -178,6 +179,7 @@
 
 <?php
  $args = array(/* 配列に複数の引数を追加 */
+  'cat' => '-2',
      'order' => 'DESC', /* 並び替えの順番 ASC：昇順、DESC：降順 */
      'orderby' => 'meta_value_num',  /*カスタムフィールドの内容を数値として扱う */
      'meta_key' => 'views',  /*カスタムフィールド名 */
