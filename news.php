@@ -26,7 +26,6 @@
       </div>
     </div>
     <div>
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
         <div class="change_size_container">
           <div class="change_font_size">
@@ -44,25 +43,31 @@
             NEWS
           </h3>
           <div class="site_info_cotent">
-            <li>
-              <p>2020.08.01</p>
-              <a href="<?php echo home_url(); ?>/">「おうちで透析」を公開しました</a>
+			  	<?php
+                     $paged = get_query_var('paged')? get_query_var('paged') : 1;
+                     $information= new WP_Query( array(
+                    'post_type' => 'post',
+                    'paged' => $paged,
+                    'post_status' => 'publish',
+                    'posts_per_page' => 5,
+					          'cat' =>5,
+                ));
+          if ( $information ->have_posts() ) : ?>
+            <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
+			  <li>
+              <p><?php the_time('Y.n.j'); ?></p>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </li>
-            <li>
-              <p>2020.08.01</p>
-              <a href="<?php echo home_url(); ?>/">「おうちで透析」Twitterアカウントを開設しました</a>
-            </li>
-            <li>
-              <p>2020.08.01</p>
-              <a href="<?php echo home_url(); ?>/">「おうちで透析」Facebookアカウントを開設しました</a>
-            </li>
+        <?php
+		    endwhile;
+        wp_reset_postdata(); ?>
+
+      <?php else: ?>
+      <p>まだ記事がありません</p>
+      <?php endif; ?>
           </div>
         </div>
       </div>
-
-      <?php endwhile; else : ?>
-        <p>まだ記事がありません</p>
-      <?php endif; ?>
     </div>
   </article>
 </main>

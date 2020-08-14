@@ -179,6 +179,11 @@
     height: 70%;
     margin: 30px 0 70px;
   }
+  .site_info_cotent p img{
+    width: 70%;
+    height: 70%;
+    margin: 0px 0 70px;
+  }
 
   .site_info_cotent{
     text-align: center;
