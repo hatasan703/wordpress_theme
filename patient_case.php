@@ -61,7 +61,7 @@
                 ));
           if ( $information ->have_posts() ) : ?>
             <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
-                  <div class="category_article pink_border">
+                  <div class="category_article">
                   <a href="<?php the_permalink(); ?>">
                   <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                   <?php the_post_thumbnail('thumbnail'); ?>
@@ -93,6 +93,11 @@
 
 
 <style>
+
+.container .article_wrap1{
+    padding-right: 10%;
+    padding-left: 10%;
+  }
 
 @media screen and (max-width: 640px) {
   .container .article_wrap1{

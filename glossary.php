@@ -92,6 +92,11 @@
 <?php get_footer(); ?>
 
 <style>
+
+.container .article_wrap1{
+    padding-right: 10%;
+    padding-left: 10%;
+  }
 @media screen and (max-width: 640px) {
   .container .article_wrap1{
     padding-right: 5%;

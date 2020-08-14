@@ -51,7 +51,8 @@
 }
 .category_page_title{
   width: 50%;
-  padding: 70px 20px;
+  padding: 50px 20px;
+
 }
 .category_page_title h3{
   border-bottom: solid 2px #fff;
@@ -61,6 +62,7 @@
 .category_page_title p{
   margin-top: 10px;
   font-size: 14px;
+  letter-spacing: 0.15em;
 }
 
 .category_top img{
@@ -159,7 +161,7 @@
   }
 
   .category_page_title{
-    padding: 0;
+    padding: 10px;
     height: 50%;
     width: 100%;
     line-height: 2;

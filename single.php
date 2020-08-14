@@ -35,13 +35,15 @@
           <?php $postcat = get_the_category();
             if ($postcat) {
               foreach($postcat as $cat) {
-              echo '<li class="tag"><a href="/' .$cat->name. '">#' . $cat->name . '</a></li>';}
+              echo '<li class="tag">#'.$cat->name.'</li>';}
+              // echo '<li class="tag"><a href="/' .$cat->name. '">#' . $cat->name . '</a></li>';}
               }
             ?>
           <?php $posttags = get_the_tags();
             if ($posttags) {
               foreach($posttags as $tag) {
-              echo '<li class="tag"><a href="/' .$tag->name. '">#' . $tag->name . '</a></li>';}
+              echo '<li class="tag">#'.$tag->name.'</li>';}
+              // echo '<li class="tag"><a href="/' .$tag->name. '">#' . $tag->name . '</a></li>';}
               }
           ?>
 		    </ul>
