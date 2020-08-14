@@ -89,7 +89,7 @@
                                 <?php get_template_part( 'template-parts/post/content', 'excerpt' ); ?>
                                 <a href="<?php the_permalink() ?>" target="_self">
                                     <time><?php the_modified_time('Y年n月j日'); ?></time>
-                                    <img src="<?php echo catch_that_image() ?>" width="244" height="90" alt="" class="wpp-thumbnail wpp_featured wpp_def_no_src" loading="lazy"></a>
+                                    <?php the_post_thumbnail('thumbnail'); ?>
                                     <p><a href="<?php the_permalink() ?>" class="wpp-post-title" target="_self"><?php the_title(); ?></a></p>
                               </div>
                   <?php endwhile; } wp_reset_query(); } ?>

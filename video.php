@@ -57,14 +57,14 @@
                     'paged' => $paged,
                     'post_status' => 'publish',
                     'posts_per_page' => 9,
-					          'cat' =>1
+					          'cat' =>7,
                 ));
           if ( $information ->have_posts() ) : ?>
             <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
                   <div class="category_article green_border">
                   <a href="<?php the_permalink(); ?>">
                   <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-                  <img src="<?php echo catch_that_image(); ?>" alt="<?php the_title(); ?>">
+                  <?php the_post_thumbnail('thumbnail'); ?>
                   <p><?php the_title(); ?></p>
                   </a>
                   </div>
