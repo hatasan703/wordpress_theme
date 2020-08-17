@@ -371,7 +371,8 @@ a.taxonomy.category:active {
  .detail_btn{
    text-align: right;
    padding: 10px 0 40px;
-   margin: 15px 45px 0;
+   /* margin: 15px 45px 0; */
+   margin: 45px;
  }
  .detail_btn a{
   border: solid 2px #FF6A29;
@@ -439,11 +440,12 @@ a.taxonomy.category:active {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .article_list .category_link img{
   height: 180px;
   width: 200px;
+  margin-top: 50px;
 }
 .category_list_btn{
   color: #FF6A29;
@@ -940,7 +942,6 @@ div.whatsnew dt {
   }
   .detail_btn a {
     padding: 20px 20%;
-
   }
 
   .topic_content p{

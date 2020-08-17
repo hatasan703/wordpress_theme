@@ -99,7 +99,7 @@
   jQuery(function($){
     $(function(){
       function initFontSize() {
-        var size = (sessionStorage.getItem('fontSize'))? sessionStorage.getItem('fontSize') : '16';
+        var size = (sessionStorage.getItem('fontSize'))? sessionStorage.getItem('fontSize') : '20';
         changeFontSize(size);
       }
       
