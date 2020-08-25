@@ -219,6 +219,9 @@
     margin-top: 100px;
     letter-spacing: 0.15em;
   }
+  .breadcrumbs {
+    line-height: 2;
+  }
 
   @media screen and (max-width: 640px) {
 
