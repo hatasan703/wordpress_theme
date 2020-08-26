@@ -112,11 +112,6 @@
                   <p><a href="<?php echo home_url(); ?>/glossary">用語集</a></p>
               </div>
             </div>
-            <button class="fixed_btn">
-              <a href="#top">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
-              </a>
-            </button>
             <!-- -------- -->
 
           </div>

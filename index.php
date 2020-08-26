@@ -21,7 +21,7 @@
 <body>
 
   <!-- main contents -->
-  <main class="main">
+  <main class="main" id="topp">
       <section>
         <h2 class="top_image">
           <img src="<?php echo get_template_directory_uri(); ?>/img/27.png" alt="トップ画像">
@@ -205,27 +205,6 @@
       </div>
     </div>
 
-    <!-- <div class="container"> -->
-      <div class="article_wrap1">
-        <div class="sns_link">
-          <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="facebook"></a>
-          <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="twitter"></a>
-          <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png" alt="youtube"></a>
-        </div>
-      </div>
-    <!-- </div> -->
-
-    <div class="container">
-      <div class="article_wrap3">
-        <div class="others_link">
-          <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/20.png" alt="「おうちで透析」について"></a>
-          <a href="<?php echo home_url(); ?>/medical-info" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/21.png" alt="医療関係者の方へ"></a>
-          <a href="<?php echo home_url(); ?>/hospital-list" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/22.png" alt="在宅腹膜透析実施病院リスト"></a>
-        </div>
-      </div>
-    </div>
-
-
   </main>
 
 </body>
@@ -241,18 +220,15 @@
   line-height: 1;
 }
 
-.article_wrap1{
+.sns_wrap{
   background: #fff;
   padding: 100px 0;
+  margin-top: 0px;
 }
+
 
 @media screen and (max-width: 640px) {
 
-  .article_wrap1{
-    background: #fff;
-    padding: 50px 0;
-  }
-   
   .article_wrap2{
     padding-top: 5px;
   }

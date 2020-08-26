@@ -41,6 +41,7 @@
 
 
             <?php echo do_shortcode('[addtoany]'); ?>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1qDqcw25luDCh9wWagRXWwV1MPTFZ3NCQ&ll=35.73266560636017%2C139.8356544017517&z=10"></iframe>
             <?php the_content(); ?>
 
 
@@ -215,12 +216,15 @@
 
   .container .article_wrap1{
     line-height: 1;
-    }
+    padding-right: 8%;
+    padding-left: 8%;
+  }
 
 
   /* --------メインコンテンツ */
   .article_wrap1{
     margin-top: 0;
+
   }
   .article_title{
     text-align: center;
@@ -271,7 +275,7 @@
   }
 
   .hospital_list li{
-    padding: 0 20px;
+    padding: 0 15px;
   }
   .hospital_top{
     display: flex;
@@ -345,9 +349,24 @@
     text-align: center;
   }
 
+  iframe{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 400px;
+    margin-top: 30px;
+  }
+
 
 
   @media screen and (max-width: 640px) {
+
+    iframe{
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    height: 300px;
+  }
     
     .container .article_wrap1{
       padding-left: 5%;

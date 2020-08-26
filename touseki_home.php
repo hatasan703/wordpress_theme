@@ -5,7 +5,6 @@
 ?>
 
 <?php get_header(); ?>
-
 <main>
   <article>
     <div class="page_title pc">
@@ -40,18 +39,6 @@
             <h2 class=""><?php the_title(); ?></h2>
             <img src="<?php echo get_template_directory_uri(); ?>/img/55.png" alt="おうちでできる腹膜透析">
           </div>
-
-          <button class="fixed_btn pc">
-            <a href="#top">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
-            </a>
-          </button>
-          <button class="fixed_btn sp">
-            <a href="#top_sp">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/back_btn.png" alt="topへ戻る">
-            </a>
-          </button>
-
 
           <?php echo do_shortcode('[addtoany]'); ?>
           <?php the_content(); ?>

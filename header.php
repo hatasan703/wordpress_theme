@@ -137,12 +137,10 @@
 
 
 
-
-
-
-
+<!-- 固定戻るボタン -->
+<?php get_template_part( 'partials/back', 'btn' ); ?>
 <!-- header -->
-<header class="header">
+<header class="header" id="header">
 
 
   <div class="headerWrap">

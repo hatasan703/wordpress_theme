@@ -562,6 +562,12 @@ a.taxonomy.category:active {
   width: 100%;
 }
 
+.sns_wrap{
+  background: #fff;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
 .others_link{
   display: flex;
   justify-content: center;
@@ -779,7 +785,7 @@ height: 200px;
 } 
  
 input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required { 
-background: rgba(255, 255, 142, 0.46); 
+background: #fff; 
 } 
  
 .submit_btn{
@@ -865,6 +871,8 @@ div.whatsnew dt {
     padding: 80px 5%;
     text-align: center;
   }
+
+
   .article_wrap2 {
     padding: 80px 5%;
     text-align: center;
@@ -997,6 +1005,11 @@ div.whatsnew dt {
     padding: 0;
   }
   
+  .sns_wrap{
+    background: #fff;
+    padding: 50px 0;
+  }
+   
 
   .footer_logo{
     font-size: 14px;

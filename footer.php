@@ -1,5 +1,24 @@
-<!-- サイトマップ -->
 
+  <div class="sns_wrap">
+    <div class="sns_link">
+      <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="facebook"></a>
+      <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="twitter"></a>
+      <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png" alt="youtube"></a>
+    </div>
+  </div>
+
+
+<div class="container">
+  <div class="article_wrap3">
+    <div class="others_link">
+      <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/20.png" alt="「おうちで透析」について"></a>
+      <a href="<?php echo home_url(); ?>/medical-info" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/21.png" alt="医療関係者の方へ"></a>
+      <a href="<?php echo home_url(); ?>/hospital-list" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/22.png" alt="在宅腹膜透析実施病院リスト"></a>
+    </div>
+  </div>
+</div>
+
+<!-- サイトマップ -->
 <div class="container">
   <div class="article_wrap3">
     <div class="site_map">
