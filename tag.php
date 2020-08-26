@@ -1,11 +1,4 @@
-<?php
-/*
- * Template Name: 動画で学ぶ腹膜透析
- */
-?>
-
 <?php get_header(); ?>
-
 <main>
     <article>
       <div>
@@ -13,7 +6,7 @@
             <div class="page_title_content">
             <div class="page_title_border"></div>
               <h1>
-                <span>「おうちで透析」の記事</span>
+                <span>#<?php echo get_tag(get_query_var('tag_id'))->name; ?></span>
               </h1>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
@@ -22,7 +15,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/30.png" alt="在宅腹膜透析実施病院リスト">
             <div class="page_title_content">
               <h1>
-                「おうちで透析」の記事
+                #<?php echo get_tag(get_query_var('tag_id'))->name; ?>
               </h1>
             </div>
           </div>
@@ -37,27 +30,21 @@
               </div>
             </div>
             <div class="article_wrap1">
-              <a href="<?php echo home_url(); ?>/category" class="back_btn">
-                <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
-                ひとつ戻る
-              </a>
+              <div class="site_info_title">
+                <h2 class="">#<?php echo get_tag(get_query_var('tag_id'))->name; ?></h2>
+              </div>
               <div class="category" >
-                <div class="category_top green">
-                  <div class="category_page_title">
-                  <h3>動画で学ぶ腹膜透析</h3>
-                  <p>ここに簡単なテキストが入ります。</p>
-                  </div>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
-                </div>
                 <div class="category_articles">
-					        <?php
-                     $paged = get_query_var('paged')? get_query_var('paged') : 1;
-                     $information= new WP_Query( array(
-                    'post_type' => 'post',
-                    'paged' => $paged,
-                    'post_status' => 'publish',
-                    'posts_per_page' => 9,
-					          'cat' =>3,
+
+                  <?php
+                    $tag_id = get_query_var('tag_id');
+                    $paged = get_query_var('paged')? get_query_var('paged') : 1;
+                    $information= new WP_Query( array(
+                   'post_type' => 'post',
+                   'paged' => $paged,
+                   'post_status' => 'publish',
+                   'posts_per_page' => 9,
+                   'tag_id' => $tag_id,
                   ));
                 if ( $information ->have_posts() ) : ?>
                   <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
@@ -88,10 +75,11 @@
     </article>
   </div>
 </main>
-
 <?php get_footer(); ?>
 
+
 <style>
+
 
 .container .article_wrap1{
     padding-right: 10%;
