@@ -33,6 +33,7 @@
               <div class="site_info_title">
                 <h2 class="">#<?php echo get_tag(get_query_var('tag_id'))->name; ?></h2>
               </div>
+              <?php echo do_shortcode('[addtoany]'); ?>
               <div class="category" >
                 <div class="category_articles">
 
