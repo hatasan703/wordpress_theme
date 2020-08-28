@@ -1055,6 +1055,9 @@ div.whatsnew dt {
     height: 100px;
     margin-top: 80px;
   }
+  .top_image img{
+    margin-top: 80px;
+  }
   
   .page_title img{
     width: 100%;
