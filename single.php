@@ -61,7 +61,7 @@
                 わが国の透析治療を行う場所は、97％が医療機関で、在宅での治療はわずか３％にすぎません。先進諸国に比べても、在宅で透析を行う比率は極端に少ない現状があります。しかし何らかの事情で医療機関に通うことが負担になる場合、おうちで透析を行うことができたら負担が軽くなる、生活上の選択肢が増えるというケースもあります。そんな患者さんやご家族のために、おうちで透析が可能になる腹膜透析という手法について情報を提供していきます。
               </p>
               <img class="alignnone  wp-image-106 info_img" src="http://dev.local/wp-content/uploads/2020/08/48.png" alt="車椅子"> -->
-
+              
               <?php the_content(); ?>
             </div>
 
@@ -211,9 +211,15 @@
     line-height: 2;
   }
 
+  .table_of_contents_lists{
+
+  }
+
   @media screen and (max-width: 640px) {
 
-
+    .site_info_cotent p {
+      text-align: center;
+    }
     .container .article_wrap1{
       padding: 20px 5% 40px;
       background: #fff;
