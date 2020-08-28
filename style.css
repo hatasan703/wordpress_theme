@@ -1053,7 +1053,9 @@ div.whatsnew dt {
     width: 100%;
     margin-bottom: 100px;
     height: 100px;
+    margin-top: 80px;
   }
+  
   .page_title img{
     width: 100%;
     height: 98px;
