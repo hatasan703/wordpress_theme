@@ -981,6 +981,7 @@ div.whatsnew dt {
   .topic_content{
     display: block;
   }
+  .sns_link{text-align: center;}
 
   .site_map{
     padding: 30px 30px 5px;

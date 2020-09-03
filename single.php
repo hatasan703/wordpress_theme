@@ -53,14 +53,32 @@
             <?php echo do_shortcode('[addtoany]'); ?>
             <div class="site_info_cotent">
 
-              <!-- <h3>
-                <span>「おうちで透析」を可能にするために</span>
+            <!-- <div id="top" class="table_of_contents pc">
+                <div class="table_of_contents_title">■目次
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <ul class="table_of_contents_lists">
+                  <li><a href="#1">見出し１</a></li>
+                  <li><a href="#2">見出し２</a></li>
+                  <li><a href="#3">見出し３</a></li>
+                </ul>
+              </div>
+              <div id="top_sp" class="table_of_contents sp">
+                <div class="table_of_contents_title">■目次
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <ul class="table_of_contents_lists">
+                  <li><a href="#1_sp">見出し１</a></li>
+                  <li><a href="#2_sp">見出し２</a></li>
+                  <li><a href="#3_sp">見出し３</a></li>
+                </ul>
+              </div>
+
+              <h3>
+              　<span id="1" class="article_item_title pc">見出し１</span>
+              　<div id="1_sp" class="article_item_title sp">見出し1</div>
               </h3>
-              <p>
-                「おうちで透析」は、自宅や職場、出張先、旅行先など「生活の場」で行うことのできる「透析治療」について、情報提供を行うサイトです。<br><br>
-                わが国の透析治療を行う場所は、97％が医療機関で、在宅での治療はわずか３％にすぎません。先進諸国に比べても、在宅で透析を行う比率は極端に少ない現状があります。しかし何らかの事情で医療機関に通うことが負担になる場合、おうちで透析を行うことができたら負担が軽くなる、生活上の選択肢が増えるというケースもあります。そんな患者さんやご家族のために、おうちで透析が可能になる腹膜透析という手法について情報を提供していきます。
-              </p>
-              <img class="alignnone  wp-image-106 info_img" src="http://dev.local/wp-content/uploads/2020/08/48.png" alt="車椅子"> -->
+              <p class="single_article_text">テキスト</p> -->
               
               <?php the_content(); ?>
             </div>
@@ -163,6 +181,8 @@
   }
   .container .article_wrap1{
     margin-top: 0;
+    /* padding-right: 10%;
+    padding-left: 10%; */
   }
 
   .site_info_cotent img{
@@ -217,9 +237,15 @@
 
   @media screen and (max-width: 640px) {
 
-    .site_info_cotent p {
+    .site_info_cotent div {
       text-align: center;
     }
+
+    .site_info_cotent p{
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
     .container .article_wrap1{
       padding: 20px 5% 40px;
       background: #fff;

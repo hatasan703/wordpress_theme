@@ -32,6 +32,8 @@
   <?php wp_head(); ?>
 
   <script type="text/javascript">
+
+  
   //   jQuery(function($){
   //     var $dropdown = $('#js-dropdown');
   //     var DURATION = 200; //アニメーションの速さ
@@ -66,7 +68,6 @@
   //     }
   //    });
   // });
-
 
   // ハンバーガーメニュー
   jQuery(function($){
@@ -105,6 +106,7 @@
       
       function changeFontSize(size){
         $('.site_info_cotent').css('font-size', size + 'px');
+        $('.table_of_contents').css('font-size', size + 'px');
         $('.article_text').css('font-size', size + 'px');
         $('.hospital_list').css('font-size', size + 'px');
         $('.category').css('font-size', size + 'px');
@@ -130,6 +132,21 @@
     });
   });
 
+
+// アンカーリンク時、ヘッダーの高さ分を下げる
+jQuery(function($){
+    $(function () {
+    var headerHight = 115; //ヘッダの高さ
+    $('a[href^="#"]').click(function(){
+        var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+        $("html, body").animate({scrollTop:position}, 400, "swing");
+            return false;
+      });
+    });
+  });
+  
   </script>
 </head>
 
