@@ -119,10 +119,10 @@
           
           <div class="articles_wrap">
             <div class="articles">
-              <div class="new margin">
-                <span class="new_btn pc">カテゴリ</span>
+              <!-- <div class="new margin"> -->
+                <!-- <span class="new_btn pc">カテゴリ</span> -->
                 <span class="sp">記事カテゴリ</span>
-              </div>
+              <!-- </div> -->
               <div class="article_list">
                 <a href="<?php echo home_url(); ?>/qa" class="category_link">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/qa.png" alt="イメージ">
@@ -144,10 +144,11 @@
               </a>
               </a>
               <div class="new">
-                <span class="new_btn">新着記事</span>
+                <span class="topic_title pc">新着記事</span>
+                <p class="topic_title sp">新着記事</p>
               </div>
               <div class="article_list">
-                <?php
+                <!-- <?php
                   $information= get_posts( array(
                   'posts_per_page' => 6,
                   'category' => -2,
@@ -169,35 +170,73 @@
                 <?php else: ?>
                   <p>表示できる情報はありません。</p>
                 <?php endif; ?>
+               -->
+          <!-- 仮で固定ページを置いてます---------------------------- -->
+               <a href="/kayou" class="top_article">
+                  <time datetime="">2020.9.1</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="">
+                <p>透析に通うのがつらい</p>
+              </a>
+              <a href="/at-home" class="top_article">
+                  <time datetime="">2020.9.1</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/52.png" alt="">
+                <p>おうちでできる腹膜透析</p>
+              </a>
+              <a href="basic-knowlege" class="top_article">
+                  <time datetime="">2020.9.1</time>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/42.png" alt="">
+                <p>腹膜透析の基礎知識</p>
+              </a>
+          <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
               </div>
               
               <div class="new">
-                <span class="new_btn">人気記事</span>
+                <span class="topic_title pc">人気記事</span>
+                <p class="topic_title sp">人気記事</p>
               </div>
 			                <div class="article_list">
 
-<?php
- $args = array(/* 配列に複数の引数を追加 */
-  'cat' => '-2',
-     'order' => 'DESC', /* 並び替えの順番 ASC：昇順、DESC：降順 */
-     'orderby' => 'meta_value_num',  /*カスタムフィールドの内容を数値として扱う */
-     'meta_key' => 'views',  /*カスタムフィールド名 */
-     'post_type' => 'post',   //投稿（ポスト）タイプ
-     'meta_value' => '1',  //カウント条件
-	'posts_per_page' => 6, /* 表示するページ数 */
-     'meta_compare' => '>=',
-); ?>
-<?php query_posts( $args ); ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                  <a href="<?php the_permalink(); ?>" class="top_article">
-                  <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-					<?php the_post_thumbnail('thumbnail'); ?>
-					  <p><?php the_title(); ?></p></a>
-<?php endwhile; else: ?>
-<p><?php _e('ありませんでした。'); ?></p>
-			  <?php endif; ?>
-            </div>
+                          <!-- <?php
+                          $args = array(/* 配列に複数の引数を追加 */
+                            'cat' => '-2',
+                              'order' => 'DESC', /* 並び替えの順番 ASC：昇順、DESC：降順 */
+                              'orderby' => 'meta_value_num',  /*カスタムフィールドの内容を数値として扱う */
+                              'meta_key' => 'views',  /*カスタムフィールド名 */
+                              'post_type' => 'post',   //投稿（ポスト）タイプ
+                              'meta_value' => '1',  //カウント条件
+                            'posts_per_page' => 6, /* 表示するページ数 */
+                              'meta_compare' => '>=',
+                          ); ?>
+                          <?php query_posts( $args ); ?>
+                          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                                            <a href="<?php the_permalink(); ?>" class="top_article">
+                                            <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                                    <?php the_post_thumbnail('thumbnail'); ?>
+                                      <p><?php the_title(); ?></p></a>
+                          <?php endwhile; else: ?>
+                          <p><?php _e('ありませんでした。'); ?></p>
+                                  <?php endif; ?> -->
+
+
+                                  <!-- 仮で固定ページを置いてます---------------------------- -->
+                                    <a href="/kayou" class="top_article">
+                                        <time datetime="">2020.9.1</time>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/8.png" alt="">
+                                      <p>透析に通うのがつらい</p>
+                                    </a>
+                                    <a href="/at-home" class="top_article">
+                                        <time datetime="">2020.9.1</time>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/52.png" alt="">
+                                      <p>おうちでできる腹膜透析</p>
+                                    </a>
+                                    <a href="basic-knowlege" class="top_article">
+                                        <time datetime="">2020.9.1</time>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/42.png" alt="">
+                                      <p>腹膜透析の基礎知識</p>
+                                    </a>
+                                <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+                      </div>
               </div>
 
           </div>        
@@ -215,15 +254,29 @@
 <style>
 
 .container .article_wrap1 {
-	padding: 80px 10%;
-  margin: -2px 0 50px;
+  padding: 105px 10% 40px;
+  margin: -2px 0 105px;
   line-height: 1;
 }
 
+.article_wrap2{
+  padding-top: 120px;
+  padding-bottom: 105px;
+}
+
+
 .sns_wrap{
   background: #fff;
-  padding: 100px 0;
+  padding: 105px 0;
   margin-top: 0px;
+}
+
+.article_list{
+  margin-top: 40px;
+}
+
+.container .article_wrap3{
+  /* margin-bottom: 25px; */
 }
 
 

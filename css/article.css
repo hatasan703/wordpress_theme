@@ -2,8 +2,10 @@
 .fixed_btn
 {
   position: fixed;
-  bottom: 60px;
-  right: 40px;
+  bottom: 20px;
+  right: -98px;
+
+  z-index: 2;
 }
 .fixed_btn img{
   height: 30%;

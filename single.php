@@ -22,6 +22,16 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="container">
           <div class="change_size_container">
+            <!-- パンクズリスト -->
+            <?php if(!is_home()) : ?>
+              <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+                <?php if(function_exists('bcn_display'))
+                  {
+                      bcn_display();
+                  }?>
+              </div>
+            <?php endif; ?>
+            <!-- ーーーーーーーーー -->
             <div class="change_font_size">
               <p class="change_text">文字サイズ</p>
               <p class="size-button small" data-font="12">小</p>
@@ -79,51 +89,41 @@
               　<div id="1_sp" class="article_item_title sp">見出し1</div>
               </h3>
               <p class="single_article_text">テキスト</p> -->
-              
               <?php the_content(); ?>
+              
+
             </div>
 
             <div class="related_article">関連記事</div>
-			          <div class="category_articles">
-                  <?php
-                  $categories = wp_get_post_categories($post->ID, array('orderby'=>'rand')); // 複数カテゴリーを持つ場合ランダムで取得
-                  if ($categories) {
-                    $args = array(
-                      'category__in' => array($categories[0]), // カテゴリーのIDで記事を取得
-                      'post__not_in' => array($post->ID), // 表示している記事を除く
-                      'showposts'=>3, // 取得記事数
-                      'ignore_sticky_posts'=>1, // 取得した記事の何番目から表示するか
-                      'orderby'=> 'DESC', // 記事をランダムで取得
-                      'cat' => -2,
-                    ); 
-                    $my_query = new WP_Query($args); 
-                    if( $my_query->have_posts() ) { ?>
-                  <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                              <div class="category_article">
-                                <?php get_template_part( 'template-parts/post/content', 'excerpt' ); ?>
-                                <a href="<?php the_permalink() ?>" target="_self">
-                                    <time><?php the_modified_time('Y年n月j日'); ?></time>
-                                    <?php the_post_thumbnail('thumbnail'); ?>
-                                    <p><a href="<?php the_permalink() ?>" class="wpp-post-title" target="_self"><?php the_title(); ?></a></p>
-                              </div>
-                  <?php endwhile; } wp_reset_query(); } ?>
-			          </div>
+            <div class="category_articles">
+              <?php
+              $categories = wp_get_post_categories($post->ID, array('orderby'=>'rand')); // 複数カテゴリーを持つ場合ランダムで取得
+              if ($categories) {
+                $args = array(
+                  'category__in' => array($categories[0]), // カテゴリーのIDで記事を取得
+                  'post__not_in' => array($post->ID), // 表示している記事を除く
+                  'showposts'=>3, // 取得記事数
+                  'ignore_sticky_posts'=>1, // 取得した記事の何番目から表示するか
+                  'orderby'=> 'DESC', // 記事をランダムで取得
+                  'cat' => -2,
+                ); 
+                $my_query = new WP_Query($args); 
+                if( $my_query->have_posts() ) { ?>
+              <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                <div class="category_article">
+                  <?php get_template_part( 'template-parts/post/content', 'excerpt' ); ?>
+                  <a href="<?php the_permalink() ?>" target="_self">
+                      <time><?php the_modified_time('Y年n月j日'); ?></time>
+                      <?php the_post_thumbnail('thumbnail'); ?>
+                      <p><a href="<?php the_permalink() ?>" class="wpp-post-title" target="_self"><?php the_title(); ?></a></p>
+                </div>
+              <?php endwhile; } wp_reset_query(); } ?>
+            </div>
 
 			  
              <!-- 固定-->
-             <div class="sidebar fixed pc">
-              <div class="sidebar_content">
-                <div class="new_article">■新着・人気の記事</div>
-                  <p><a href="">新着記事</a></p>
-                  <p><a href="">人気の記事</a></p>
-                <div class="category">■カテゴリ</div>
-                  <p><a href="<?php echo home_url(); ?>/qa">腹膜透析Q&A</a></p>
-                  <p><a href="<?php echo home_url(); ?>/patient-case">患者さんの事例</a></p>
-                  <p><a href="<?php echo home_url(); ?>/video">動画で学ぶ腹膜透析</a></p>
-                  <p><a href="<?php echo home_url(); ?>/glossary">用語集</a></p>
-              </div>
-            </div>
-            <!-- -------- -->
+             <?php get_template_part( 'partials/side', 'bar' ); ?>
+            <!-- -------- --> 
 
           </div>
         </div>
@@ -167,7 +167,7 @@
   }
   .fixed_btn{
     right: -98px;
-    bottom: 10px;
+    bottom: 20px;
     z-index: 1;
   }
   .fixed_btn:hover{
@@ -234,6 +234,26 @@
   .table_of_contents_lists{
 
   }
+
+  .category_article{
+    height: 150px;
+    width : 200px;
+    margin: 30px 0;
+    margin-right: 20px;
+    border: solid 3px #FFA42C;
+    position: relative;
+  }
+
+  .category_article img{
+    height: 100px;
+    width: 194px;
+    object-fit: cover;
+  }
+  
+  .category_articles time{
+    padding: 0 2px;
+  }
+
 
   @media screen and (max-width: 640px) {
 

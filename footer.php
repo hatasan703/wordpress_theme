@@ -1,9 +1,14 @@
-
+<div class="footer_wrap">
+  
+  
   <div class="sns_wrap">
     <div class="sns_link">
-      <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="facebook"></a>
-      <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="twitter"></a>
-      <a href="<?php echo home_url(); ?>/about" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png" alt="youtube"></a>
+      <a href="https://www.facebook.com/fukumakutouseki" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="facebook"></a>
+      <a href="https://twitter.com/ouchide_toseki" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="twitter"></a>
+      <div>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png" alt="youtube">
+        <div style="text-align: center; margin-top: 5px;">coming soon..</div>
+      </div>
     </div>
   </div>
 
@@ -88,3 +93,6 @@
       <small class="copyright">&copy; 2020 おうちで透析.com</small>
     </div>
   </footer>
+  
+
+</div>

@@ -30,6 +30,17 @@
           </div>
           <div class="container">
             <div class="change_size_container">
+
+            <!-- パンクズリスト -->
+            <?php if(!is_home()) : ?>
+              <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+                <?php if(function_exists('bcn_display'))
+                  {
+                      bcn_display();
+                  }?>
+              </div>
+            <?php endif; ?>
+            <!-- ーーーーーーーーー -->
               <div class="change_font_size">
                 <p class="change_text">文字サイズ</p>
                 <p class="size-button small" data-font="12">小</p>
@@ -41,7 +52,7 @@
 
 
             <?php echo do_shortcode('[addtoany]'); ?>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1qDqcw25luDCh9wWagRXWwV1MPTFZ3NCQ&ll=35.73266560636017%2C139.8356544017517&z=10"></iframe>
+           
             <?php the_content(); ?>
 
 
@@ -201,6 +212,9 @@
               </div> -->
 
             </div>
+            <!-- 固定-->
+        <?php get_template_part( 'partials/side', 'bar' ); ?>
+        <!-- -------- -->
           </div>
         <?php endwhile; else : ?>
           <p>まだ記事がありません</p>
@@ -213,6 +227,10 @@
 <?php get_footer(); ?>
 
 <style>
+
+  iframe{
+    margin-top: 50px!important;
+  }
 
   .container .article_wrap1{
     line-height: 1;

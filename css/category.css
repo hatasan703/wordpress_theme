@@ -73,13 +73,13 @@
 .category_articles{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .category_article{
   height: 180px;
   width : 250px;
   margin: 30px 0;
+  margin-right: 15px;
   border: solid 3px #FFA42C;
   position: relative;
 }

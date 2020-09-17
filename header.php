@@ -106,6 +106,7 @@
       
       function changeFontSize(size){
         $('.site_info_cotent').css('font-size', size + 'px');
+        $('.site_info_title').css('font-size', size + 'px');
         $('.table_of_contents').css('font-size', size + 'px');
         $('.article_text').css('font-size', size + 'px');
         $('.hospital_list').css('font-size', size + 'px');
@@ -197,17 +198,10 @@ jQuery(function($){
 
   </div>
 
-  <div class="mainNav">
+  <!-- <div class="mainNav">
     <li class="header_bar">
-      <?php if(!is_home()) : ?>
-        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-          <?php if(function_exists('bcn_display'))
-            {
-                bcn_display();
-            }?>
-          </div>
-      <?php endif; ?>
     </li>
-  </div>
+    
+  </div> -->
 </header>
 
