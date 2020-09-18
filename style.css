@@ -190,7 +190,8 @@ BreakPoint
   color: #666;
   line-height: 3;
   letter-spacing: 0.1em;
-  margin-left: 5px;
+  margin-left: 20px;
+  /* margin-bottom: 50px; */
 }
 .taxonomy span{
   font-size: 14px;
@@ -514,58 +515,6 @@ a.taxonomy.category:active {
   margin: 0 20px;
 }
 
-/* サイドバー */
-.fixed{
-  /* position: sticky; */
-  /* top: 20px; */
-  position: fixed;
-  bottom: 20px;
-  right: 7%;
-  color: #FF6A29;
-  border: solid 3px #FF6A29;
-  background: #fff;
-  box-shadow: 0 0 17px #d8d8d8;
-}
-.sidebar{
-  height: 400px;
-  width: 220px;
-  border: solid 2px #FF6A29;
-  margin-left: 87%;
-}
-
-.sidebar_content{
-  padding: 30px 0;
-  color: #FF6A29;
-  margin: 0 15%;
-}
-
-.new_article,
-.category{
-  font-size: 16px;
-}
-.new_article{
-}
-.category{
-  margin-top: 30px;
-}
-
-.sidebar_content p{
-  font-size: 14px;
-  padding: 5px 0 5px 5px;
-}
-
-.sidebar_content p a{
-  text-decoration: none;
-  color: #666666;
-  border-bottom: solid 1px #FF6A29;
-  padding: 5px;
-}
-
-@media screen and (max-width: 1240px) {
-  .sidebar{ display: none;}
-}
-
-/* ------------------- */
 
 /* コンテンツ３ */
 

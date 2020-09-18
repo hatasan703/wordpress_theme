@@ -11,19 +11,85 @@
   </div>
 </div>
 
-
 <style>
+
+  /* サイドバー */
+.fixed{
+  position: absolute;
+  top: 335px;
+  right: 3%;
+  color: #FF6A29;
+  border: solid 3px #FF6A29;
+  background: #fff;
+  box-shadow: 0 0 17px #d8d8d8;
+}
+.sidebar{
+  width: 220px;
+  border: solid 3px #FF6A29;
+}
+
+.sidebar_content{
+  padding: 30px 0;
+  color: #FF6A29;
+  margin: 0 15%;
+}
+
+.new_article,
+.category{
+  font-size: 16px;
+}
+.new_article{
+}
+.category{
+  margin-top: 30px;
+}
 
 .sidebar_content p{
   font-size: 14px;
-  /* padding: 20px 0 5px 5px; */
+  padding: 5px 0 5px 5px;
 }
+
+.sidebar_content p a{
+  text-decoration: none;
+  color: #666666;
+  border-bottom: solid 1px #FF6A29;
+  padding: 5px;
+}
+
+/* @media screen and (max-width: 1340px) {
+  .fixed{
+    position: fixed;
+    bottom: 180px;
+    right: 5px;
+    color: #FF6A29;
+    border: solid 3px #FF6A29;
+    background: #fff;
+    box-shadow: 0 0 17px #d8d8d8;
+  }
+} */
+@media screen and (max-width: 1200px) {
+  .sidebar{
+    display: none;
+  }
+}
+
+
+/* ------------------- */
 .category {
   font-size: 16px!important;
 }
-.sidebar {
-    margin-left: 103%;
-}
+
+
+.changed{
+    position: fixed;
+    /* bottom: 180px; */
+    top: 100px;
+    right: 3%;
+    color: #FF6A29;
+    border: solid 3px #FF6A29;
+    background: #fff;
+    box-shadow: 0 0 17px #d8d8d8;
+  }
 
 </style>
 
@@ -32,20 +98,29 @@
   
   jQuery(function($) {
 
+    $(document).ready(function(){
 
       var main_area = $('.article_wrap1');
       var main_area_length = main_area.outerHeight(true);
 
       var pagetop = $('.sidebar');   
       $(window).scroll(function () {
-          if ($(this).scrollTop() > main_area_length) {  //500pxスクロールしたら表示
+          if ($(this).scrollTop() > main_area_length) {  //記事の長さ分スクロールしたらサイドバー非表示
               pagetop.fadeOut();
           } else {
               pagetop.fadeIn();
           }
       });
-    
 
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 230) {  //230pxスクロールしたらサイドバーの位置を変更
+            $(pagetop).addClass("changed");
+          } else {
+            $(pagetop).removeClass("changed");
+          }
+      });
+
+    });
  
 });
 

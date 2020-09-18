@@ -27,28 +27,7 @@
     </div>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="container">
-
-        <div class="change_size_container">
-
-        <!-- パンクズリスト -->
-        <?php if(!is_home()) : ?>
-          <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-            <?php if(function_exists('bcn_display'))
-              {
-                  bcn_display();
-              }?>
-          </div>
-        <?php endif; ?>
-        <!-- ーーーーーーーーー -->
-
-          <div class="change_font_size">
-            <p class="change_text">文字サイズ</p>
-            <p class="size-button small" data-font="12">小</p>
-            <p class="size-button midium active" data-font="16">中</p>
-            <p class="size-button large" data-font="20">大</p>
-          </div>
-        </div>
-
+        <?php get_template_part( 'partials/article', 'head' ); ?>
         <div class="article_wrap1">
           <div class="site_info_title">
             <h2 class=""><?php the_title(); ?></h2>
@@ -239,9 +218,6 @@
       letter-spacing: 0em;
     }
 
-    .page_title_content h1 {
-      letter-spacing: 0.05em;
-    }
     .main_article_title h2 {
       letter-spacing: 0em;
     }
@@ -250,7 +226,7 @@
     .page_title_content h1{
       width: 100%;
       font-size: 16px;
-      letter-spacing: 0;
+      letter-spacing: 0.1em;
     }
 
     .page_title_border {

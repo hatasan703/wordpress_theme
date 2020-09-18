@@ -106,7 +106,6 @@
       
       function changeFontSize(size){
         $('.site_info_cotent').css('font-size', size + 'px');
-        $('.site_info_title').css('font-size', size + 'px');
         $('.table_of_contents').css('font-size', size + 'px');
         $('.article_text').css('font-size', size + 'px');
         $('.hospital_list').css('font-size', size + 'px');

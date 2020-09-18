@@ -29,32 +29,11 @@
             </div>
           </div>
           <div class="container">
-            <div class="change_size_container">
+            <?php get_template_part( 'partials/article', 'head' ); ?>
 
-            <!-- パンクズリスト -->
-            <?php if(!is_home()) : ?>
-              <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-                <?php if(function_exists('bcn_display'))
-                  {
-                      bcn_display();
-                  }?>
-              </div>
-            <?php endif; ?>
-            <!-- ーーーーーーーーー -->
-              <div class="change_font_size">
-                <p class="change_text">文字サイズ</p>
-                <p class="size-button small" data-font="12">小</p>
-                <p class="size-button midium active" data-font="16">中</p>
-                <p class="size-button large" data-font="20">大</p>
-              </div>
-            </div>
             <div class="article_wrap1">
-
-
-            <?php echo do_shortcode('[addtoany]'); ?>
-           
-            <?php the_content(); ?>
-
+              <?php echo do_shortcode('[addtoany]'); ?>
+              <?php the_content(); ?>
 
               <!-- <div class="article_title">
                 在宅腹膜透析の実施病院リストです。<br>
@@ -210,11 +189,11 @@
                   </li>
                 </div>
               </div> -->
-
+              <!-- 固定-->
+              <?php get_template_part( 'partials/side', 'bar' ); ?>
+              <!-- -------- -->
+              
             </div>
-            <!-- 固定-->
-        <?php get_template_part( 'partials/side', 'bar' ); ?>
-        <!-- -------- -->
           </div>
         <?php endwhile; else : ?>
           <p>まだ記事がありません</p>
@@ -227,6 +206,10 @@
 <?php get_footer(); ?>
 
 <style>
+.sidebar_content p{
+  font-size: 14px;
+  padding: 23px 0 5px 5px;
+}
 
   iframe{
     margin-top: 50px!important;

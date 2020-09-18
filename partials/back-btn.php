@@ -25,3 +25,16 @@
 });
 
 </script>
+
+
+<style>
+
+
+@media screen and (max-height: 600px) {
+  .fixed_btn{
+    right: 10%;
+  }
+}
+
+
+</style>
