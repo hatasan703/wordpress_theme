@@ -56,6 +56,14 @@
   padding: 5px;
 }
 
+.hide {
+  display:none;
+}
+
+.hide2{
+  display:none!important;
+}
+
 /* @media screen and (max-width: 1340px) {
   .fixed{
     position: fixed;
@@ -67,10 +75,10 @@
     box-shadow: 0 0 17px #d8d8d8;
   }
 } */
-@media screen and (max-width: 1200px) {
-  .sidebar{
+@media screen and (max-width: 1270px) {
+  /* .sidebar{
     display: none;
-  }
+  } */
 }
 
 
@@ -97,28 +105,50 @@
 <script>
   
   jQuery(function($) {
-
     $(document).ready(function(){
 
       var main_area = $('.article_wrap1');
-      var main_area_length = main_area.outerHeight(true);
-
+      var main_area_height = main_area.outerHeight(true); //記事の長さ
       var pagetop = $('.sidebar');   
-      $(window).scroll(function () {
-          if ($(this).scrollTop() > main_area_length) {  //記事の長さ分スクロールしたらサイドバー非表示
-              pagetop.fadeOut();
-          } else {
-              pagetop.fadeIn();
+      //記事の長さ分スクロールしたらサイドバー非表示
+      var sidebarScrollRange = function() {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > main_area_height) {  
+            $('.sidebar').addClass('hide');
+          } 
+          else{
+            $('.sidebar').removeClass('hide');
           }
+        });
+      };
+      //上から230pxスクロールしたらサイドバーの位置を変更
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 230) {  
+          $(pagetop).addClass("changed");
+        } else {
+          $(pagetop).removeClass("changed");
+        }
       });
 
-      $(window).scroll(function () {
-          if ($(this).scrollTop() > 230) {  //230pxスクロールしたらサイドバーの位置を変更
-            $(pagetop).addClass("changed");
-          } else {
-            $(pagetop).removeClass("changed");
-          }
-      });
+
+      // リアルタイムで画面幅を取得し、1270px以下はサイドバーを非表示
+      // 縦スクロール時に記事分の長さを終えたら非表示
+      var checkWidth = function() {
+        var browserWidth = $(window).width();
+
+        if(browserWidth > 1270){
+          sidebarScrollRange();
+          $('.sidebar').removeClass('hide2');
+        }else{
+          $('.sidebar').addClass('hide2');
+        }
+      };
+      $(function(){
+          checkWidth();
+          $(window).resize(checkWidth);
+      });     
+
+      
 
     });
  

@@ -30,7 +30,7 @@
         <div class="container">
           <?php get_template_part( 'partials/article', 'head' ); ?>
           <div class="article_wrap1">
-            <div class="site_info_title">
+            <div class="site_info_title" style="margin-bottom: 20px;">
               <h2 class=""><?php the_title(); ?></h2>
             </div>
               <!-- 腹膜透析QAーーーーーーーー -->
@@ -85,7 +85,7 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
                 </div>
                 <div class="category_articles">
-															        <?php
+														<?php
                               $paged = get_query_var('paged')? get_query_var('paged') : 1;
                               $information= new WP_Query( array(
                               'post_type' => 'post',

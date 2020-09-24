@@ -22,6 +22,7 @@
     </div>
     
     <div class="container">
+      <?php get_template_part( 'partials/article', 'head' ); ?>
       <div class="article_wrap2">
 
         <div class="site_info_title">
