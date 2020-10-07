@@ -13,7 +13,7 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <div class="page_title pc">
             <div class="page_title_content">
-              <div class="page_title_border"></div>
+              
               <h1>
                 <span><?php the_title(); ?></span>
               </h1>

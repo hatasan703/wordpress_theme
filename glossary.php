@@ -11,7 +11,7 @@
     <div>      
       <div class="page_title pc">
         <div class="page_title_content">
-          <div class="page_title_border"></div>
+          
           <h1>
             <span>「おうちで透析」の記事</span>
           </h1>

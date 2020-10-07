@@ -4,7 +4,7 @@
       <div>
           <div class="page_title pc">
             <div class="page_title_content">
-            <div class="page_title_border"></div>
+            
               <h1>
                 <span>#<?php echo get_tag(get_query_var('tag_id'))->name; ?></span>
               </h1>
