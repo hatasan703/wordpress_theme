@@ -232,6 +232,11 @@
     bottom: 10px;
   }
 
+  .article_image img{
+    height: 100%;
+    width: 100%;
+  }
+
 
 
 
