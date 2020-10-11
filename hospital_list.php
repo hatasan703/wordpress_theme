@@ -34,7 +34,7 @@
             <div class="article_wrap1">
               <?php echo do_shortcode('[addtoany]'); ?>
               <?php the_content(); ?>
-
+              
               <!-- <div class="article_title">
                 在宅腹膜透析の実施病院リストです。<br>
                 お住まいの地域をクリックしてください。
@@ -48,26 +48,24 @@
                 <a>九州の病院</a>
               </div>
               <div class="hospital_list">
-                <h2 class="hospital_area">
-                  関東の病院
-                </h2>
+                <h2 class="hospital_area">関東の病院</h2>
                 <div class="hospital_list">
                   <li>
                     <div class="hospital_top">
-                      <p class="hospital_title">柴垣医院 自由が丘</p>
+                      <p class="hospital_title">江戸川病院</p>
                       <p class="hospital_place">東京都</p>
                     </div>
                     <div class="hospital_bottom">
                       <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
                       <div class="address">
-                        <p>〒152-0035</p>
+                        <p>〒133-0052</p>
                         <p>
-                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">東京都目黒区自由が丘1-13-4<br>
-                          シャイン自由が丘ビル２F
+                          <a href="https://maps.google.com/?cid=14570491366904498745" taget="_blank">
+                          東京都江戸川区東小岩２丁目24-18
+                          <br>
                           </a>
                         </p>
-                        <p>☎︎ 03-3724-2626</p>
-                        <p>jiyugaoka@sibagakiiin.com</p>
+                        <p>☎︎ 03-3673-1221</p>
                       </div>
                       <div class="time">
                         <div class="closed">
@@ -77,118 +75,86 @@
                         <div class="open">
                           <p class="open_title">営業<br>時間</p>
                           <p>
-                            12:30-16:45<br>
-                            17:00-22:30
+                            8:20-11:30<br>
+                            12:00-16:30<br>
                           </p>
                         </div>
                       </div>
                     </div>
                   </li>
 
-                  <li>
-                    <div class="hospital_top">
-                      <p class="hospital_title">柴垣医院 自由が丘</p>
-                      <p class="hospital_place">東京都</p>
-                    </div>
-                    <div class="hospital_bottom">
-                      <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
-                      <div class="address">
-                        <p>〒152-0035</p>
-                        <p>
-                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">東京都目黒区自由が丘1-13-4<br>
-                          シャイン自由が丘ビル２F
-                          </a>
-                        </p>
-                        <p>☎︎ 03-3724-2626</p>
-                        <p>jiyugaoka@sibagakiiin.com</p>
-                      </div>
-                      <div class="time">
-                        <div class="closed">
-                          <p class="closed_title">休診日</p>
-                          <p>日曜日</p>
-                        </div>
-                        <div class="open">
-                          <p class="open_title">営業<br>時間</p>
-                          <p>
-                            12:30-16:45<br>
-                            17:00-22:30
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <h2 class="hospital_area">
-                  関西の病院
-                </h2>
+                <h2 class="hospital_area">関西の病院</h2>
                 <div class="hospital_list">
                   <li>
                     <div class="hospital_top">
-                      <p class="hospital_title">柴垣医院 自由が丘</p>
-                      <p class="hospital_place">大阪府</p>
-                    </div>
-                    <div class="hospital_bottom">
-                      <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
-                      <div class="address">
-                        <p>〒152-0035</p>
-                        <p>
-                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">東京都目黒区自由が丘1-13-4<br>
-                          シャイン自由が丘ビル２F
-                          </a>
-                        </p>
-                        <p>☎︎ 03-3724-2626</p>
-                        <p>jiyugaoka@sibagakiiin.com</p>
-                      </div>
-                      <div class="time">
-                        <div class="closed">
-                          <p class="closed_title">休診日</p>
-                          <p>日曜日</p>
-                        </div>
-                        <div class="open">
-                          <p class="open_title">営業<br>時間</p>
-                          <p>
-                            12:30-16:45<br>
-                            17:00-22:30
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="hospital_top">
-                      <p class="hospital_title">柴垣医院 自由が丘</p>
+                      <p class="hospital_title">正木医院</p>
                       <p class="hospital_place">京都府</p>
                     </div>
                     <div class="hospital_bottom">
                       <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
                       <div class="address">
-                        <p>〒152-0035</p>
+                        <p>〒602-8384</p>
                         <p>
-                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">東京都目黒区自由が丘1-13-4<br>
-                          シャイン自由が丘ビル２F
+                          <a href="https://www.google.com/maps?ll=35.027959,135.735268&z=17&t=m&hl=ja&gl=JP&mapclient=embed&cid=6629965808113269162" taget="_blank">
+                            京都府京都市上京区今小路通御前通西入紙屋川町８２６
                           </a>
                         </p>
-                        <p>☎︎ 03-3724-2626</p>
-                        <p>jiyugaoka@sibagakiiin.com</p>
+                        <p>☎︎ 075-461-5947</p>
                       </div>
                       <div class="time">
                         <div class="closed">
                           <p class="closed_title">休診日</p>
-                          <p>日曜日</p>
+                          <p>木曜午後<br>土曜午後<br>日曜、祝日</p>
                         </div>
                         <div class="open">
                           <p class="open_title">営業<br>時間</p>
                           <p>
-                            12:30-16:45<br>
-                            17:00-22:30
+                            9:00-12:00<br>
+                            18:30-20:30
                           </p>
                         </div>
                       </div>
                     </div>
                   </li>
                 </div>
+
+                <h2 class="hospital_area">九州の病院</h2>
+                <div class="hospital_list">
+                  <li>
+                    <div class="hospital_top">
+                      <p class="hospital_title">宮崎内科医院</p>
+                      <p class="hospital_place">長崎県</p>
+                    </div>
+                    <div class="hospital_bottom">
+                      <img class="alignnone  wp-image-166" src="http://dev.local/wp-content/uploads/2020/08/28-1.png" alt="病院" width="397" height="234" />
+                      <div class="address">
+                        <p>〒852-8042</p>
+                        <p>
+                          <a href="https://www.google.com/maps/place/%E6%9F%B4%E5%9E%A3%E5%8C%BB%E9%99%A2+%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98/@35.6084183,139.6703683,17z/data=!3m1!5s0x6018f51f7c9536a1:0xd5948abf93fed8d4!4m12!1m6!3m5!1s0x0:0x85ffbb901c1de9a8!2z5p-05Z6j5Yy76ZmiIOiHqueUseOBjOS4mA!8m2!3d35.608113!4d139.670497!3m4!1s0x0:0x85ffbb901c1de9a8!8m2!3d35.608113!4d139.670497" taget="_blank">
+                            長崎県長崎市白鳥町3-12
+                          </a>
+                        </p>
+                        <p>☎︎ 095-845-0312</p>
+                      </div>
+                      <div class="time">
+                        <div class="closed">
+                          <p class="closed_title">休診日</p>
+                          <p>日曜、祝日</p>
+                        </div>
+                        <div class="open">
+                          <p class="open_title">営業<br>時間</p>
+                          <p>
+                            8:30-11:45<br>
+                            13:45-5:45
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                
               </div> -->
+
               <!-- 固定-->
               <?php get_template_part( 'partials/side', 'bar' ); ?>
               <!-- -------- -->
@@ -321,7 +287,7 @@
     border: solid 1px #FF6A29;
     width:calc(100% / 3) ; 
     font-size: 14px;
-    height: 120px;
+    /* height: 120px; */
     width: 200px;
   }
   .time li{margin: 20px 0;}

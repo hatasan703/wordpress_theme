@@ -83,6 +83,7 @@ add_action( 'widgets_init', 'lab_widgets_init' );
  * wp_enqueue_styleについて参照：https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_enqueue_style
  * wp_enqueue_scriptについて参照：https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/wp_enqueue_script
  */
+
 function lab_scripts() {
 	wp_enqueue_style( 'lab-style', get_stylesheet_uri() );
 }
@@ -90,6 +91,18 @@ add_action( 'wp_enqueue_scripts', 'lab_scripts' );
 
 function my_function_admin_bar(){ return false; }
 add_filter( 'show_admin_bar' , 'my_function_admin_bar');
+
+// クエリ付与
+
+// function theme_name_scripts() {
+// 	wp_enqueue_style( 'style-name', get_stylesheet_uri() . '/style.css' . date('YmdHi'), array() );
+// 	wp_enqueue_style( 'style-name', get_template_directory_uri() . '/css/article.css' . date('YmdHi'), array() );
+// 	wp_enqueue_style( 'style-name', get_template_directory_uri() . '/css/category.css' . date('YmdHi'), array() );
+// 	wp_enqueue_style( 'style-name', get_template_directory_uri() . '/css/drawer.css' . date('YmdHi'), array() );
+// 	wp_enqueue_style( 'style-name', get_template_directory_uri() . '/css/reset.css' . date('YmdHi'), array() );
+// 	wp_enqueue_style( 'style-name', get_template_directory_uri() . '/css/site_info.css' . date('YmdHi'), array() );
+// }
+// add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
 /* 記事内の最初の画像を取得して表示 */
 function catch_that_image() {
