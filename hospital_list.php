@@ -40,15 +40,16 @@
                 お住まいの地域をクリックしてください。
               </div>
               <div class="hospital_list_btn">
-                <a>関東の病院</a>
-                <a>関西の病院</a>
-                <a>中国･四国の病院</a>
-                <a>東北の病院</a>
-                <a>中部の病院</a>
-                <a>九州の病院</a>
+                <a href="#kanto">関東の病院</a>
+                <a href="#kansai">関西の病院</a>
+                <a href="#chugoku">中国･四国の病院</a>
+                <a href="#tohoku">東北の病院</a>
+                <a href="#chubu">中部の病院</a>
+                <a href="#kyusyu">九州の病院</a>
               </div>
+              <p><iframe src="https://www.google.com/maps/d/embed?mid=1qDqcw25luDCh9wWagRXWwV1MPTFZ3NCQ&amp;ll=35.73266560636017%2C139.8356544017517&amp;z=10"></iframe></p>
               <div class="hospital_list">
-                <h2 class="hospital_area">関東の病院</h2>
+                <h2 class="hospital_area" id="kanto">関東の病院</h2>
                 <div class="hospital_list">
                   <li>
                     <div class="hospital_top">
@@ -83,7 +84,7 @@
                     </div>
                   </li>
 
-                <h2 class="hospital_area">関西の病院</h2>
+                <h2 class="hospital_area" id="kansai">関西の病院</h2>
                 <div class="hospital_list">
                   <li>
                     <div class="hospital_top">
@@ -118,7 +119,7 @@
                   </li>
                 </div>
 
-                <h2 class="hospital_area">九州の病院</h2>
+                <h2 class="hospital_area" id="kyusyu">九州の病院</h2>
                 <div class="hospital_list">
                   <li>
                     <div class="hospital_top">
@@ -220,6 +221,7 @@
     text-align: center;
     letter-spacing: 0.2em;
     box-shadow: 0 0 3px gray;
+    text-decoration: none;
   }
 
   .hospital_list_btn a:hover{

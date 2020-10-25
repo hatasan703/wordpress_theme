@@ -58,7 +58,7 @@
                                 <a href="<?php the_permalink(); ?>">
                                 <time class="artcile_time" datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                                 <?php the_post_thumbnail('thumbnail'); ?>
-                                <p><?php the_title(); ?></p>
+                                <p><?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?></p>
                                 </a>
                                 </div>
                         <?php
@@ -100,7 +100,7 @@
                               <a href="<?php the_permalink(); ?>">
                               <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                               <?php the_post_thumbnail('thumbnail'); ?>
-                              <p><?php the_title(); ?></p>
+                              <p><?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?></p>
                               </a>
                               </div>
                           <?php
@@ -142,7 +142,7 @@
                                   <a href="<?php the_permalink(); ?>">
                                   <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                                   <?php the_post_thumbnail('thumbnail'); ?>
-                                  <p><?php the_title(); ?></p>
+                                  <p><?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?></p>
                                   </a>
                                   </div>
                         <?php
@@ -182,11 +182,13 @@
                       if ( $information ->have_posts() ) : ?>
                         <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
                               <div class="category_article blue_border">
-                              <a href="<?php the_permalink(); ?>">
-                              <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-                              <?php the_post_thumbnail('thumbnail'); ?>
-                              <p><?php the_title(); ?></p>
-                              </a>
+                                <a href="<?php the_permalink(); ?>">
+                                <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
+                                <?php the_post_thumbnail('thumbnail'); ?>
+                                <p>
+                                <?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?>
+                                </p>
+                                </a>
                               </div>
                     <?php
                     endwhile;

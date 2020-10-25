@@ -58,7 +58,7 @@
                             <a href="<?php the_permalink(); ?>">
                             <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                             <?php the_post_thumbnail('thumbnail'); ?>
-                            <p><?php the_title(); ?></p>
+                            <p><?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?></p>
                             </a>
                             </div>
                       <?php
