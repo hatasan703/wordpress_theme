@@ -176,17 +176,16 @@
                         'post_type' => 'post',
                         'paged' => $paged,
                         'post_status' => 'publish',
-                        'posts_per_page' => 3,
+                        'posts_per_page' => 6,
                         'cat' =>5,
                     ));
                       if ( $information ->have_posts() ) : ?>
                         <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
-                              <div class="category_article blue_border">
+                              <div class="category_article blue_border" style="height: 50px;">
                                 <a href="<?php the_permalink(); ?>">
-                                <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-                                <?php the_post_thumbnail('thumbnail'); ?>
-                                <p>
-                                <?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?>
+                                <!-- <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time> -->
+                                <p style="padding: 12px 2px;">
+                                <?php echo wp_trim_words( get_the_title(), 11 , '…' ); ?>
                                 </p>
                                 </a>
                               </div>

@@ -10,7 +10,7 @@
     rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css?date=1" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" />
-  <link href="<?php echo get_template_directory_uri(); ?>/css/category.css?date=1" rel="stylesheet" type="text/css">
+  <link href="<?php echo get_template_directory_uri(); ?>/css/category.css?date=1027" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/article.css?date=1" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/site_info.css?date=1" rel="stylesheet" type="text/css">
   <link href="<?php echo get_template_directory_uri(); ?>/css/drawer.css?date=1" rel="stylesheet" type="text/css">

@@ -101,7 +101,8 @@
 }
 .category_article p{
   height: 60px;
-  padding: 10px 15px;
+  line-height: 23px;
+  padding: 0 5px;
 }
 
 .more_btn{
@@ -134,7 +135,11 @@
 
 .blue,
 .blue_border time{background: #1eafd1;}
-.blue_border{border: solid 3px #1eafd1;}
+.blue_border{
+  border: solid 3px #1eafd1;
+  margin: 10px 0;
+  margin-right: 15px;
+}
 
 
 

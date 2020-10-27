@@ -162,7 +162,7 @@
                   <a href="<?php the_permalink(); ?>" class="top_article">
                   <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
 					    <?php the_post_thumbnail('thumbnail'); ?>
-					      <p><?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?></p></a>
+					      <p><?php echo wp_trim_words( get_the_title(), 20 , '…' ); ?></p></a>
                 <?php
                 endforeach;
                 wp_reset_postdata();
@@ -213,7 +213,7 @@
                                             <a href="<?php the_permalink(); ?>" class="top_article">
                                             <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
                                     <?php the_post_thumbnail('thumbnail'); ?>
-                                      <p><?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?></p></a>
+                                      <p><?php echo wp_trim_words( get_the_title(), 20 , '…' ); ?></p></a>
                           <?php endwhile; else: ?>
                           <p><?php _e('ありませんでした。'); ?></p>
                                   <?php endif; ?> -->

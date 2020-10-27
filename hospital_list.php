@@ -33,6 +33,7 @@
 
             <div class="article_wrap1">
               <?php echo do_shortcode('[addtoany]'); ?>
+              
               <?php the_content(); ?>
               
               <!-- <div class="article_title">
@@ -83,7 +84,7 @@
                       </div>
                     </div>
                   </li>
-
+                  
                 <h2 class="hospital_area" id="kansai">関西の病院</h2>
                 <div class="hospital_list">
                   <li>
@@ -117,6 +118,21 @@
                       </div>
                     </div>
                   </li>
+                </div>
+
+                <h2 class="hospital_area" id="chugoku">中国･四国の病院</h2>
+                <div class="hospital_list" style="text-align: center; margin: 80px 0;">
+                  掲載する病院を募集しています。
+                </div>
+
+                <h2 class="hospital_area" id="tohoku">東北の病院</h2>
+                <div class="hospital_list" style="text-align: center; margin: 80px 0;">
+                  掲載する病院を募集しています。
+                </div>
+
+                <h2 class="hospital_area" id="chubu">中部の病院</h2>
+                <div class="hospital_list" style="text-align: center; margin: 80px 0;">
+                  掲載する病院を募集しています。
                 </div>
 
                 <h2 class="hospital_area" id="kyusyu">九州の病院</h2>

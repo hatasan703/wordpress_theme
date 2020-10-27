@@ -43,32 +43,33 @@
               <img src="<?php echo get_template_directory_uri(); ?>/img/31.png" alt="体温計">
             </div>
             <div class="category_articles">
-					        <?php
-                     $paged = get_query_var('paged')? get_query_var('paged') : 1;
-                     $information= new WP_Query( array(
-                    'post_type' => 'post',
-                    'paged' => $paged,
-                    'post_status' => 'publish',
-                    'posts_per_page' => 9,
-					          'cat' =>5,
-                ));
-          if ( $information ->have_posts() ) : ?>
-            <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
-                  <div class="category_article blue_border">
-                  <a href="<?php the_permalink(); ?>">
-                  <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time>
-                  <?php the_post_thumbnail('thumbnail'); ?>
-                  <p><?php echo wp_trim_words( get_the_title(), 9 , '…' ); ?></p>
-                  </a>
-                  </div>
-        <?php
-		    endwhile;
-        wp_reset_postdata(); ?>
+																				        <?php
+                        $paged = get_query_var('paged')? get_query_var('paged') : 1;
+                        $information= new WP_Query( array(
+                        'post_type' => 'post',
+                        'paged' => $paged,
+                        'post_status' => 'publish',
+                        'posts_per_page' => 100,
+                        'cat' =>5,
+                    ));
+                      if ( $information ->have_posts() ) : ?>
+                        <?php while ( $information -> have_posts() ) : $information -> the_post(); ?>
+                              <div class="category_article blue_border" style="height: 50px;">
+                                <a href="<?php the_permalink(); ?>">
+                                <!-- <time datetime="<?php the_time('Y.n.j'); ?>"><?php the_time('Y.n.j'); ?></time> -->
+                                <p style="padding: 12px 2px;">
+                                <?php echo wp_trim_words( get_the_title(), 11 , '…' ); ?>
+                                </p>
+                                </a>
+                              </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata(); ?>
 
-      <?php else: ?>
-      <p>まだ記事がありません</p>
-      <?php endif; ?>
-      </div>
+                  <?php else: ?>
+                  <p>まだ記事がありません</p>
+                  <?php endif; ?>
+                </div>
 				  <?php 		 
               if( function_exists('wp_pagenavi') ) {
                     wp_pagenavi(array('query' => $information));
